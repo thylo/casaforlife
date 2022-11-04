@@ -1,4 +1,4 @@
-import "./scss/emiliem.scss";
+import "./scss/casaforlife.scss";
 
 let last_known_scroll_position = 0;
 let ticking = false;
@@ -7,7 +7,6 @@ const menu = document.getElementById("js-menu-scroll"),
   toggle = document.getElementById("js-menu-toggle"),
   close = document.getElementById("js-menu-close"),
   sections = [...document.querySelectorAll("section")];
-
 if (toggle && close) {
   toggle.addEventListener("click", (e) => {
     console.log("click");
