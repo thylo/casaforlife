@@ -23,46 +23,21 @@ if (toggle && close) {
   });
 }
 
-const mod = 3;
+//-------- Valentin code
 
-function doSomething(scroll_pos) {
-  const navHeight = menu.clientHeight;
-  if (navHeight * mod < scroll_pos && !menu.classList.contains("scroll")) {
-    menu.classList.add("scroll");
-  } else if (
-    navHeight * mod > scroll_pos * mod &&
-    menu.classList.contains("scroll")
-  ) {
-    menu.classList.remove("scroll");
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    // document.getElementById("navbar").style.padding = "30px 10px";
+    document.querySelector(".js-menu__logo--desk").style.height = "65px";
+    console.log("hey");
+  } else {
+    // document.getElementById("navbar").style.padding = "80px 10px";
+    document.querySelector(".js-menu__logo--desk").style.height = "230px";
+    console.log("hey");
   }
-
-  sections.forEach(function (section) {
-    const top = section.offsetTop - navHeight,
-      bottom = top + section.clientHeight;
-
-    if (scroll_pos >= top - 2 * navHeight && scroll_pos <= bottom) {
-      [...menu.querySelectorAll(".c-menu__link")].forEach((link) => {
-        link.classList.remove("active");
-      });
-      menu
-        .querySelector(`[href='#${section.getAttribute("id")}']`)
-        .classList.add("active");
-      sections.forEach((link) => {
-        link.classList.remove("active");
-      });
-      section.classList.add("active");
-    }
-  });
 }
-
-window.addEventListener("scroll", function (e) {
-  last_known_scroll_position = window.scrollY;
-
-  if (!ticking) {
-    window.requestAnimationFrame(function () {
-      doSomething(last_known_scroll_position);
-      ticking = false;
-    });
-    ticking = true;
-  }
-});

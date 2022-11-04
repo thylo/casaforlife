@@ -21,3 +21,10 @@ fieldset {
 dd, ol, ul {
   margin-left: $inuit-global-spacing-unit;
 }
+
+@include mq($from: tablet) {
+  body{
+    height: 10000px;
+    padding-top: 300px;
+  }
+}

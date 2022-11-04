@@ -37,14 +37,6 @@ h1 {
   @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
   line-height: 1.1em;
   margin-bottom: 1em;
-  &:after {
-    background: #CC8776;
-    content: '';
-    display: block;
-    height: 2px;
-    margin: .9em 0;
-    width: 50px;
-  }
 }
 
 h2 {
@@ -55,17 +47,6 @@ h2 {
 h3 {
   font-size: $mod_1*$mod_1 *1rem;
   @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
-  &:after {
-    background: #CC8776;
-    content: '';
-    display: block;
-    height: 2px;
-    margin: .9em 0;
-    width: 1em;
-    position: relative;
-    left:50%;
-    transform: translateX(-50%);
-  }
 }
 
 h4 {
