@@ -23,21 +23,19 @@ if (toggle && close) {
   });
 }
 
-//-------- Valentin code
+//-------- Valentin code ----------//
 
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+// When the user scrolls down 80px from the top of the document, resize the navbar's the logo's size
 window.onscroll = function () {
   scrollFunction();
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    // document.getElementById("navbar").style.padding = "30px 10px";
-    document.querySelector(".js-menu__logo--desk").style.height = "65px";
-    console.log("hey");
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    // document.querySelector("navbar").style.padding = "30px 10px";
+    document.querySelector(".js-menu__logo--desk").style.height = "70px";
   } else {
-    // document.getElementById("navbar").style.padding = "80px 10px";
-    document.querySelector(".js-menu__logo--desk").style.height = "230px";
-    console.log("hey");
+    // document.querySelector("navbar").style.padding = "80px 10px";
+    document.querySelector(".js-menu__logo--desk").style.height = "200px";
   }
 }
