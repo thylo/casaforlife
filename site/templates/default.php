@@ -13,4 +13,5 @@
 <h1> <?= $page->title()?> </h1>
 <h3> <?= $page->intro()?> </h3>
 <p> <?= $page->text()?> </p>
+
 <?php snippet('footer') ?>

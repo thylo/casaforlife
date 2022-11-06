@@ -21,4 +21,6 @@
 </head>
 <body>
  
-<?= snippet('menu') ?>
+<header class="c-siteheader">
+    <?= snippet('menu') ?>
+</header>

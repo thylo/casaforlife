@@ -1,20 +1,14 @@
 <?php if (site()->mainMenu()->isNotEmpty()): ?>
-    <header>
+    
    <nav class="c-mainnav c-mainnav--desk">
         <div class="o-container">
             <ul class=" u-padding-small o-list-bare c-menu c-menu--desk o-list-inline" id="js-menu">
-                        <li class="o-list-bare__item o-list-inline__item">
-                            <a href="/" class=" c-menu__logo js-menu__logo--desk">
-                            <?= svg("/assets/img/svg/logo.svg") ?>
-                            </a>
-                        </li>
-                    <?php foreach (site()->content()->get("mainMenu")->toPages() as $index => $item): ?>
-                        <li class="o-list-bare__item o-list-inline__item c-menu__item menu-item-<?= $index ?><?= (site()->page()->id() == $item->id()) ? " active" : "" ?>">
-                            <a href="<?= url($item) ?>" title="Go to <?= $item ?>" class="c-menu__link">
-                                <?= $item->title() ?>
-                            </a>
-                        </li>
-                    <?php endforeach; ?>
+                <li class="o-list-bare__item o-list-inline__item">
+                    <a href="/" class=" c-menu__logo js-menu__logo--desk">
+                    <?= svg("/assets/img/svg/logo.svg") ?>
+                    </a>
+                </li>
+                <?= snippet('nav') ?>   
             </ul>
         </div>
    </nav>
@@ -32,15 +26,8 @@
                         <?= svg("/assets/img/svg/logo.svg") ?>
                     </a>
                 </li>
-                <?php foreach (site()->content()->get("mainMenu")->toPages() as $item): ?>
-                    <li class="o-list-bare__item o-list-inline__item c-menu__item menu-item-{{ forloop.index }} {% if item.url == page.url %}active{% endif %}">
-                        <a href="<?= url($item) ?>" title="Go to <?= $item ?>" class="c-menu__link">
-                            <?= $item->title() ?>
-                        </a>
-                    </li>
-                <?php endforeach; ?>
+                <?= snippet('nav') ?>   
             </ul>
         </nav>
    </div>
-    </header>
 <?php endif; ?>

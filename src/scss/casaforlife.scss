@@ -2,6 +2,7 @@
 @import "../../node_modules/inuitcss/settings/example.settings.config";
 @import "../../node_modules/inuitcss/settings/settings.core";
 @import "../../node_modules/inuitcss/settings/example.settings.global";
+@import "./settings/_colors";
 
 // TOOLS
 @import "../../node_modules/inuitcss/tools/tools.font-size";
@@ -47,10 +48,11 @@
 // Build and include your project’s UI components here.
 @import "../../node_modules/inuitcss/components/example.components.buttons";
 @import "./components/components.buttons";
+@import "./components/components.ctalink";
 @import "./components/components.home-links";
-@import "./components/components.split";
 
 @import "./components/component.menu";
+@import "./components/component.footer";
 
 // UTILITIES
 @import "../../node_modules/inuitcss/utilities/utilities.clearfix";

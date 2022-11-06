@@ -24,7 +24,6 @@ dd, ol, ul {
 
 @include mq($from: tablet) {
   body{
-    height: 10000px;
     padding-top: 300px;
   }
 }
