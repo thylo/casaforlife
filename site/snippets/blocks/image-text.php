@@ -1,8 +1,7 @@
 <?php
 /** @var Kirby\Cms\Block $block */
 ?>
-
-<li class="c-contact__card c-contactlist__item">
+<article class="c-contact__card">
   <img class="c-contactcard__img" src="<?= $block->contact_image()->toFile()->url() ?>"
     alt="<?= $block->content()->contact_name() ?> photo">
   <ul class="c-contactcard__infos o-list-bare u-margin-none">
@@ -30,5 +29,7 @@
         </svg>
       </a>
     </li>
+
+
   </ul>
-</li>
+</article>
