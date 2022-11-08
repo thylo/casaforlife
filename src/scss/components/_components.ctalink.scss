@@ -1,6 +1,7 @@
 .c-ctalink{
     display: inline-block;
     border-radius: 25px;
+    line-break: strict;
     height: fit-content;
     padding: calc(6 / 16 * 1rem) calc(18 / 16 * 1rem);
     text-align: center;

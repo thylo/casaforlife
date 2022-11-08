@@ -20,8 +20,7 @@
         color: $color-white;
     }
     &__link{
-        display: flex;
-        gap: 10px;
+        display: inline-block;
         color: $color-white;
         text-decoration: none;
     }

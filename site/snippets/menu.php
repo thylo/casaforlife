@@ -26,7 +26,7 @@
                         <?= svg("/assets/img/svg/logo.svg") ?>
                     </a>
                 </li>
-                <?= snippet('nav') ?>   
+                <?= snippet('nav') ?>
             </ul>
         </nav>
    </div>
