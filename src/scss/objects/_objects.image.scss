@@ -1,0 +1,8 @@
+.o-fluidimage{
+  min-width: 100%;
+  height: auto;
+}
+
+.o-image-crop--right{
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}

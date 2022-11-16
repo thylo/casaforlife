@@ -24,3 +24,5 @@
 <header class="c-siteheader">
     <?= snippet('menu') ?>
 </header>
+
+<main>

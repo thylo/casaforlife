@@ -1,3 +1,7 @@
+<?php
+/** @var Kirby\Cms\Block $block */
+?>
+
 <?php snippet('header') ?>
 
 

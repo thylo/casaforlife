@@ -1,0 +1,9 @@
+title: Content
+
+fields:
+  sections:
+    layout: cards
+    label: Equipe
+    type: blocks
+    fieldsets:
+      - equip

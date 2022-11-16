@@ -1,0 +1,84 @@
+name: Equipe
+icon: 👱🏼
+fields:
+  contact_name:
+    label: Nom
+    type: writer
+    required: true
+  contact_function:
+    label: Fonction
+    type: writer
+    required: true
+  contact_mail:
+    label: Email
+    type: email
+    required: false
+  contact_phone:
+    label: Numéro de teléphone
+    type: tel
+    required: false
+  contact_image:
+    label: Photo
+    type: files
+    required: true
+    multiple: false
+# title: Equipe
+
+# icon: 👨🏻‍💼
+
+# sections:
+#   type: fields
+#   fields:
+#     contact_name:
+#       label: Nom
+#       type: writer
+#       required: true
+#     contact_function:
+#       label: Fonction
+#       type: writer
+#       required: true
+#     contact_mail:
+#       label: Email
+#       type: email
+#       required: false
+#     contact_phone:
+#       label: Numéro de teléphone
+#       type: tel
+#     required: false
+#     contact_image:
+#       label: Photo
+#       type: files
+#       required: true
+#       multiple: false
+# # ---TEST---
+
+# # title: Contact block
+
+# # sections:
+# #   Equipe:
+# #     contactCard:
+# #       contact_name:
+# #         label: Nom
+# #         type: writer
+# #         required: true
+# #       contact_function:
+# #         label: Fonction
+# #         type: writer
+# #         required: true
+# #       contact_mail:
+# #         label: Email
+# #         type: email
+# #         required: false
+# #       contact_phone:
+# #         label: Numéro de teléphone
+# #         type: tel
+# #         required: false
+# #       contact_image:
+# #         type: files
+# #         required: true
+# #         multiple: false
+# # # ca marche -- pages
+# # # sections:
+# # #   Equipe:
+# # #     type: pages
+# # #     layout: cards

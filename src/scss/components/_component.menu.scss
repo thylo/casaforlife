@@ -4,6 +4,7 @@
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 99;
   }
 }
 
@@ -22,7 +23,6 @@
       align-items: center;
       
       transition: heigth 0.4s;
-      z-index: 99;
 
       &> :first-child{
         margin-right: auto;

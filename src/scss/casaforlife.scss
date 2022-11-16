@@ -41,6 +41,7 @@
 @import "../../node_modules/inuitcss/objects/objects.pack";
 @import "./objects/objects.flex-layout";
 @import "./objects/objects.container";
+@import "./objects/_objects.image";
 @import "./objects/objects.grid";
 
 
@@ -51,7 +52,7 @@
 @import "./components/components.buttons";
 @import "./components/components.ctalink";
 @import "./components/_components.smallcomponents";
-@import "./components/components.home-links";
+@import "./components/components.home";
 
 @import "./components/component.menu";
 @import "./components/component.contact";

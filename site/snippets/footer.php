@@ -1,3 +1,4 @@
+</main>
 <footer class="c-sitefooter">
   <div class="o-container">
     <div class="c-sitefooter__content">

@@ -1,0 +1,66 @@
+# #réussir à metre les conctacts dans une section propre à eux
+
+# Each page blueprint must have a title, the title may be different from the file name
+title: Contacts
+
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 🖼
+
+# Here we extend two sections which are defined in `/site/blueprints/sections/albums.yml`
+# They differ in their page status and the headline.
+sections:
+  type: fields
+  fields:
+    contact_name:
+      label: Nom
+      type: writer
+      required: true
+    contact_function:
+      label: Fonction
+      type: writer
+      required: true
+    contact_mail:
+      label: Email
+      type: email
+      required: false
+    contact_phone:
+      label: Numéro de teléphone
+      type: tel
+    required: false
+    contact_image:
+      label: Photo
+      type: files
+      required: true
+      multiple: false
+# ---TEST---
+
+title: Contact block
+
+sections:
+  Equipe:
+    contactCard:
+      contact_name:
+        label: Nom
+        type: writer
+        required: true
+      contact_function:
+        label: Fonction
+        type: writer
+        required: true
+      contact_mail:
+        label: Email
+        type: email
+        required: false
+      contact_phone:
+        label: Numéro de teléphone
+        type: tel
+        required: false
+      contact_image:
+        type: files
+        required: true
+        multiple: false
+# ca marche -- pages
+# sections:
+#   Equipe:
+#     type: pages
+#     layout: cards

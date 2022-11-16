@@ -4,12 +4,5 @@ fields:
     label: Sections
     type: blocks
     fieldsets:
-      - hero
-      - content
-      - about
       - contact
-      - products
-      - services
-      - contact
-      - makeup
-      - workshops
+      - section
