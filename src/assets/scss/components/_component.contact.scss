@@ -1,0 +1,17 @@
+
+.c-contactcard{
+    &__item > p{
+       margin: 0;
+    }
+    &__img{
+        width: 250px;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+    }
+    &__link{
+        display: inline-block;
+        height: 30px;
+        color: var(--color-text-offset);
+    }
+}
+

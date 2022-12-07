@@ -1,0 +1,140 @@
+.c-mainnav{
+  background: #00694adb;
+}
+
+.c-mainnav--desk{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 99;
+}
+
+.c-menu {
+  text-align: center;
+  margin: 0;
+
+  &--desk{
+    display: none; 
+  }
+
+  @include breakpoint(medium) {
+    &--desk{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      transition: heigth 0.4s;
+
+      &> :first-child{
+        margin-right: auto;
+      }
+    }
+    &--small{
+      display: none;
+    }
+  }
+
+  &> :last-child{
+    position: relative;
+    margin-left: 25px;
+  }
+  &> :last-child::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translate3d(0,-50%,0);
+    display: block;
+    height: 70%;
+    width: 2px;
+    background-color: var(--color-background);
+  }
+
+  &__link {
+    position: relative;
+    padding: var(--spacing-s);
+    text-decoration: none;
+    color: var(--color-text-invert);
+    display: block;
+    @include breakpoint(medium) {
+      padding: var(--spacing-s);
+      display: inline-block;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 0;
+      background-color: var(--color-background);
+      transition: all 0.3s ease-in-out;
+    }
+    
+    &:hover::after {
+      width: 50%;
+      transition: width 0.3s ease-in-out;
+    }
+  }
+  &__logo {
+    display: inline-block;
+    //same size as the one in index.js l39
+    height: 200px;
+    transition: 0.3s ease-in-out;
+  }
+
+  &__item {
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
+}
+
+.c-menu-toggle {
+  border: none;
+  background: var(--color-background);
+  position: fixed;
+  padding: var(--spacing-l);
+  cursor: pointer;
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.c-scroll-menu {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: var(--color-brand) ;
+  transition: all 0.3s ease-out;
+
+  @include breakpoint(medium) {
+    transform: translate(0, -100%);
+    height: unset;
+  }
+  &__close {
+    position: absolute;
+    left: 0;
+  }
+  &.visible {
+    display: block;
+  }
+  &.scroll {
+    @include breakpoint(medium) {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.c-menu--small{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

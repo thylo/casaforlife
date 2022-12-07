@@ -1,0 +1,22 @@
+.c-ctalink{
+    display: inline-block;
+    border-radius: 25px;
+    line-break: strict;
+    height: fit-content;
+    padding: calc(6 / 16 * 1rem) calc(18 / 16 * 1rem);
+    text-align: center;
+    font-weight: 500;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+    
+    text-decoration: none;
+    
+    &--white-stroke{
+        color: var(--color-text-invert);
+        border: 2px solid var(--color-border-white);
+    }
+    &:hover{
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in-out;
+    }
+}

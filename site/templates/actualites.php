@@ -15,7 +15,7 @@ function console_log($output, $with_script_tags = true) {
 <?php snippet('header') ?>
 
 
-<div class="o-container">
+<div class="l-container">
 
 <?php
 $listedElements = $page->children()->listed();

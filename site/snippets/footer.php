@@ -1,6 +1,6 @@
 </main>
 <footer class="c-sitefooter">
-  <div class="o-container">
+  <div class="l-container">
     <div class="c-sitefooter__content">
       <nav class="c-sitefooter__nav u-padding-large">
         <ul class="o-list-bare u-margin-none">

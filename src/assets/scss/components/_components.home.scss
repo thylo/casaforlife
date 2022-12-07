@@ -1,0 +1,32 @@
+
+.c-herobanner{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  gap: calc(10 / 16 * 1rem);
+  margin-top: calc(10 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    grid-template-columns: 1fr 1fr;
+    gap: calc(24 / 16 * 1rem);
+    margin-top: calc(10 / 16 * 1rem);
+  }
+  
+  @include breakpoint(large) {
+    grid-template-columns: 1fr 1fr;
+    gap: calc(32 / 16 * 1rem);
+    margin-top: calc(10 / 16 * 1rem);
+  }
+}
+
+.c-herobanner__title{
+  font-weight: 700;
+  color: var(--color-brand);
+  margin-bottom: calc(10 / 16 * 1rem);
+}
+
+.c-herobanner__headline{
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: calc(10 / 16 * 1rem);
+}

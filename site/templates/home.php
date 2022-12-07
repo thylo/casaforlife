@@ -1,11 +1,11 @@
 <?php snippet('header') ?>
 
-<div class="o-container">
+<div class="l-container">
 
   <?php snippet('hero') ?>
 
   <?php if ($photographyPage = page('photography')): ?>
-  <ul class="home-grid">
+  <ul class="l-grid">
     <?php foreach ($photographyPage->children()->listed() as $album): ?>
     <li>
       <a href="<?= $album->url() ?>">

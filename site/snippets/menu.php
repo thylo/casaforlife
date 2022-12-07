@@ -1,7 +1,7 @@
 <?php if (site()->mainMenu()->isNotEmpty()): ?>
     
    <nav class="c-mainnav c-mainnav--desk">
-        <div class="o-container">
+        <div class="l-container">
             <ul class=" u-padding-small o-list-bare c-menu c-menu--desk o-list-inline" id="js-menu">
                 <li class="o-list-bare__item o-list-inline__item">
                     <a href="/" class=" c-menu__logo js-menu__logo--desk">

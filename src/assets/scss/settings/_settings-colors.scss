@@ -1,0 +1,33 @@
+:root {
+  // base variables (do not use in CSS)
+  --color-green-full: #00694a;
+  --color-green-alpha: #00694adb;
+  --color-green-alpha-color: #2B7F67;
+
+  --color-brown: #803E2B;
+
+  --color-gray1: #1B1918;
+  --color-gray2: #363230;
+  --color-gray3: #696463;
+  --color-gray4: #9B9897;
+  --color-gray5: #CDCBCB;
+  --color-gray6: #E6E6E6;
+
+  --color-black: #0D0C0C;
+  --color-white: #FCFCFC;
+
+  // incident variables (used in CSS)
+  --color-background: var(--color-white);
+  --color-text: var(--color-black);
+  --color-text-offset: var(--color-gray3);
+  --color-text-invert: var(--color-white);
+  --color-border: var(--color-green-alpha-color);
+  --color-border-light: var(--color-gray5);
+  --color-border-white: var(--color-gray5);
+
+  --color-brand: var(--color-green-alpha-color);
+  --color-brand-dark: var(--color-green-full);
+  --color-brand-alpha: var(--color-green-alpha);
+  --color-brand-muted: var(--color-brown);
+}
+

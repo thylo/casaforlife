@@ -1,0 +1,39 @@
+.c-sitefooter{
+    background: var(--color-brand-alpha);
+    color: var(--color-text-invert);
+    font-size: 18px;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+.c-footerinfo{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    &__title{
+        font-size: 20px;
+        color: var(--color-text-invert);
+    }
+    &__link{
+        display: inline-block;
+        color: var(--color-text-invert);
+        text-decoration: none;
+    }
+}
+
+.c-footercontact{
+    display: flex;
+    align-items: ce;
+    gap: 15px;
+  
+    &__link{
+        display: inline-block;
+        color: var(--color-text-invert);
+        height: 30px;
+    }
+}

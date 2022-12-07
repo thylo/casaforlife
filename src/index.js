@@ -1,4 +1,4 @@
-import "./scss/casaforlife.scss";
+import "./assets/scss/main.scss";
 
 let last_known_scroll_position = 0;
 let ticking = false;
