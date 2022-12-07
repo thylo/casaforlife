@@ -6,14 +6,19 @@ options:
   changeStatus: false
 
 columns:
-  - width: 1/2
+  - width: 2/3
       fields:
         image:
+          width: 1/2
+          layout: cards
           label: Hero banner
           type: files
-          query: model.images
           multiple: false
-  - width: 1/2
+          query: page.image
+          image:
+            ratio: 5/4 
+            cover: true
+  - width: 1/3
     sections:
       content:
         type: fields
