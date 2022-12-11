@@ -35,6 +35,9 @@ $spacing-map: (
   .u-ml-#{$name} {
     margin-left: $value !important;
   }
+  .u-m-#{$name} {
+    margin: $value !important;
+  }
 
   // paddings
   .u-pt-#{$name} {
@@ -48,5 +51,8 @@ $spacing-map: (
   }
   .u-pl-#{$name} {
     padding-left: $value !important;
+  }
+  .u-p-#{$name} {
+    padding: $value !important;
   }
 }

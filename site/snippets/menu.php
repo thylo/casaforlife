@@ -20,8 +20,8 @@
             <?= svg("/assets/img/svg/x.svg") ?>
         </button>
         <nav class="c-mainnav">
-            <ul class="o-list-bare o-list-inline u-margin-none c-menu--small">
-                <li class="o-list-bare__item o-list-inline__item">
+            <ul class="o-list-bare u-margin-none c-menu--small">
+                <li class="o-list-bare__item">
                     <a href="/" class="u-padding-small c-menu__logo">
                         <?= svg("/assets/img/svg/logo.svg") ?>
                     </a>
