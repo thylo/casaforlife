@@ -1,20 +1,11 @@
-.c-mainnav{
-  background: #00694adb;
-}
-
-.c-mainnav--desk{
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 99;
-}
 
 .c-menu {
   text-align: center;
   margin: 0;
-
+  
   &--desk{
     display: none; 
+    padding: var(--spacing-s);
   }
 
   @include breakpoint(medium) {
@@ -26,6 +17,7 @@
       transition: heigth 0.4s;
 
       &> :first-child{
+        position: relative;
         margin-right: auto;
       }
     }

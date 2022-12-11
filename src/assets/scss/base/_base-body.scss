@@ -12,6 +12,7 @@ body {
   color: var(--color-text);
 
   @include breakpoint(medium) {
+    padding-top: 250px;
     font-size: calc(18 / 16 * 1rem);
   }
 }

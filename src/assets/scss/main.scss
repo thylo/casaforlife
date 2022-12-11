@@ -21,7 +21,6 @@
 @import "layout/_layout-split.scss";
 
 @import "components/_components-logo.scss";
-@import "components/_components-mainnav.scss";
 @import "components/_components-menulink.scss";
 @import "components/_components-mobilemenu.scss";
 @import "components/_components-mobilenav.scss";
@@ -47,13 +46,14 @@
 @import "components/_components-copyright.scss";
 @import "components/_components-contactlist.scss";
 
-@import "components/_components.ctalink";
-@import "components/_components.smallcomponents";
-@import "components/_components.home";
+@import "components/_components.ctalink.scss";
+@import "components/_components.smallcomponents.scss";
+@import "components/_components.home.scss";
 
-@import "components/_component.menu";
-@import "components/_component.contact";
-@import "components/_component.footer";
+@import "components/_component.mainnav.scss";
+@import "components/_component.menu.scss";
+@import "components/_component.contact.scss";
+@import "components/_component.footer.scss";
 
 @import "utilities/_utilities-text-colors.scss";
 @import "utilities/_utilities-spacing.scss";

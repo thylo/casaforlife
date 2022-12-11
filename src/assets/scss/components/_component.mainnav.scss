@@ -1,0 +1,10 @@
+.c-mainnav{
+  background: var(--color-brand-alpha);
+}
+
+.c-mainnav--desk{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 99;
+}

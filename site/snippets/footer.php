@@ -48,6 +48,6 @@
   </div>
 </footer>
 <?= vite()->js() ?>
-  </body>
+</body>
 
-  </html>
+</html>
