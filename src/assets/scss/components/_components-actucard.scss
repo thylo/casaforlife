@@ -1,12 +1,12 @@
 /* ---------------------------------
-=project card
+=actu card
 --------------------------------- */
 
-.c-projectcard {
+.c-actucard {
   display: block;
 }
 
-.c-projectcard__link {
+.c-actucard__link {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -15,22 +15,23 @@
   text-decoration: none;
 }
 
-.c-projectcard__media {
+.c-actucard__media {
   overflow: hidden;
-
   margin: 0;
 }
 
-.c-projectcard__media > img {
+.c-actucard__media > img {
   transform: scale(1);
   transition: transform 0.2s ease-out;
+  aspect-ratio: 4/5;
+  object-fit: cover;
 }
 
-a:hover .c-projectcard__media > img {
+a:hover .c-actucard__media > img {
   transform: scale(1.024);
 }
 
-.c-projectcard__title {
+.c-actucard__title {
   font-weight: 500;
   font-size: calc(22 / 16 * 1rem);
   line-height: 1.24;
@@ -46,7 +47,7 @@ a:hover .c-projectcard__media > img {
   }
 }
 
-.c-projectcard__tagline {
+.c-actucard__tagline {
   font-weight: 400;
   font-size: calc(18 / 16 * 1rem);
   line-height: 1.24;

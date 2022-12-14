@@ -60,19 +60,19 @@
       height: 2px;
       width: 0;
       background-color: var(--color-background);
-      transition: all 0.3s ease-in-out;
+      transition: all 0.5s cubic-bezier(0.85, 0, 0.15, 1);
     }
     
     &:hover::after {
-      width: 50%;
-      transition: width 0.3s ease-in-out;
+      width: 60%;
+      transition: width 0.5s cubic-bezier(0.85, 0, 0.15, 1);
     }
   }
   &__logo {
     display: inline-block;
     //same size as the one in index.js l39
     height: 200px;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s cubic-bezier(0.85, 0, 0.15, 1);
   }
 
   &__item {
@@ -103,7 +103,7 @@
   bottom: 0;
   height: 100%;
   background-color: var(--color-brand) ;
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 
   @include breakpoint(medium) {
     transform: translate(0, -100%);
@@ -120,6 +120,18 @@
     @include breakpoint(medium) {
       transform: translate(0, 0);
     }
+  }
+}
+
+.c-menu__item.active a{
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 60%;
+    background-color: var(--color-background);
+    transition: all 0.5s cubic-bezier(0.85, 0, 0.15, 1);
   }
 }
 

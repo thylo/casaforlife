@@ -1,19 +1,4 @@
-<?php
-function console_log($output, $with_script_tags = true) {
-    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
-');';
-    if ($with_script_tags) {
-        $js_code = '<script>' . $js_code . '</script>';
-    }
-    echo $js_code;
-}
-?>
-<?= console_log($page->children()->listed()->data()); ?>
-
-
-
 <?php snippet('header') ?>
-
 
 <div class="l-container">
 
@@ -22,15 +7,24 @@ $listedElements = $page->children()->listed();
 ?>
 
 <?php if($listedElements->count()): ?>
-    <ul>
+    <ul class="l-grid l-grid--2cols@small l-grid--4cols@large">
 <?php endif; ?>
 
-    <?php foreach ($listedElements as $article): ?>
+
+    <?php foreach ($listedElements as $item): ?>
 
     <li>
-    <h4><?= $article->title() ?></h4> 
-    <p><?= $article->subheadline() ?></p>
-    <img class="o-fluidimage" src="<?= $article->cover()->toFile()->url() ?>">  
+        <article class="c-actucard">
+            <a href="<?= $item->url() ?>" class="c-actucard__link">
+                <div class="c-actucard__media">
+                    <img class="o-fluidimage" src="<?= $item->cover()->toFile()->url() ?>">
+                </div>
+                <div class="c-actucard__body">
+                    <h3 class="c-actucard__title"><?= $item->title() ?></h3> 
+                    <p class="c-actucard__tagline "><?= $item->subheadline() ?></p>
+                </div>
+            </a>
+        </article>
     </li>
 
     <?php endforeach; ?>

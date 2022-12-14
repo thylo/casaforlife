@@ -8,13 +8,13 @@ options:
 columns:
   - width: 2/3
       fields:
-        image:
+        heroimage:
           width: 1/2
           layout: cards
           label: Hero banner
           type: files
           multiple: false
-          query: page.image
+          query: page.image.toFile
           image:
             ratio: 5/4 
             cover: true

@@ -11,6 +11,6 @@ layout: cards
 template: actu
 empty: Pas encore d'actualités
 image:
-  query: page.cover
+  query: page.cover.toFile
   cover: true
-  ratio: 5/4
+  ratio: 4/5

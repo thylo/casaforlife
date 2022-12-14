@@ -1,7 +1,9 @@
+<?php $hero_img = $page->hero_image()->toFile()?>
+
 <header class="c-herobanner">
     <div class="c-herobanner__img">
         <?php if ($image = $page->image()) : ?>
-            <img class="o-fluidimage o-image-crop--right" src="<?= $image->url() ?>" alt="Hero banner">
+            <img class="o-fluidimage o-image-crop--right" src="<?= $hero_img->url() ?>" alt="Hero banner">
         <?php endif ?>
     </div>
     <div class=" c-herobanner__content">

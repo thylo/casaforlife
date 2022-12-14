@@ -6,9 +6,9 @@
 
   <?php if ($photographyPage = page('photography')): ?>
   <ul class="l-grid">
-    <?php foreach ($photographyPage->children()->listed() as $album): ?>
+    <?php foreach ($photographyPage->children()->listed() as $item): ?>
     <li>
-      <a href="<?= $album->url() ?>">
+      <a href="<?= $item->url() ?>">
         <figure>
           <?php
       /*
@@ -19,13 +19,13 @@
       size with Kirby's built-in image manipulation API
       */
           ?>
-          <?php if ($cover = $album->cover()): ?>
+          <?php if ($cover = $item->cover()): ?>
           <?= $cover->resize(1024, 1024) ?>
             <?php endif ?>
             <figcaption>
               <span>
                 <span class="example-name">
-                  <?= $album->title()->esc() ?>
+                  <?= $item->title()->esc() ?>
                 </span>
               </span>
             </figcaption>
