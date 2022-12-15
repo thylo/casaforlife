@@ -1,9 +1,9 @@
 <?php snippet('header') ?>
 
-<div class="c-pagesection c-pagesection--brand">
+<div class="c-pagesection c-pagesection--brand ">
   <div class="l-container">
     
-    <?php snippet('hero') ?>
+    <?php snippet('hero/hero') ?>
 
   </div>
 </div>

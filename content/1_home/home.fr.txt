@@ -2,7 +2,7 @@ Title: À propos
 
 ----
 
-Headline: CASA for LIFE
+Headline: CASA {{{for}}} LIFE
 
 ----
 
@@ -10,8 +10,8 @@ Subheadline: Une démarche solidaire pour la santé et la vie en casamance
 
 ----
 
-Alt: Africa landskape
+Heroimage: - home.png
 
 ----
 
-Heroimage: - annie-spratt-cveoh_jjmee-unsplash.jpg
+Alt: Africa landskape

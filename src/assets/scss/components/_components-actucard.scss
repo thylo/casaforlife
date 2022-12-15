@@ -35,7 +35,7 @@ a:hover .c-actucard__media > img {
   font-weight: 500;
   font-size: calc(22 / 16 * 1rem);
   line-height: 1.24;
-  font-family: var(--fontstack-alt);
+  font-family: var(--fontstack-main);
   margin-bottom: calc(6 / 16 * 1rem);
   color: var(--color-text);
 
@@ -51,6 +51,6 @@ a:hover .c-actucard__media > img {
   font-weight: 400;
   font-size: calc(18 / 16 * 1rem);
   line-height: 1.24;
-  font-family: var(--fontstack-alt);
+  font-family: var(--fontstack-main);
   color: var(--color-text-offset);
 }

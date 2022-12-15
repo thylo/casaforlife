@@ -1,10 +1,9 @@
 <?php $hero_img = $page->heroimage()->toFile()?>
+<?php $hero_title =  $page->headline()->or($page->title())->esc() ?>
 
 <header class="c-herobanner">
     <div class=" c-herobanner__content">
-        <h1 class="c-herobanner__title c-pagetitle">
-            <?= $page->headline()->or($page->title())->esc() ?>
-        </h1>
+        <?= snippet('hero/bigTitle',['text' => $hero_title]) ?>
         <?php if ($page->subheadline()->isNotEmpty()) : ?>
             <h3 class="c-herobanner__headline">
                 <?= $page->subheadline()->esc() ?>
@@ -14,7 +13,7 @@
         
     <?php if ($hero_img) : ?>
         <div class="c-herobanner__img">
-            <?php snippet('svgHomeClipPath') ?>
+            <?php snippet('hero/svgHeroClipPath') ?>
                 <img class="o-fluidimage" src="<?= $hero_img->url() ?>" alt="Hero banner">
         </div>
    <?php endif ?>

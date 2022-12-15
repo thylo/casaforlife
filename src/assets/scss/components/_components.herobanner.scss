@@ -14,7 +14,7 @@
   }
   
   @include breakpoint(large) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     gap: calc(32 / 16 * 1rem);
     margin-top: calc(10 / 16 * 1rem);
   }
@@ -26,12 +26,12 @@
 .c-herobanner__img > img{
   -webkit-clip-path: url(#svgHomeClipPath);
   clip-path: url(#svgHomeClipPath);
-  aspect-ratio: 19/22;
+  aspect-ratio: 1;
   object-fit: cover;
 }
 
 .c-herobanner__headline{
-  font-weight: 500;
+  font-weight: 300;
   font-size: 24px;
   margin-bottom: calc(10 / 16 * 1rem);
 }

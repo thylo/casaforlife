@@ -12,8 +12,9 @@
   line-height: 1.12;
   max-width: 15ch;
   margin-bottom: 0.75em;
+  white-space: nowrap;
 }
 
 .c-pagetitle > span {
-  color: var(--color-brand-bright);
+  font-family: "Metal", serif;
 }
