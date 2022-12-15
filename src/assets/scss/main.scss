@@ -21,14 +21,11 @@
 @import "layout/_layout-grid.scss";
 @import "layout/_layout-split.scss";
 
-@import "components/_components-logo.scss";
-@import "components/_components-menulink.scss";
-@import "components/_components-mobilemenu.scss";
-@import "components/_components-mobilenav.scss";
+//@import "components/_components-mobilemenu.scss";
+//@import "components/_components-mobilenav.scss";
+//@import "components/_components-button.scss";
 @import "components/_components-pagesection.scss";
 @import "components/_components-pagetitle.scss";
-@import "components/_components-homeintro.scss";
-@import "components/_components-button.scss";
 @import "components/_components-banner.scss";
 @import "components/_components-titles.scss";
 @import "components/_components-intro.scss";
@@ -49,7 +46,7 @@
 
 @import "components/_components.ctalink.scss";
 @import "components/_components.smallcomponents.scss";
-@import "components/_components.home.scss";
+@import "components/_components.herobanner.scss";
 
 @import "components/_component.mainnav.scss";
 @import "components/_component.menu.scss";

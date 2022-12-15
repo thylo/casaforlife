@@ -20,12 +20,9 @@
   }
 }
 
-.c-herobanner__title{
-  font-weight: 700;
-  color: var(--color-brand);
-  margin-bottom: calc(10 / 16 * 1rem);
+.c-herobanner__img{
+  display: flex;
 }
-
 .c-herobanner__img > img{
   -webkit-clip-path: url(#svgHomeClipPath);
   clip-path: url(#svgHomeClipPath);

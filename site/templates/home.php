@@ -1,13 +1,15 @@
 <?php snippet('header') ?>
 
-<div class="l-container">
-  <div class="c-pagesection">
+<div class="c-pagesection c-pagesection--brand">
+  <div class="l-container">
     
     <?php snippet('hero') ?>
 
   </div>
+</div>
 
-  <div class="c-pagesection">
+<div class="l-container">
+<div class="c-pagesection">
 
     <?php if ($page = page('Actualites')): ?>
 
@@ -26,6 +28,7 @@
     <?php endif ?>
 
   </div>
+</div>
 
 </div>
 

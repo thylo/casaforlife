@@ -2,10 +2,6 @@ Title: À propos
 
 ----
 
-Hero-image: - payasage.jpg
-
-----
-
 Headline: CASA for LIFE
 
 ----
@@ -14,8 +10,8 @@ Subheadline: Une démarche solidaire pour la santé et la vie en casamance
 
 ----
 
-Hero-banner: - payasage.jpg
+Alt: Africa landskape
 
 ----
 
-Alt: Africa landskape
+Heroimage: - annie-spratt-cveoh_jjmee-unsplash.jpg
