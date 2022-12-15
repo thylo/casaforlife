@@ -2,9 +2,9 @@
 
 <div class="l-container">
   <div class="c-pagesection">
-
-    <?php snippet('hero') ?>
     
+    <?php snippet('hero') ?>
+
   </div>
 
   <div class="c-pagesection">

@@ -1,5 +1,6 @@
 
 .c-herobanner{
+  position: relative;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr;
@@ -23,6 +24,13 @@
   font-weight: 700;
   color: var(--color-brand);
   margin-bottom: calc(10 / 16 * 1rem);
+}
+
+.c-herobanner__img > img{
+  -webkit-clip-path: url(#svgHomeClipPath);
+  clip-path: url(#svgHomeClipPath);
+  aspect-ratio: 19/22;
+  object-fit: cover;
 }
 
 .c-herobanner__headline{
