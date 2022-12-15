@@ -1,0 +1,5 @@
+Title: Contact
+
+----
+
+Sections: [{"content":{"contact_name":"<p>Jake<\/p>","contact_function":"<p>Jakeur<\/p>","contact_mail":"mail@exemple.com","contact_phone":"00090808054","contact_image":["lucas-medium.jpeg"]},"id":"254165a9-2a5c-45e1-b1fd-1c4ca72908b8","isHidden":false,"type":"equip"}]

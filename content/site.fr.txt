@@ -1,0 +1,14 @@
+Title: Casa For Life
+
+----
+
+Description: Casa for Life - Une démarche solidaire pour la santé et la vie en Casamance
+
+----
+
+Mainmenu:
+
+- home
+- apropos
+- actualites
+- contact
