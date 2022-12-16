@@ -12,9 +12,17 @@
         </div>
         
     <?php if ($hero_img) : ?>
-        <div class="c-herobanner__img">
-            <?php snippet('hero/svgHeroClipPath') ?>
-                <img class="o-fluidimage" src="<?= $hero_img->url() ?>" alt="Hero banner">
+        <div class="c-herobanner__picture o-fluidimage">
+            <div class="c-herobanner__deco">
+                <svg viewBox="0 0 818 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M812.5 409V1221.5H5.5V409C5.5 186.153 186.153 5.5 409 5.5C631.847 5.5 812.5 186.153 812.5 409Z" stroke="white" stroke-width="11"/>
+                </svg>
+            </div>
+            <div class="c-herobanner__img">
+                <img src="<?= $hero_img->url() ?>" alt="Hero banner">
+                <?php snippet('hero/svgHeroClipPath') ?>
+            </div>
+            
         </div>
    <?php endif ?>
 </header>

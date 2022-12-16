@@ -29,6 +29,6 @@
 --------------------------------- */
 
 .c-pagesection--brand {
-  background-color: var(--color-brand);
+  background: linear-gradient(var(--color-brand) 75%, var( --color-background) 75%);
   color: var(--color-text-invert);
 }
