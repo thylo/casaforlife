@@ -1,7 +1,14 @@
 
-
-
 <?php snippet('header') ?>
+
+<div class="c-pagesection c-pagesection--brand ">
+  <div class="l-container">
+    
+    <?php snippet('hero/hero') ?>
+
+  </div>
+</div>
+
 
 <div class="l-container">
 

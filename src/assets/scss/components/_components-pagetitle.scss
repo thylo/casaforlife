@@ -13,8 +13,10 @@
   max-width: 15ch;
   margin-bottom: 0.75em;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 .c-pagetitle > span {
   font-family: "Metal", serif;
+  text-transform: lowercase;
 }

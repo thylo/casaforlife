@@ -43,6 +43,7 @@
   }
 
   &__link {
+    font-size: calc(21/16*1rem);
     position: relative;
     padding: var(--spacing-s);
     text-decoration: none;
@@ -57,7 +58,7 @@
       content: "";
       position: absolute;
       display: block;
-      height: 2px;
+      height: 1.5px;
       width: 0;
       background-color: var(--color-background);
       transition: width 0.5s cubic-bezier(0.85, 0, 0.15, 1);
@@ -128,7 +129,7 @@
     content: "";
     position: absolute;
     display: block;
-    height: 2px;
+    height: 1.5px;
     width: 60%;
     background-color: var(--color-background);
     transition: all 0.5s cubic-bezier(0.85, 0, 0.15, 1);
