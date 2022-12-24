@@ -36,6 +36,11 @@ a:hover .c-actucard__media > img {
   color: var(--color-text);
 }
 
+.c-actucard__date{
+  margin: 0;
+  opacity: 60%;
+}
+
 .c-actucard__tagline {
   font-weight: 400;
   font-size: calc(16 / 16 * 1rem);
@@ -44,14 +49,6 @@ a:hover .c-actucard__media > img {
   color: var(--color-text-offset);
 }
 
-.c-actucard__tag-date{
-  display: flex;
-  justify-content: space-between;
-  margin-top: calc(18 / 16 * 1rem);
-  padding: 0 12px;
-}
-
-
 .c-actucard__tags {
   margin: 0;
   padding: 0;
@@ -59,8 +56,8 @@ a:hover .c-actucard__media > img {
 
   display: flex;
   gap: calc(6 / 16 * 1rem);
+  margin-top: calc(18 / 16 * 1rem);
 }
-
 
 .c-actucard__tag{
   
