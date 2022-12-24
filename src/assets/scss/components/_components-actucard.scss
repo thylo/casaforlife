@@ -44,6 +44,14 @@ a:hover .c-actucard__media > img {
   color: var(--color-text-offset);
 }
 
+.c-actucard__tag-date{
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(18 / 16 * 1rem);
+  padding: 0 12px;
+}
+
+
 .c-actucard__tags {
   margin: 0;
   padding: 0;
@@ -51,8 +59,8 @@ a:hover .c-actucard__media > img {
 
   display: flex;
   gap: calc(6 / 16 * 1rem);
-  margin-top: calc(18 / 16 * 1rem);
 }
+
 
 .c-actucard__tag{
   

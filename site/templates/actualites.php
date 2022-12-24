@@ -9,7 +9,7 @@
   </div>
 </div>
 
-<div class="c-pagesection">
+<div class="c-pagesection u-pt-m">
   <div class="l-container">
 
   <?php

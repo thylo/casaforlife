@@ -43,30 +43,15 @@
   }
 
   &__link {
-    font-size: calc(21/16*1rem);
-    position: relative;
+    font-size: calc(18/16*1rem);
     padding: var(--spacing-s);
-    text-decoration: none;
-    color: var(--color-text-invert);
     display: block;
     @include breakpoint(medium) {
       padding: var(--spacing-s);
       display: inline-block;
     }
-
     &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 1.5px;
-      width: 0;
-      background-color: var(--color-background);
-      transition: width 0.5s var(--ease-custom-ease-in-out);
-    }
-    
-    &:hover::after {
-      width: 60%;
-      transition: width 0.5s var(--ease-custom-ease-in-out);
+      bottom: unset;
     }
   }
   &__logo {
