@@ -11,12 +11,19 @@ fields:
   mainBtn: 
     label: Bouton principal
     type: link
-    placeholder: https://exemple.com
+    linkTypes:
+      - page
+      - url
+    help: Pour le texte du bouton ça se trouve dans option et laissez vide si vous ne souhaitez pas de bouton principal
 
   secondaryBtn:
     label: Bouton secondaire
     type: link
-    placeholder: https://exemple2.com
+    linkTypes:
+      - page
+      - url
+    help: Pour le texte du bouton ça se trouve dans option et laissez vide si vous ne souhaitez pas de bouton secondaire
+    
   
   heroimage:
     width: 1/2

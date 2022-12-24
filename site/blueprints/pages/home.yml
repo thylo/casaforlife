@@ -18,15 +18,21 @@ columns:
       subheadline:
         type: text
 
-      mainBtn: 
+      mainBtn:
         label: Bouton principal
         type: link
-        placeholder: https://exemple.com
+        linkTypes:
+          - page
+          - url
+        help: Pour le texte du bouton ça se trouve dans option et laissez vide si vous ne souhaitez pas de bouton secondaire
 
       secondaryBtn:
         label: Bouton secondaire
         type: link
-        placeholder: https://exemple2.com
+        linkTypes:
+          - page
+          - url
+        help: Pour le texte du bouton ça se trouve dans option et laissez vide si vous ne souhaitez pas de bouton secondaire
 
         
   - width: 1/3

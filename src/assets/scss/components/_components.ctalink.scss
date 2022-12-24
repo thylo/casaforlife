@@ -3,17 +3,19 @@
     border-radius: 25px;
     line-break: strict;
     height: fit-content;
-    padding: calc(6 / 16 * 1rem) calc(18 / 16 * 1rem);
+    padding: calc(9 / 16 * 1rem) calc(18 / 16 * 1rem);
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     transform: scale(1);
     transition: transform 0.2s ease-in-out;
-    
+    color: var(--color-brand);
+    background-color: var(--color-white);
     text-decoration: none;
     
     &--white-stroke{
         color: var(--color-text-invert);
         border: 2px solid var(--color-border-white);
+        background-color: transparent;
     }
     &:hover{
         transform: scale(1.05);

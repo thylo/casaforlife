@@ -10,4 +10,20 @@ Subheadline: Des nouvelles fraîches de notre engagement solidaire en Casamance
 
 ----
 
-Heroimage: - markus-winkler-aid-xyrtlec-unsplash.jpg
+Mainbtn: type: page
+
+----
+
+Secondarybtn: type: page
+
+----
+
+Heroimage: - file://pCuOp2qSzNNDatCT
+
+----
+
+Myfield: type: page
+
+----
+
+Uuid: sbx8xbn4nWv9n3oA

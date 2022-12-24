@@ -5,7 +5,8 @@
   "license": "MIT",
   "require": {
     "getkirby/cms": "^3.7.5",
-    "arnoson/kirby-vite": "^v2.5.2"
+    "arnoson/kirby-vite": "^v2.5.2",
+    "oblik/kirby-link-field": "^5.2"
   },
   "config": {
     "allow-plugins": {

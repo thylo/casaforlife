@@ -14,6 +14,7 @@ Mainbtn:
 
 type: page
 text: Nous contacter
+value: page://WK73ymLBIwJHtszY
 
 ----
 
@@ -21,11 +22,16 @@ Secondarybtn:
 
 type: page
 text: Nous soutenir
+value: page://WK73ymLBIwJHtszY
 
 ----
 
-Heroimage: - home.png
+Heroimage: - file://61Z4Vex7zxDZSJW8
 
 ----
 
 Alt: Africa landskape
+
+----
+
+Uuid: C71sjPAxFWHlWnQT

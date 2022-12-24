@@ -13,20 +13,6 @@
 
     <?php if ($page = page('Actualites')): ?>
 
-      
-
-    <?php
-    function console_log($output, $with_script_tags = true) {
-        $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
-    ');';
-        if ($with_script_tags) {
-            $js_code = '<script>' . $js_code . '</script>';
-        }
-        echo $js_code;
-    }
-    ?>
-    <?= console_log(page('Actualites')); ?>
-
       <h2 class="c-smalltitle"><?= page('Actualites')->title()?></h2>
 
       <?php $listedElements = $page->children()->listed()->limit(3); ?>
