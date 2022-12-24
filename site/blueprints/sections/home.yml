@@ -9,3 +9,4 @@ image:
   query: page.cover.toFile
   cover: true
   ratio: 4/5
+

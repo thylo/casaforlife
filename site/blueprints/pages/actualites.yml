@@ -1,23 +1,11 @@
+title: page.title
 columns:
   - width: 2/3
     sections:
-      actualites: sections/actualites
+      page: sections/actualites
   - width: 1/3 
     sections:
       content:
         type: fields
         fields:
-          headline:
-            type: text
-          subheadline:
-            type: text
-          heroimage:
-            width: 1/2
-            layout: cards
-            label: Hero banner
-            type: files
-            multiple: false
-            query: page.image.toFile
-            image:
-              ratio: 4/5 
-              cover: true
+          hero: fields/hero

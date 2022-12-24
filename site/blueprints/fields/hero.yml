@@ -1,0 +1,31 @@
+type: group
+fields:
+  headline:
+    type: text
+    placeholder: "{{ page.title }}"
+    help: Entourez un mot avec (((  ))) pour le mettre écriture fine dans le titre. Exemple (((Mon mot)))
+
+  subheadline:
+    type: text
+
+  mainBtn: 
+    label: Bouton principal
+    type: link
+    placeholder: https://exemple.com
+
+  secondaryBtn:
+    label: Bouton secondaire
+    type: link
+    placeholder: https://exemple2.com
+  
+  heroimage:
+    width: 1/2
+    layout: cards
+    size: small
+    label: Hero banner
+    type: files
+    multiple: false
+    query: page.image.toFile
+    image:
+      ratio: 10/15
+      cover: true

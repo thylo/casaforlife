@@ -2,4 +2,12 @@ Title: Actualités
 
 ----
 
+Headline: Nos actualités les plus (((fraiches)))
+
+----
+
+Subheadline: Des nouvelles fraîches de notre engagement solidaire en Casamance
+
+----
+
 Heroimage: - markus-winkler-aid-xyrtlec-unsplash.jpg

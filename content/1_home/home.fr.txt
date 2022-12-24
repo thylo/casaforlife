@@ -2,11 +2,25 @@ Title: À propos
 
 ----
 
-Headline: CASA {{{for}}} LIFE
+Headline: CASA (((for))) LIFE
 
 ----
 
 Subheadline: Une démarche solidaire pour la santé et la vie en casamance
+
+----
+
+Mainbtn:
+
+type: page
+text: Nous contacter
+
+----
+
+Secondarybtn:
+
+type: page
+text: Nous soutenir
 
 ----
 
