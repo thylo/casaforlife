@@ -29,11 +29,15 @@ columns:
       fields:
         cover: fields/cover
         headline:
+          label: Titre
           type: text
           placeholder: "{{ page.title }}"
           help: Leave empty to use the title as headline
+          maxlength: 64
         subheadline:
-          type: text
+          label: Description
+          type: textarea
+          maxlength: 175
         date:
           type: date
           default: now
@@ -41,12 +45,3 @@ columns:
         author:
           type: users
         tags: true
-        images:
-          type: files
-          layout: cards
-          template: image
-          info: "{{ file.dimensions }}"
-          image:
-            ratio: 5/4
-            cover: true
-          size: small

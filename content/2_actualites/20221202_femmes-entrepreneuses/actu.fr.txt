@@ -1,0 +1,37 @@
+Title: Femmes entrepreneuses
+
+----
+
+Text: [{"content":{"location":"kirby","image":["file:\/\/ipmVeiBTzSDb9yoI"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"da78646e-b7ad-4418-847d-d64dfdade192","isHidden":false,"type":"image"},{"content":{"level":"h2","text":"Rencontre avec les femmes entrepreneures de la Casamance"},"id":"055d2b7e-fabb-4750-9b0c-57c4dea97465","isHidden":false,"type":"heading"}]
+
+----
+
+Cover: - file://ipmVeiBTzSDb9yoI
+
+----
+
+Headline: Rencontre avec les femmes entrepreneures de la Casamance
+
+----
+
+Subheadline: Les femmes de la Casamance sont de plus en plus nombreuses à se lancer dans l'entrepreneuriat. Nous avons rencontré trois d'entre elles qui ont créé leur propre entreprise et ont su s'imposer dans leur domaine.
+
+----
+
+Date: 2022-12-02
+
+----
+
+Author: - user://83g6OXDE
+
+----
+
+Tags: Rencontre, Femmes
+
+----
+
+Images: 
+
+----
+
+Uuid: 84j9p5YEvt23Loug

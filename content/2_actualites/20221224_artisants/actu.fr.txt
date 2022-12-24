@@ -1,0 +1,33 @@
+Title: Artisants
+
+----
+
+Text: [{"content":{"location":"kirby","image":["file:\/\/Tz7D9fx9iozFVd7l"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"ae125ed0-0151-4c81-908b-3b68cfe5604d","isHidden":false,"type":"image"},{"content":{"level":"h2","text":"Rencontre avec les artisans de la Casamance"},"id":"f726f19c-8ed9-4e82-966e-66f6efe060d0","isHidden":false,"type":"heading"}]
+
+----
+
+Cover: - file://Tz7D9fx9iozFVd7l
+
+----
+
+Headline: Rencontre avec les artisans de la Casamance
+
+----
+
+Subheadline: La Casamance regorge de talents dans les métiers de l'artisanat. Nous avons rencontré trois artisans qui ont su transmettre leur savoir-faire et créer leur propre entreprise.
+
+----
+
+Date: 2022-12-24
+
+----
+
+Author: - user://83g6OXDE
+
+----
+
+Tags: Rencontre
+
+----
+
+Uuid: EIw1hdgwVL022cw4

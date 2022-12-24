@@ -1,0 +1,37 @@
+Title: Jardins
+
+----
+
+Text: [{"content":{"level":"h2","text":"Projet de jardins potagers collectifs en Casamance"},"id":"6ca41ae0-a83b-4864-b600-b718cf256077","isHidden":false,"type":"heading"},{"content":{"images":["file:\/\/xPDEyvryiAXJ4Tyo"],"caption":"","ratio":"","crop":"false"},"id":"65a42428-05ea-4b12-8100-cee465d32604","isHidden":false,"type":"gallery"},{"content":{"text":"<p>Depuis plusieurs ann\u00e9es, la Casamance conna\u00eet une grave crise alimentaire. Pour y rem\u00e9dier, de nombreux habitants se sont tourn\u00e9s vers l'agriculture et les jardins potagers. C'est dans ce contexte que l'association \"Semences de paix\" a lanc\u00e9 un projet de jardins collectifs.<\/p><p>L'objectif de ce projet est de permettre aux populations de la Casamance de se nourrir de mani\u00e8re durable et de leur offrir un moyen de subvenir \u00e0 leurs besoins alimentaires. Pour ce faire, l'association a mis en place des jardins collectifs dans plusieurs villages de la r\u00e9gion. Chacun de ces jardins est g\u00e9r\u00e9 par une \u00e9quipe de b\u00e9n\u00e9voles qui s'occupent de la plantation, de l'entretien et de la r\u00e9colte des l\u00e9gumes et des fruits.<\/p><p>Le projet de jardins potagers collectifs en Casamance est un v\u00e9ritable succ\u00e8s. En effet, il a permis de cr\u00e9er des emplois et de favoriser l'autonomie alimentaire des populations. De plus, ces jardins sont un lieu de rencontre et de partage, o\u00f9 les habitants peuvent se retrouver et \u00e9changer leurs connaissances et leurs exp\u00e9riences.<\/p><p>L'association \"Semences de paix\" a \u00e9galement mis en place un programme de formation pour accompagner les b\u00e9n\u00e9voles et les habitants dans la gestion de leurs jardins. Gr\u00e2ce \u00e0 ces formations, les b\u00e9n\u00e9voles ont acquis de nouvelles comp\u00e9tences et connaissances en mati\u00e8re d'agriculture et de jardinage.<\/p><p>Le projet de jardins potagers collectifs en Casamance est une initiative innovante et inspirante qui a d\u00e9j\u00e0 eu un impact positif sur la vie de nombreuses personnes. En effet, gr\u00e2ce \u00e0 ce projet, de nombreuses populations ont pu se nourrir de mani\u00e8re durable et ont acquis de nouvelles comp\u00e9tences et connaissances. Nous esp\u00e9rons que ce projet continuera \u00e0 se d\u00e9velopper et \u00e0 s'\u00e9tendre \u00e0 d'autres r\u00e9gions de la Casamance, afin que le plus grand nombre possible de personnes puissent en b\u00e9n\u00e9ficier.<\/p>"},"id":"a7ba6ec1-0614-46cd-a817-e53cf7631617","isHidden":false,"type":"text"}]
+
+----
+
+Cover: - file://xPDEyvryiAXJ4Tyo
+
+----
+
+Headline: Projet de jardins potagers collectifs en Casamance
+
+----
+
+Subheadline: La Casamance connaît depuis quelques années une grave crise alimentaire. Pour y remédier, de nombreux habitants se sont tournés vers l'agriculture et les jardins potagers.
+
+----
+
+Date: 2022-12-05
+
+----
+
+Author: - user://83g6OXDE
+
+----
+
+Tags: Alimentaire, Projet
+
+----
+
+Images: 
+
+----
+
+Uuid: 53GK4jnn9s8RYWJC

@@ -11,5 +11,8 @@ function console_log($output, $with_script_tags = true) {
 <?= console_log($page->children()->listed()->data()); ?>
 
 
-Show avatr of a user
-<p class="c-actucard__author-name"><?= $user->avatar()->url() ?></p>
+Show author user
+<div class="actucard__author">
+    <p class="c-actucard__author-name"><?= $user->username() ?></p>
+    <p class="c-actucard__author-name"><?= $user->avatar()->url() ?></p>
+</div>

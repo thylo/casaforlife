@@ -3,20 +3,15 @@
 --------------------------------- */
 
 .c-actucard {
-  display: block;
-  bo
-}
-
-.c-actucard__link {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   gap: calc(18 / 16 * 1rem);
-  text-decoration: none;
 }
 
 .c-actucard__media {
+  border-radius: 25px;
   overflow: hidden;
   margin: 0;
 }
@@ -24,7 +19,7 @@
 .c-actucard__media > img {
   transform: scale(1);
   transition: transform 0.2s ease-out;
-  aspect-ratio: 4/5;
+  aspect-ratio: 5/3;
   object-fit: cover;
 }
 
@@ -37,21 +32,38 @@ a:hover .c-actucard__media > img {
   font-size: calc(22 / 16 * 1rem);
   line-height: 1.24;
   font-family: var(--fontstack-main);
-  margin-bottom: calc(6 / 16 * 1rem);
+  margin-bottom: calc(12 / 16 * 1rem);
   color: var(--color-text);
-
-  a:hover &,
-  a:focus & {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 0.05em;
-  }
 }
 
 .c-actucard__tagline {
   font-weight: 400;
-  font-size: calc(18 / 16 * 1rem);
+  font-size: calc(16 / 16 * 1rem);
   line-height: 1.24;
   font-family: var(--fontstack-main);
   color: var(--color-text-offset);
 }
+
+.c-actucard__tags {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  gap: calc(6 / 16 * 1rem);
+  margin-top: calc(18 / 16 * 1rem);
+}
+
+.c-actucard__tag{
+  
+  &::before {
+    content: "#";
+    color: var(--color-brand);
+  }
+}
+
+.c-actucard__link {
+  display: flex;
+  text-decoration: none;
+}
+

@@ -1,0 +1,37 @@
+Title: L'eau potable
+
+----
+
+Text: [{"content":{"location":"kirby","image":["file:\/\/9txDMR3vmXzMUWM6"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"3dc7b2eb-053e-44f5-93d1-d877479d3806","isHidden":false,"type":"image"},{"content":{"level":"h2","text":"Enqu\u00eate sur l'acc\u00e8s \u00e0 l'eau potable en Casamance"},"id":"2211987d-cb2f-4e7b-9ec3-5fec38392fd9","isHidden":false,"type":"heading"},{"content":{"text":""},"id":"b44f7f3c-ec81-47a5-829b-ab645bace135","isHidden":false,"type":"text"}]
+
+----
+
+Cover: - file://9txDMR3vmXzMUWM6
+
+----
+
+Headline: Enquête sur l'accès à l'eau potable en Casamance
+
+----
+
+Subheadline: L'accès à l'eau potable est un enjeu crucial en Casamance, où de nombreuses populations sont encore dépourvues de cette ressource essentielle. Nous avons mené une enquête sur l'accès à l'eau potable en Casamance .
+
+----
+
+Date: 2022-12-03
+
+----
+
+Author: - user://83g6OXDE
+
+----
+
+Tags: Santé, Enquête
+
+----
+
+Images: - file://nMmxpJQRei4YNnIk
+
+----
+
+Uuid: Gzim4dGIZiiqHsf7
