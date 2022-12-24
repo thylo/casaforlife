@@ -1,0 +1,31 @@
+.c-link {
+    position: relative;
+    width: fit-content;
+
+    font-size: calc(16/16*1rem);
+    text-decoration: none;
+    color: var(--color-brand);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      display: block;
+      height: 1.5px;
+      width: 0;
+      background-color: var(--color-brand);
+      transition: width 0.5s var(--ease-custom-ease-in-out);
+    }
+
+    &--invert {
+        color: var(--color-text-invert);
+        &::after {
+          background-color: var(--color-white);
+        }
+    }
+    
+    &:hover::after {
+      width: 60%;
+      transition: width 0.5s var(--ease-custom-ease-in-out);
+    }
+  }
