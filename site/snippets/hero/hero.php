@@ -5,24 +5,30 @@
 <?php $secondaryBtn = $page->secondaryBtn()->toLinkObject()?>
 
 
-<header class="c-herobanner">
+<div class="c-herobanner">
     <div class=" c-herobanner__content">
         <?= snippet('hero/bigTitle',['text' => $hero_title]) ?>
         <?php if ($page->subheadline()->isNotEmpty()) : ?>
-            <h3 class="c-herobanner__headline">
-                <?= $page->subheadline()->esc() ?>
-            </h3>
+                <h3 class="c-herobanner__headline">
+                    <?= $page->subheadline()->esc() ?>
+                </h3>
         <?php endif ?>
-        <?php if ($mainBtn->isNotEmpty()) : ?>
-            <a href="<?= $mainBtn->url() ?>" class="c-herobanner__btn c-ctalink">
-            <?= $mainBtn->text() ?>
-            </a>
-        <?php endif ?>
-        <?php if ($secondaryBtn->isNotEmpty()) : ?>
-            <a href="<?= $secondaryBtn->url() ?>" class="c-herobanner__btn c-ctalink c-ctalink--white-stroke">
-            <?= $secondaryBtn->text() ?>
-            </a>
-        <?php endif ?>
+        <?php if ($mainBtn->isNotEmpty()||$secondaryBtn->isNotEmpty() ) : ?>
+        <div class="c-herobanner__btns">  
+        <?php endif?>
+            <?php if ($mainBtn->isNotEmpty()) : ?>
+                <a href="<?= $mainBtn->url() ?>" class="c-herobanner__btn c-ctalink">
+                <?= $mainBtn->text() ?>
+                </a>
+            <?php endif ?>
+            <?php if ($secondaryBtn->isNotEmpty()) : ?>
+                <a href="<?= $secondaryBtn->url() ?>" class="c-herobanner__btn c-ctalink c-ctalink--white-stroke">
+                <?= $secondaryBtn->text() ?>
+                </a>
+            <?php endif ?>
+        <?php if ($mainBtn->isNotEmpty()||$secondaryBtn->isNotEmpty() ) : ?>
+        </div>
+        <?php endif?>
     </div>
         
     <?php if ($hero_img) : ?>
@@ -39,4 +45,4 @@
             
         </div>
    <?php endif ?>
-</header>
+</div>

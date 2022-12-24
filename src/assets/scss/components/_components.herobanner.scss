@@ -30,6 +30,12 @@
   margin-bottom: calc(10 / 16 * 1rem);
 }
 
+.c-herobanner__btns{
+  display: flex;
+  gap: calc(15 / 16 * 1rem);
+  margin-top: calc(36 / 16 * 1rem);
+}
+
 .c-herobanner__picture {
   position: relative;
   width: 100%;
