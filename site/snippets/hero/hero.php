@@ -9,7 +9,7 @@
     <div class=" c-herobanner__content">
         <?= snippet('hero/bigTitle',['text' => $hero_title]) ?>
         <?php if ($page->subheadline()->isNotEmpty()) : ?>
-                <h3 class="c-herobanner__headline">
+                <h3 class="c-herobanner__subheadline">
                     <?= $page->subheadline()->esc() ?>
                 </h3>
         <?php endif ?>

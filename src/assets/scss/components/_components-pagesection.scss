@@ -29,10 +29,11 @@
 --------------------------------- */
 
 .c-pagesection--brand {
-  background: linear-gradient(var(--color-brand) 75%, var( --color-background) 75%);
+  background: linear-gradient(var(--color-brand) 80%, var( --color-background) 75%);
   color: var(--color-text-invert);
 
   @include breakpoint(medium) {
+    //permets de laisser l'epace le menu nav
     padding-top: 300px;
     font-size: calc(18 / 16 * 1rem);
   }

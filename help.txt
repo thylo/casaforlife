@@ -9,3 +9,7 @@ function console_log($output, $with_script_tags = true) {
 }
 ?>
 <?= console_log($page->children()->listed()->data()); ?>
+
+
+Show avatr of a user
+<p class="c-actucard__author-name"><?= $user->avatar()->url() ?></p>

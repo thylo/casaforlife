@@ -4,36 +4,42 @@
   display: grid;
   
   grid-template-columns: 1fr;
-  gap: calc(10 / 16 * 1rem);
+  gap: calc(72 / 16 * 1rem);
   margin-top: calc(10 / 16 * 1rem);
 
   @include breakpoint(medium) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     gap: calc(42 / 16 * 1rem);
     margin-top: calc(10 / 16 * 1rem);
   }
   
   @include breakpoint(large) {
-    grid-template-columns: 3fr 2fr;
     gap: calc(64 / 16 * 1rem);
     margin-top: calc(10 / 16 * 1rem);
   }
 }
 
 .c-herobanner__content{
-  margin-top: calc(65 / 16 * 1rem);
+  display: flex;
+  flex-direction: column;
+  gap: calc(16 / 16 * 1rem);
+  margin-top: 5vw;
 }
 
-.c-herobanner__headline{
+.c-herobanner__subheadline{
   font-weight: 300;
-  font-size: 24px;
-  margin-bottom: calc(10 / 16 * 1rem);
+  font-size: clamp(
+    calc(24 / 16 * 1rem),
+    calc(0.5rem + 1vw),
+    calc(48 / 16 * 1rem)
+  );
+  margin: 0;
 }
 
 .c-herobanner__btns{
   display: flex;
   gap: calc(15 / 16 * 1rem);
-  margin-top: calc(36 / 16 * 1rem);
+  margin-top: calc(24 / 16 * 1rem);
 }
 
 .c-herobanner__picture {

@@ -36,8 +36,8 @@ columns:
           type: text
         date:
           type: date
-          time: true
           default: now
+          display: DD/MM/YYYY
         author:
           type: users
         tags: true
