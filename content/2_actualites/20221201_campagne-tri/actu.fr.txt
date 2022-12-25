@@ -2,7 +2,7 @@ Title: Campagne de tri
 
 ----
 
-Text: [{"content":{"location":"kirby","image":["file:\/\/wanD3KkL4hLIyK03"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"d10decf9-0be6-4824-bf51-414c1f7a7d9a","isHidden":false,"type":"image"},{"content":{"level":"h2","text":"Campagne de sensibilisation au tri s\u00e9lectif en Casamance"},"id":"4e4f3d88-dd56-48f9-9ea3-2dcf8b5d1c9b","isHidden":false,"type":"heading"}]
+Text: 
 
 ----
 
@@ -10,7 +10,7 @@ Cover: - file://wanD3KkL4hLIyK03
 
 ----
 
-Headline: Campagne de sensibilisation au tri sélectif en Casamance
+Headline: Campagne de sensibilisation au tri en Casamance
 
 ----
 

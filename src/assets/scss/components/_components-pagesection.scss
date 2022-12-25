@@ -17,13 +17,21 @@
   }
 }
 
+/* ---------------------------------
+=variants of page sections
+--------------------------------- */
+
+.c-pagesection--actu {
+  @include breakpoint(medium) {
+    //permets de laisser l'epace le menu nav
+    padding-top: 190px;
+  }
+}
+
 .c-pagesection--notop {
   padding-top: 0;
 }
 
-/* ---------------------------------
-=variants of page sections
---------------------------------- */
 
 .c-pagesection--brand {
   background: linear-gradient(var(--color-brand) 80%, var( --color-background) 75%);
@@ -32,6 +40,5 @@
   @include breakpoint(medium) {
     //permets de laisser l'epace le menu nav
     padding-top: 300px;
-    font-size: calc(18 / 16 * 1rem);
   }
 }

@@ -27,13 +27,19 @@ a:hover .c-actucard__media > img {
   transform: scale(1.024);
 }
 
+.c-actucard__body {
+  display: flex;
+  flex-direction: column;
+  gap: calc(12 / 16 * 1rem);
+}
+
 .c-actucard__title {
   font-weight: 500;
   font-size: calc(22 / 16 * 1rem);
   line-height: 1.24;
   font-family: var(--fontstack-main);
-  margin-bottom: calc(12 / 16 * 1rem);
   color: var(--color-text);
+  margin: 0;
 }
 
 .c-actucard__date{
@@ -42,11 +48,19 @@ a:hover .c-actucard__media > img {
 }
 
 .c-actucard__tagline {
+  margin: 0;
   font-weight: 400;
   font-size: calc(16 / 16 * 1rem);
   line-height: 1.24;
   font-family: var(--fontstack-main);
   color: var(--color-text-offset);
+}
+
+.c-actucard__tags-link {
+  display: flex;
+  align-items: flex-center;
+  justify-content: space-between;
+  gap: calc(6 / 16 * 1rem);
 }
 
 .c-actucard__tags {
@@ -55,12 +69,12 @@ a:hover .c-actucard__media > img {
   list-style: none;
 
   display: flex;
+  flex-wrap: wrap;
   gap: calc(6 / 16 * 1rem);
-  margin-top: calc(18 / 16 * 1rem);
 }
 
 .c-actucard__tag{
-  
+  margin: 0;
   &::before {
     content: "#";
     color: var(--color-brand);
@@ -69,6 +83,10 @@ a:hover .c-actucard__media > img {
 
 .c-actucard__link {
   display: flex;
+  align-items: center;
+  gap: calc(3 / 16 * 1rem);
   text-decoration: none;
+  font-size: calc(18/16*1rem);
+  white-space: nowrap;
 }
 

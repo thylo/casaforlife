@@ -13,11 +13,11 @@
   <div class="l-container">
 
   <?php
-  $listedElements = $page->children()->listed();
+  $listedElements = $page->children()->listed()->sortBy('date','desc');
   ?>
 
   <?php if($listedElements->count()): ?>
-      <ul class="l-grid l-grid--2cols@small l-grid--4cols@large">
+      <ul class="l-grid l-grid--2cols@small l-grid--3cols@large">
   <?php endif; ?>
 
 

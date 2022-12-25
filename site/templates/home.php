@@ -13,9 +13,9 @@
 
     <?php if ($page = page('Actualites')): ?>
 
-      <h2 class="c-smalltitle"><?= page('Actualites')->title()?></h2>
+      <?= snippet('hero/bigTitleh2',['text' => page('Actualites')->headline()]) ?>
 
-      <?php $listedElements = $page->children()->listed()->limit(3); ?>
+      <?php $listedElements = $page->children()->listed()->sortBy('date','desc')->limit(3); ?>
 
       <ul class="l-grid l-grid--3cols">
         <?php foreach ($listedElements as $item): ?>

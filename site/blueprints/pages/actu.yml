@@ -37,7 +37,7 @@ columns:
         subheadline:
           label: Description
           type: textarea
-          maxlength: 175
+          maxlength: 200
         date:
           type: date
           default: now

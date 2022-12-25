@@ -28,4 +28,9 @@
       width: 60%;
       transition: width 0.5s var(--ease-custom-ease-in-out);
     }
-  }
+}
+
+.c-link--bare{
+    text-decoration: none;
+    color: unset;
+}
