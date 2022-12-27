@@ -1,0 +1,44 @@
+type: group
+fields:
+  title:
+    type: text
+    placeholder: Titre de la section
+  text:
+    type: textarea
+    placeholder: Contenu de la section
+  image:
+    width: 1/2
+    layout: cards
+    size: small
+    label: Hero banner
+    type: files
+    multiple: false
+    query: page.image.toFile
+    image:
+      ratio: 10/15
+      cover: true
+
+
+sections:
+      mission:
+        type: fields
+        fields:
+         missionTitle:
+            label: Mission
+            type: text
+            placeholder: Titre de la section
+            maxlength: 64
+          missionText:
+            type: textarea
+            placeholder: Contenu de la section
+          image:
+            width: 1/2
+            layout: cards
+            size: small
+            label: Hero banner
+            type: files
+            multiple: false
+            query: page.image.toFile
+            image:
+              ratio: 10/15
+              cover: true

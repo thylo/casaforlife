@@ -1,0 +1,19 @@
+title: Small Section Block
+fields:
+  title:
+    label: Title
+    type: text
+    maxlength: 64
+  textContent:
+    label: Text
+    type: textarea
+  image:
+    layout: cards
+    size: small
+    label: Image
+    type: files
+    multiple: false
+    query: page.image.toFile
+    image:
+      ratio: 10/15
+      cover: true

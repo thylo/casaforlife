@@ -13,5 +13,30 @@ return [
                 '1440w' => ['width' => 1440, 'quality' => 80]
             ]
         ]
-    ]
+    ],
+    'blocks' => [
+        'fieldsets' => [
+          'custom' => [
+            'label' => 'Custom blocks',
+            'type' => 'group',
+            'fieldsets' => [
+              'smallSection'
+            ]
+          ],
+          'kirby' => [
+            'label' => 'Kirby blocks',
+            'type' => 'group',
+            'fieldsets' => [
+              'heading',
+              'text',
+              'list',
+              'quote',
+              'image',
+              'video',
+              'code',
+              'markdown'
+            ]
+          ]
+        ]
+      ]
 ];

@@ -29,6 +29,35 @@
 
     <?php endif ?>
 
+    <?php
+function console_log($output, $with_script_tags = true) {
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
+');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
+}
+?>
+
+<?php $page = $pages->current() ?>
+
+<div class="l-container">
+  <?= console_log($page->blockContent()->toBlocks()); ?>
+  <?php foreach ($page->sections()->blockContent()->toBlocks() as $block): ?>
+        
+      <div id="<?= $block->id() ?>" class="o-section block block-type-<?= $block->type() ?>">
+        <?php snippet(
+          'blocks/' . $block->type(),
+          [
+            'block' => $block,
+            'theme' => 'ligth'
+          ]
+        ) ?>
+      </div>
+    <?php endforeach ?>
+  </div>
+
   </div>
 </div>
 

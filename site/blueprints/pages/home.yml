@@ -1,52 +1,20 @@
-title: Home
-
-icon: 🏠
-
-options:
-  changeStatus: false
-
+title: page.title
 columns:
-  - width: 2/3 
+  - width: 2/3
     sections:
-    fields:
-
-      headline:
-        type: text
-        placeholder: "{{ page.title }}"
-        help: Entourez un mot avec (((  ))) pour le mettre écriture fine dans le titre. Exemple (((Mon mot)))
-
-      subheadline:
-        type: text
-
-      mainBtn:
-        label: Bouton principal
-        type: link
-        linkTypes:
-          - page
-          - url
-        help: Pour le texte du bouton ça se trouve dans option et laissez vide si vous ne souhaitez pas de bouton secondaire
-
-      secondaryBtn:
-        label: Bouton secondaire
-        type: link
-        linkTypes:
-          - page
-          - url
-        help: Pour le texte du bouton ça se trouve dans option et laissez vide si vous ne souhaitez pas de bouton secondaire
-
-        
-  - width: 1/3
-      sections:
-      fields:
-        heroimage:
-          layout: cards
-          size: small
-          label: Hero banner
-          type: files
-          multiple: false
-          query: page.image.toFile
-          image:
-            ratio: 10/15
-            cover: true
-
-
+      blockContent:
+        type: fields
+        fields:
+          blocks:
+            label: Blocks
+            type: blocks
+            layout: cards
+            types:
+              small-section: SmallSectionBlock
+            
+  - width: 1/3 
+    sections:
+      hero:
+        type: fields
+        fields:
+          hero: fields/hero
