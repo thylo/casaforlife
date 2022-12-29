@@ -1,3 +1,4 @@
+
 .c-smallsection-group{
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@
   align-items: center;
   @include breakpoint(medium) {
     grid-template-areas: 'image text';
+    grid-template-rows: repeat(auto-fit, auto);
   }
 }
 
@@ -24,6 +26,7 @@
     }
   .c-smallsection__content{
     grid-area: text;
+    grid-row: auto;
   }
   .c-smallsection__media{
     grid-area: image;
