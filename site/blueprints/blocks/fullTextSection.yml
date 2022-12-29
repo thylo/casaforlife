@@ -1,0 +1,9 @@
+title: Full Text Section Block
+fields:
+  title:
+    label: Title
+    type: text
+    maxlength: 64
+  textContent:
+    label: Text
+    type: textarea
