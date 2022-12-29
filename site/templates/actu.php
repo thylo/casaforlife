@@ -8,7 +8,8 @@
         <div class="l-container l-container--copy">
             <div class="c-actu__body">
                 <h1 class="c-actu__title"><?= $page->headline() ?></h1>
-                <div class="c-actu__tags-date">
+                <!-- Tags -->
+                <!-- <div class="c-actu__tags-date">
                     <div class="c-actu__tags-link">
                         <ul class="c-actu__tags o-list-bare">
                             <?php foreach ($page->tags()->split(',') as $tag): ?>
@@ -19,7 +20,8 @@
                         </ul>
                     </div>
                     <p class="c-actu__date"><?= $page->date()->toDate('d-m-Y') ?></p>
-                </div>
+                </div> -->
+                <p class="c-actu__date"><?= $page->date()->toDate('d-m-Y') ?></p>
             </div>
         </div>
         <div class="l-container l-container--copy">

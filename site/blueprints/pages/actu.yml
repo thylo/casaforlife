@@ -44,4 +44,4 @@ columns:
           display: DD/MM/YYYY
         author:
           type: users
-        tags: true
+        # tags: true

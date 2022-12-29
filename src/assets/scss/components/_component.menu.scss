@@ -25,22 +25,22 @@
       display: none;
     }
   }
-
-  &> :last-child{
-    position: relative;
-    margin-left: 25px;
-  }
-  &> :last-child::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -10px;
-    transform: translate3d(0,-50%,0);
-    display: block;
-    height: 70%;
-    width: 2px;
-    background-color: var(--color-background);
-  }
+//add the language switcher
+  // &> :last-child{
+  //   position: relative;
+  //   margin-left: 25px;
+  // }
+  // &> :last-child::before{
+  //   content: "";
+  //   position: absolute;
+  //   top: 50%;
+  //   left: -10px;
+  //   transform: translate3d(0,-50%,0);
+  //   display: block;
+  //   height: 70%;
+  //   width: 2px;
+  //   background-color: var(--color-background);
+  // }
 
   &__link {
     font-size: calc(18/16*1rem);

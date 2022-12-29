@@ -1,0 +1,34 @@
+.c-smallsection-group{
+  display: flex;
+  flex-direction: column;
+  gap: calc(32/16*1rem);
+}
+
+.c-smallsection{
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: 'image text';
+}
+
+.c-smallsection:nth-child(even){
+  grid-template-areas: 'text image';
+}
+
+.c-smallsection__media{
+  grid-area: image;
+  width: 50%;
+  aspect-ratio: 4/6;
+  overflow: hidden;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+
+  &>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.c-smallsection__content{
+  grid-area: text;
+}

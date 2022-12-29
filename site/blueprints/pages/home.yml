@@ -5,12 +5,11 @@ columns:
       blockContent:
         type: fields
         fields:
-          blocks:
+          blockContent:
             label: Blocks
             type: blocks
-            layout: cards
-            types:
-              small-section: SmallSectionBlock
+            fieldsets:
+                - smallSection
             
   - width: 1/3 
     sections:

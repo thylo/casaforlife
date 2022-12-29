@@ -1,0 +1,9 @@
+Uuid: kbAaow87eKyHqzma
+
+----
+
+Template: blocks/image
+
+----
+
+Caption: 

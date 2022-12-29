@@ -20,7 +20,6 @@ return [
             'label' => 'Custom blocks',
             'type' => 'group',
             'fieldsets' => [
-              'smallSection'
             ]
           ],
           'kirby' => [

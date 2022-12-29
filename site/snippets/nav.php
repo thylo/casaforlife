@@ -5,8 +5,8 @@
         </a>
     </li>
 <?php endforeach; ?>
-    <li class="o-list-bare__item c-menu__item menu-item-language">
+    <!-- <li class="o-list-bare__item c-menu__item menu-item-language">
             <a href="/" title="Change the language"" class="c-menu__link c-link c-link--invert">
                 Fr
             </a>
-    </li>
+    </li> -->
