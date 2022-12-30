@@ -1,3 +1,8 @@
+
+#anchor-projects{
+    scroll-margin-top: 200px;
+}
+
 .c-projects__filters{
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +20,7 @@
   padding: calc(6/16*1rem) calc(12/16*1rem);
 }
 
-.c-projects__filter--active{
+.c-projects__filter.active{
   font-weight: 500;
   color: var(--color-brand);
   border: 1.5px solid var(--color-brand);

@@ -47,11 +47,20 @@ columns:
         projectStatus:
           label: Statut du projet
           type: select
-          default: inProgress
+          default: En cours
           options:
             Terminé: Terminé
             En cours: En cours
             En projet: Projet futur
+        projectType:
+          label: Type du projet
+          type: select
+          default: En cours
+          options:
+            Santé: Nos réalisations en santé et maternité
+            Handicap: Nos réalisations dans le domaine du handicap
+            Agréculture: Nos réalisations en maraîchage et accès à l’eau
+            Autre: Autres réalisations
         locationLat:
           label: Latitude
           type: number

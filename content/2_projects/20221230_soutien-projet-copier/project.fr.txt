@@ -30,6 +30,10 @@ Projectstatus: En projet
 
 ----
 
+Projecttype: Agréculture
+
+----
+
 Locationlat: 12.737073
 
 ----

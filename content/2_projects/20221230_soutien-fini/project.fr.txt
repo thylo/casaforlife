@@ -30,6 +30,10 @@ Projectstatus: Terminé
 
 ----
 
+Projecttype: Autre
+
+----
+
 Locationlat: 12.737073
 
 ----

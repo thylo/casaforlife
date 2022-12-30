@@ -9,17 +9,14 @@
   </div>
 </div>
 
-<div class="c-pagesection u-pt-m">
+<div id="anchor-projects" class="c-pagesection u-pt-m">
   <div class="l-container">
 
   <?php
   $listedElements = $page->children()->listed()->sortBy('date','desc');
-  echo param('status');
-
-  $inProgressElements = $listedElements->filterBy('projectStatus', 'En cours')->sortBy('date','desc');
-  $futurElements = $listedElements->filterBy('projectStatus', 'En projet')->sortBy('date','desc');
-  $finishedElements = $listedElements->filterBy('projectStatus', 'Terminé')->sortBy('date', 'desc');
-  $elementsToShow = $listedElements;
+  $inProgressElements = $page->children()->listed()->sortBy('date','desc')->filterBy('projectStatus', 'En cours', ',');
+  $futurElements = $page->children()->listed()->sortBy('date','desc')->filterBy('projectStatus', 'En projet', ',');
+  $finishedElements = $page->children()->listed()->sortBy('date','desc')->filterBy('projectStatus', 'Terminé', ',');
 
   ?>
 
@@ -27,30 +24,31 @@
     <div class="c-projects">
       <ul class="c-projects__filters o-list-bare">
         <li class="c-projects__filter-item">
-            <a href="#" class="c-projects__filter js-projects__filter c-projects__filter--active">Tous</a>
+            <a href="<?= $page->url() ?>#anchor-projects" class="c-projects__filter 
+            <?= !isset($_GET['tag']) ? 'active' : '' ?>">Tous</a>
         </li>
-        <?php if($inProgressElements->count()): ?>
-          <li class="c-projects__filter-item">
-            <a href="#inProgress" class="c-projects__filter js-projects__filter">En cours</a>
-          </li>
-          <?php endif; ?>
-        <?php if($futurElements->count()): ?>
-          <li class="c-projects__filter-item">
-            <a href="#futur" class="c-projects__filter js-projects__filter">En projet</a>
-          </li>
-          <?php endif; ?>
-        <?php if($finishedElements->count()): ?>
-          <li class="c-projects__filter-item">
-            <a href="#finished" class="c-projects__filter js-projects__filter">Terminé</a>
-          </li>
-        <?php endif; ?>
+      <?php foreach($page->children()->listed()->pluck('projectStatus', ',', true) as $tag): ?>
+        <li class="c-projects__filter-item">
+            <a href="<?= $page->url() . '?tag=' . $tag ?>#anchor-projects" class="c-projects__filter 
+            <?= isset($_GET['tag']) && $_GET['tag'] !== null && $tag === $_GET['tag'] ? 'active' : '' ?>"><?= $tag ?></a>
+        </li>
+      <?php endforeach?>
+       
       </ul>
-    
+  <?php endif?>
+
+  <?php
+    $tag = $_GET['tag'] ?? null;
+    if($tag) {
+      $projects = $page->children()->listed()->sortBy('date','desc')->filterBy('projectStatus', $tag, ',');
+    } else {
+      $projects = $page->children()->listed()->sortBy('date','desc');
+    } ?>
+
+  <?php if($projects->count()): ?>
       <ul class="l-grid l-grid--2cols@small l-grid--3cols@large">
   <?php endif; ?>
-
-
-  <?php foreach ($elementsToShow as $item): ?>
+  <?php foreach ($projects as $item): ?>
       <li>
           <?= snippet('projectCard', ['item' => $item]) ?>
       </li>

@@ -30,6 +30,10 @@ Projectstatus: Terminé
 
 ----
 
+Projecttype: Santé
+
+----
+
 Locationlat: 12.737073
 
 ----
