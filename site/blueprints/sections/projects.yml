@@ -1,0 +1,12 @@
+type: pages
+label: Contenu
+size: small
+info: "{{ page.images.count }} image(s)"
+template: project
+sortBy: date desc
+empty: Pas encore de projects
+
+image:
+  query: page.cover.toFile
+  cover: true
+  ratio: 4/5

@@ -9,6 +9,6 @@ Description: Casa for Life - Une démarche solidaire pour la santé et la vie en
 Mainmenu:
 
 - home
-- apropos
+- projects
 - actualites
 - contact
