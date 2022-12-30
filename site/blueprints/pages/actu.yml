@@ -31,7 +31,7 @@ columns:
         headline:
           label: Titre
           type: text
-          placeholder: "{{ page.title }}"
+          default: "{{ page.title }}"
           help: Leave empty to use the title as headline
           maxlength: 64
         subheadline:

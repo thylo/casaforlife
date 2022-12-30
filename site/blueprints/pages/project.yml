@@ -1,5 +1,5 @@
 # Each page blueprint must have a title, the title may be different from the file name
-title: Actu
+title: Project
 
 # Each page can have an icon that is shown in page listings when no preview image is available.
 icon: 🖼
@@ -31,7 +31,7 @@ columns:
         headline:
           label: Titre
           type: text
-          placeholder: "{{ page.title }}"
+          default: "{{ page.title }}"
           help: Leave empty to use the title as headline
           maxlength: 64
         subheadline:
@@ -44,4 +44,20 @@ columns:
           display: DD/MM/YYYY
         author:
           type: users
-        # tags: true
+        projectStatus:
+          label: Statut du projet
+          type: select
+          default: inProgress
+          options:
+            Terminé: Terminé
+            En cours: En cours
+            En projet: En projet
+        locationLat:
+          label: Latitude
+          type: number
+          icon: map-marker
+        locationLong:
+          label: Longitude
+          type: number
+          icon: map-marker
+        

@@ -23,7 +23,7 @@
 
   <?php foreach ($listedElements as $item): ?>
       <li>
-          <?= snippet('actuCard', ['item' => $item]) ?>
+          <?= snippet('projectCard', ['item' => $item]) ?>
       </li>
   <?php endforeach; ?>
 

@@ -1,5 +1,5 @@
 type: pages
-label: Contenu
+label: Contenu de la page
 size: small
 info: "{{ page.images.count }} image(s)"
 template: project
