@@ -1,0 +1,49 @@
+Title: Soutien fini
+
+----
+
+Text: 
+
+----
+
+Cover: - file://SVrHSRnFuHjowXCa
+
+----
+
+Headline: Soutien aux femmes porteuses d'un handicap physique
+
+----
+
+Subheadline: Poursuite du soutien aux femmes porteuses d'un handicap physique du GIE « Jabott ».
+
+----
+
+Date: 2022-12-30
+
+----
+
+Author: - user://83g6OXDE
+
+----
+
+Projectstatus: Terminé
+
+----
+
+Locationlat: 12.737073
+
+----
+
+Locationlong: -15.565192
+
+----
+
+Status: inProgress
+
+----
+
+Uuid: 4SDpU3R1Og6H0m4x
+
+----
+
+Location: 

@@ -1,3 +1,0 @@
-[submodule "site/fields/geolocation"]
-	path = site/fields/geolocation
-	url = https://github.com/lekkerduidelijk/kirby-geolocation-field.git

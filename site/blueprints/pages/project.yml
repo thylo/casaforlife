@@ -51,7 +51,7 @@ columns:
           options:
             Terminé: Terminé
             En cours: En cours
-            En projet: En projet
+            En projet: Projet futur
         locationLat:
           label: Latitude
           type: number
