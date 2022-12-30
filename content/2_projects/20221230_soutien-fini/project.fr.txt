@@ -30,7 +30,7 @@ Projectstatus: Terminé
 
 ----
 
-Projecttype: Autre
+Projecttype: agreculture
 
 ----
 

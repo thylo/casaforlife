@@ -30,7 +30,7 @@ Projectstatus: En cours
 
 ----
 
-Projecttype: Santé
+Projecttype: sante
 
 ----
 

@@ -57,10 +57,10 @@ columns:
           type: select
           default: En cours
           options:
-            Santé: Nos réalisations en santé et maternité
-            Handicap: Nos réalisations dans le domaine du handicap
-            Agréculture: Nos réalisations en maraîchage et accès à l’eau
-            Autre: Autres réalisations
+            sante: Nos réalisations en santé et maternité
+            handicap: Nos réalisations dans le domaine du handicap
+            agreculture: Nos réalisations en maraîchage et accès à l’eau
+            autre: Autres réalisations
         locationLat:
           label: Latitude
           type: number

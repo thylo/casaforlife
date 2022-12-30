@@ -5,10 +5,7 @@
                 <img class="o-fluidimage" src="<?= $item->cover()->toFile()->url() ?>">
     </div>
     <div class="c-projectcard__body">
-        <div class="c-projectcard__date-status">
-            <p class="c-projectcard__date"><?= $item->date()->toDate('d-m-Y') ?></p>
-            <p class="c-projectcard__status"><?= $item->projectStatus()->value() ?></p>
-        </div>
+        <p class="c-projectcard__date"><?= $item->date()->toDate('d-m-Y') ?></p>
         <a href="<?= $item->url() ?>" class="c-link--bare">
             <h3 class="c-projectcard__title"><?= $item->headline() ?></h3> </a>
         <p class="c-projectcard__tagline "><?= $item->subheadline() ?></p>

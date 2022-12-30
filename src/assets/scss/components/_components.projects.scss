@@ -3,6 +3,12 @@
     scroll-margin-top: 200px;
 }
 
+.c-projects{
+  display: flex;
+  flex-direction: column;
+  gap: var( --spacing-l);
+}
+
 .c-projects__filters{
   display: flex;
   flex-wrap: wrap;
@@ -24,4 +30,14 @@
   font-weight: 500;
   color: var(--color-brand);
   border: 1.5px solid var(--color-brand);
+}
+
+
+.c-projects__section:not(:last-child){
+  margin-bottom: calc(24/16*1rem);
+}
+
+.c-projects__title{
+  color: var(--color-text);
+  font-size: calc(24/16*1rem);
 }

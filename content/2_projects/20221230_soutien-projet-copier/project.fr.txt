@@ -30,7 +30,7 @@ Projectstatus: En projet
 
 ----
 
-Projecttype: Agréculture
+Projecttype: handicap
 
 ----
 

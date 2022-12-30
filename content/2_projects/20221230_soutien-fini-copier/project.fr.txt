@@ -30,7 +30,7 @@ Projectstatus: Terminé
 
 ----
 
-Projecttype: Santé
+Projecttype: autre
 
 ----
 

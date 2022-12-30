@@ -13,12 +13,7 @@
   <div class="l-container">
 
   <?php
-  $listedElements = $page->children()->listed()->sortBy('date','desc');
-  $inProgressElements = $page->children()->listed()->sortBy('date','desc')->filterBy('projectStatus', 'En cours', ',');
-  $futurElements = $page->children()->listed()->sortBy('date','desc')->filterBy('projectStatus', 'En projet', ',');
-  $finishedElements = $page->children()->listed()->sortBy('date','desc')->filterBy('projectStatus', 'Terminé', ',');
-
-  ?>
+  $listedElements = $page->children()->listed()->sortBy('date','desc');?>
 
   <?php if($listedElements->count()): ?>
     <div class="c-projects">
@@ -33,7 +28,6 @@
             <?= isset($_GET['tag']) && $_GET['tag'] !== null && $tag === $_GET['tag'] ? 'active' : '' ?>"><?= $tag ?></a>
         </li>
       <?php endforeach?>
-       
       </ul>
   <?php endif?>
 
@@ -45,20 +39,40 @@
       $projects = $page->children()->listed()->sortBy('date','desc');
     } ?>
 
-  <?php if($projects->count()): ?>
-      <ul class="l-grid l-grid--2cols@small l-grid--3cols@large">
-  <?php endif; ?>
-  <?php foreach ($projects as $item): ?>
-      <li>
-          <?= snippet('projectCard', ['item' => $item]) ?>
-      </li>
-  <?php endforeach; ?>
+    <?php foreach($projects->pluck('projectType', ',', true) as $type): ?>
+      <?php
+        switch($type):
+          case 'agreculture':
+            $title = 'Nos réalisations en maraîchage et accès à l’eau';
+            break;
+          case 'handicap':
+            $title = 'Nos réalisations dans le domaine du handicap';
+            break;
+          case 'sante':
+            $title = 'Nos réalisations en santé et maternité';
+            break;
+          case 'autre':
+            $title = 'Autres réalisations';
+            break;
+        endswitch;
+      ?>
+        <div class="c-projects__section">
+          <h3 class="c-projects__title c-smalltitle"><?= $title ?></h3>
+            <?php if($projects->count()): ?>
+              <ul class="l-grid l-grid--2cols@small l-grid--3cols@large">
+            <?php endif; ?>
 
-  <?php if($listedElements->count()): ?>
-   </ul>
-  </div>
-  <?php endif; ?>
+                <?php foreach ($projects->filterBy('projectType', $type, ',') as $item): ?>
+                    <li>
+                        <?= snippet('projectCard', ['item' => $item]) ?>
+                    </li>
+                <?php endforeach; ?>
 
+              <?php if($listedElements->count()): ?>
+              </ul>
+              <?php endif; ?>
+        </div>
+    <?php endforeach?>
   </div>
 </div>
 
