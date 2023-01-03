@@ -30,6 +30,13 @@
     }
 }
 
+.c-actulink{
+  margin-left: auto;
+  margin-top: calc(24/16*1rem);
+  display: block;
+  font-size: calc(18/16*1rem);
+}
+
 .c-link--bare{
     text-decoration: none;
     color: unset;

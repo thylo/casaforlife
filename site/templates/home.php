@@ -17,7 +17,7 @@
 
       <?php $listedElements = $page->children()->listed()->sortBy('date','desc')->limit(3); ?>
 
-        <ul class="l-grid l-grid--2cols@small l-grid--3cols@large">
+        <ul class="l-grid l-grid--3cols@medium">
           <?php foreach ($listedElements as $item): ?>
 
             <li>
@@ -26,7 +26,8 @@
 
           <?php endforeach ?>
         </ul>
-
+      
+      <a href="<?= $page->url()?>" class="c-link c-actulink"> Toutes nos actualités</a>  
     <?php endif ?>
   </div>
 </div>
