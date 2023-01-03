@@ -21,10 +21,12 @@
 =variants of page sections
 --------------------------------- */
 
-.c-pagesection--actu {
+.c-pagesection--article {
+  padding-top: 0;
+  
   @include breakpoint(medium) {
     //permets de laisser l'epace le menu nav
-    padding-top: 190px;
+    padding-top: 230px;
   }
 }
 

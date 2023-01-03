@@ -1,9 +1,9 @@
 <?php $user = $item->author()->toUser()?>
 
 <article class="c-projectcard">
-    <div class="c-projectcard__media">
-                <img class="o-fluidimage" src="<?= $item->cover()->toFile()->url() ?>">
-    </div>
+    <a href="<?= $item->url() ?>" class="c-projectcard__media">
+        <img class="o-fluidimage" src="<?= $item->cover()->toFile()->url() ?>">
+    </a>
     <div class="c-projectcard__body">
         <p class="c-projectcard__date"><?= $item->date()->toDate('d-m-Y') ?></p>
         <a href="<?= $item->url() ?>" class="c-link--bare">

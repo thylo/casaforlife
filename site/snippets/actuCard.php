@@ -1,9 +1,9 @@
 <?php $user = $item->author()->toUser()?>
 
 <article class="c-actucard">
-    <div class="c-actucard__media">
-                <img class="o-fluidimage" src="<?= $item->cover()->toFile()->url() ?>">
-    </div>
+    <a href="<?= $item->url() ?>" class="c-actucard__media">
+        <img class="o-fluidimage" src="<?= $item->cover()->toFile()->url() ?>">
+    </a>
     <div class="c-actucard__body">
         <p class="c-actucard__date"><?= $item->date()->toDate('d-m-Y') ?></p>
         <a href="<?= $item->url() ?>" class="c-link--bare">

@@ -1,16 +1,16 @@
 
-.c-actu__cover{
+.c-article__cover{
   width: 100vw;
   height: 50vh;
   object-fit: cover;
   margin-bottom: calc(30/16*1rem);
 }
 
-.c-actu__body{
+.c-article__body{
   margin-bottom: calc(30/16*1rem);
 }
 
-.c-actu__title{
+.c-article__title{
   font-size: calc(36/16*1rem);
   font-weight: 600;
   text-align: center;
@@ -26,17 +26,17 @@
   }
 }
 
-.c-actu__tags-date{
+.c-article__tags-date{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.c-actu__date{
+.c-article__date{
   opacity: 70%;
 }
 
-.c-actu__content{
+.c-article__content{
   ::first-letter{
     margin-left: 3rem;
   }
