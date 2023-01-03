@@ -69,37 +69,52 @@
 }
 
 .c-menu-toggle {
-  border: none;
-  background: var(--color-background);
   position: fixed;
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  width: 75px;
+  height: 75px;
+  border: none;
+  border-radius: 100px;
+  background: var(--color-background);
   padding: var(--spacing-l);
   cursor: pointer;
+  transition: all 0.5s ease-out;
   @include breakpoint(medium) {
     display: none;
   }
 }
 
 .c-scroll-menu {
-  display: none;
+  display: block;
   z-index: 99;
   position: fixed;
+  top: 10px;
+  right: 10px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   height: 100%;
   background-color: var(--color-brand) ;
-  transition: all 0.5s ease-out;
-
+  transform: translate3d(0, -100%, 0);
+  transition: all 0.2s var(--ease-custom-ease-in-out);
+  
   @include breakpoint(medium) {
-    transform: translate(0, -100%);
+    transform: translate3d(0, -100%, 0);
     height: unset;
   }
-  &__close {
-    position: absolute;
-    left: 0;
+  &.close{
+    position: fixed;
   }
   &.visible {
+    transition: all 0.2s var(--ease-custom-ease-in-out);
+    transform: translate3d(0, 0, 0);
     display: block;
   }
   &.scroll {
