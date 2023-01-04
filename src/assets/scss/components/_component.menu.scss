@@ -9,6 +9,7 @@
   }
 
   @include breakpoint(medium) {
+
     &--desk{
       display: flex;
       justify-content: center;
@@ -84,10 +85,19 @@
   background: var(--color-background);
   color: var(--color-brand);
 
-  transition: all 0.5s ease-out;
+  transform: rotate(0deg);
+  transition: all 0.5s var(--ease-custom-ease-in-out);
+  transition-delay: 0.3s;
+
   @include breakpoint(medium) {
     display: none;
   }
+}
+
+.c-menu-toggle--visible {
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in-out;
+  transition-delay: 1s;
 }
 
 .c-scroll-menu {
@@ -103,19 +113,21 @@
   height: 100%;
   background-color: var(--color-brand) ;
   transform: translate3d(0, -100%, 0);
-  transition: all 0.2s var(--ease-custom-ease-in-out);
+  transition: all 0.5s var(--ease-custom-ease-in-out);
   
   @include breakpoint(medium) {
-    transform: translate3d(0, -100%, 0);
+    display: none;
     height: unset;
   }
-  &.close{
+  &__close{
     position: fixed;
+    transform: rotate(-60deg);
+    transition: all 0.3s var(--ease-custom-ease-in-out);
   }
   &.visible {
-    transition: all 0.2s var(--ease-custom-ease-in-out);
-    transform: translate3d(0, 0, 0);
     display: block;
+    transition: all 0.5s var(--ease-custom-ease-in-out);
+    transform: translate3d(0, 0, 0);
   }
   &.scroll {
     @include breakpoint(medium) {
@@ -134,6 +146,13 @@
     background-color: var(--color-background);
     transition: all 0.5s var(--ease-custom-ease-in-out);
   }
+}
+
+.c-scroll-menu__close--visible{
+  transform: rotate(0deg);
+  transition: all 0.5s var(--ease-custom-ease-in-out);
+  transition-delay: 0.35s;
+
 }
 
 .c-menu--small{

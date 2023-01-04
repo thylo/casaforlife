@@ -12,12 +12,16 @@ if (toggle && close) {
     e.preventDefault();
     e.stopPropagation();
     menu.classList.add("visible");
+    close.classList.add("c-scroll-menu__close--visible");
+    toggle.classList.add("c-menu-toggle--visible");
   });
 
   close.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
     menu.classList.remove("visible");
+    close.classList.remove("c-scroll-menu__close--visible");
+    toggle.classList.remove("c-menu-toggle--visible");
   });
 }
 
