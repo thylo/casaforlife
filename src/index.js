@@ -9,14 +9,12 @@ const menu = document.getElementById("js-menu-scroll"),
   sections = [...document.querySelectorAll("section")];
 if (toggle && close) {
   toggle.addEventListener("click", (e) => {
-    console.log("click");
     e.preventDefault();
     e.stopPropagation();
     menu.classList.add("visible");
   });
 
   close.addEventListener("click", (e) => {
-    console.log("click");
     e.preventDefault();
     e.stopPropagation();
     menu.classList.remove("visible");

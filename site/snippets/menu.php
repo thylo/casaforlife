@@ -12,14 +12,14 @@
             </ul>
         </div>
    </nav>
-    <button class="c-menu-toggle" id="js-menu-toggle">
+    <a href="#footermenu" class="c-menu-toggle" id="js-menu-toggle">
         <?= svg("/assets/img/svg/menu.svg") ?>
-    </button>
+    </a>
     <div class="c-menu c-scroll-menu" id="js-menu-scroll">
-        <button class="c-menu-toggle c-scroll-menu__close" id="js-menu-close">
+        <a href="#footermenu" class="c-menu-toggle c-scroll-menu__close" id="js-menu-close">
             <?= svg("/assets/img/svg/x.svg") ?>
-        </button>
-        <nav class="c-mainnav">
+        </a>
+        <nav class="c-mainnav c-mainnav--phone">
             <ul class="o-list-bare c-menu--small">
                 <li class="c-menu__item o-list-bare__item">
                     <a href="/" class="u-padding-small c-menu__logo">

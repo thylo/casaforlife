@@ -3,6 +3,13 @@
   border-bottom: 1px solid #ffffff55;
 }
 
+.c-mainnav--phone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .c-mainnav--desk{
   position: fixed;
   top: 0;

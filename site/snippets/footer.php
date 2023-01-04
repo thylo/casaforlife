@@ -1,5 +1,5 @@
 </main>
-<footer class="c-sitefooter">
+<footer id="footermenu" class="c-sitefooter">
   <div class="l-container">
     <div class="c-sitefooter__content">
       <nav class="c-sitefooter__nav u-padding-large">
