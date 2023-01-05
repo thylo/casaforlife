@@ -3,6 +3,13 @@ figure{
   margin: 0;
 }
 
+figcaption{
+  font-size: calc(14/16*1rem);
+  opacity: 70%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
 .c-article__cover{
   width: 100vw;
   height: 50vh;
@@ -26,7 +33,7 @@ figure{
     height: 1px;
     background-color: var(--color-text);
     opacity: 25%;
-    margin: 1rem 0;
+    margin: calc(18/16*1rem) 0;
   }
 }
 
@@ -40,6 +47,25 @@ figure{
   opacity: 70%;
 }
 
+//projects
+
+.c-article__date-position{
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-article__position{
+  display: flex;
+  gap: calc(6/16*1rem);
+  align-items: center;
+  opacity: 70%;
+
+  :first-child::after{
+    content: ',';
+  }
+}
+
+
 //================================================
 //=content
 //================================================
@@ -49,30 +75,10 @@ figure{
   width: 100%;
   border: solid 0.5px var(--color-text);
   opacity: 25%;
-  margin: 3rem 0;
-}
-
-.c-article__block-title{
-  font-size: calc(22/16*1rem);
-  font-weight: 500;
-  width: fit-content;
-  margin: 0 auto;
-  
-  &::after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-text);
-    opacity: 25%;
-    margin: .3rem 0 2rem 0;
-  }
+  margin: calc(48/16*1rem) 0;
 }
 
 .c-article__gallery{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: calc(30/16*1rem);
 }
 
@@ -106,7 +112,7 @@ figure{
 
 .c-article__heading{
   font-weight: 500;
-  margin: 2rem 0;
+  margin: calc(18/16*1rem) 0;
 }
 
 h1.c-article__heading{

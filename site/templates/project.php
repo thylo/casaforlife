@@ -11,20 +11,13 @@
             <div class="l-container l-container--copy">
                 <div class="c-article__body">
                     <h1 class="c-article__title"><?= $page->headline() ?></h1>
-                    <!-- Tags -->
-                    <!-- <div class="c-article__tags-date">
-                        <div class="c-article__tags-link">
-                            <ul class="c-article__tags o-list-bare">
-                                <?php foreach ($page->tags()->split(',') as $tag): ?>
-                                    <li class="c-article__tag-item">
-                                        <p class="c-articlecard__tag"><?= $tag ?></p>
-                                    </li>
-                                <?php endforeach ?>
-                            </ul>
-                        </div>
+                    <div class="c-article__date-position">
                         <p class="c-article__date"><?= $page->date()->toDate('d-m-Y') ?></p>
-                    </div> -->
-                    <p class="c-article__date"><?= $page->date()->toDate('d-m-Y') ?></p>
+                        <div class="c-article__position">
+                            <p class="c-article__location"><?= $page->locationLat()?></p>
+                            <p class="c-article__location"><?= $page->locationLong()?></p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Article content block -->

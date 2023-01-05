@@ -9,20 +9,20 @@ if($ratio !== 'auto') {
 }?>
 
 <figure class="c-article__gallery">
-    <?php if ($caption->isNotEmpty()): ?>
-        <figcaption>
-            <h2 class="c-mediumtitle c-article__block-title" ><?= $caption->text() ?></h2>
-        </figcaption>
-    <?php endif ?>
-    <ul class="c-article__gallery-images o-list-bare l-grid l-grid--auto">
-        <?php foreach ($block->images()->toFiles() as $image): ?>
-            <?php $croppedImage = $image->thumb(array(
-                                'width'  => 1280,
-                                'height' => 1280 * $ratio,
-                                'crop'   => $crop));?>
+        <ul class="c-article__gallery-images o-list-bare l-grid l-grid--auto">
+            <?php foreach ($block->images()->toFiles() as $image): ?>
+                <?php $croppedImage = $image->thumb(array(
+                    'width'  => 1280,
+                    'height' => 1280 * $ratio,
+                    'crop'   => $crop));?>
             <li class="o-list-bare__item">
                 <img class="o-fluidimage c-article__contentimage" src="<?= $croppedImage->url() ?>">
             </li>
-        <?php endforeach ?>
-    </ul>
+            <?php endforeach ?>
+        </ul>
+        <?php if ($caption->isNotEmpty()): ?>
+            <figcaption>
+                <p><?= $caption->text() ?></p>
+            </figcaption>
+        <?php endif ?>
 </figure>
