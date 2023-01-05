@@ -41,7 +41,7 @@ columns:
         subheadline:
           label: Description
           type: textarea
-          maxlength: 200
+          maxlength: 215
           required: true
         date:
           type: date

@@ -1,13 +1,16 @@
 <div class="l-container l-container--copy">
     <div class="c-article__content">
-        <?php foreach ($page->text()->toBlocks() as $block): ?>
-            <?php if ($block->type() == 'image'): ?>
-                    <img class="o-fluidimage c-article__contentimage" src="<?= $block->image()->toFile()->url() ?>">
-                <?php elseif (true): ?>
-                    <div id="<?= $block->id() ?>" class="block block-type-<?= $block->type() ?>">
-                <?= $block ?>
+
+<?php foreach ($page->article()->toBlocks() as $block): ?>    
+            <div id="<?= $block->id() ?>" class="o-section block block-type-<?= $block->type() ?>">
+            <?php snippet(
+                'blocks/' . $block->type(),
+                [
+                'block' => $block,
+                'theme' => 'dark'
+                ]
+            ) ?>
             </div>
-            <?php endif ?>
         <?php endforeach ?>
     </div>
 </div>

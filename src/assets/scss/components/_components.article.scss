@@ -36,7 +36,28 @@
   opacity: 70%;
 }
 
-.c-article__content{
+//================================================
+//=content
+//================================================
+
+.c-article__gallery-title{
+  font-size: calc(22/16*1rem);
+  font-weight: 500;
+  width: fit-content;
+  margin: 0 auto;
+  
+  &::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-text);
+    opacity: 25%;
+    margin: .3rem 0 2rem 0;
+  }
+}
+
+.c-article__text{
   ::first-letter{
     margin-left: 3rem;
   }
