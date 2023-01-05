@@ -17,7 +17,7 @@ if ($block->location() == 'web') {
 }
 
 if ($ratio !== 'auto') {
-  $ratio = Str::split($ratio, '/');
+  $ratio = explode("/",$ratio);
   $w = $ratio[0] ?? 1;
   $h = $ratio[1] ?? 1;
 }

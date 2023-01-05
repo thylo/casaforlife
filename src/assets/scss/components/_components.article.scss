@@ -1,4 +1,8 @@
 
+figure{
+  margin: 0;
+}
+
 .c-article__cover{
   width: 100vw;
   height: 50vh;
@@ -57,8 +61,28 @@
   }
 }
 
-.c-article__text{
-  ::first-letter{
-    margin-left: 3rem;
-  }
+.c-article__gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: calc(30/16*1rem);
+}
+
+.c-article__heading{
+  font-weight: 500;
+  margin: 2rem 0;
+}
+
+h1.c-article__heading{
+  font-size: calc(30/16*1rem);
+  font-weight:600;
+}
+h2.c-article__heading{
+  font-size: calc(30/16*1rem);
+}
+h3.c-article__heading{
+  font-size: calc(26/16*1rem);
+}
+h4.c-article__heading{
+  font-size: calc(22/16*1rem);
 }

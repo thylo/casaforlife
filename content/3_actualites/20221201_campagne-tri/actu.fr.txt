@@ -2,7 +2,7 @@ Title: Campagne de tri
 
 ----
 
-Article:
+Article: [{"content":{"level":"h2","text":"Hello world"},"id":"53351c17-30ed-4575-81ad-165c902e1871","isHidden":false,"type":"title"},{"content":{"level":"h3","text":"Hello h3"},"id":"58d96378-3ab1-4907-bab2-33dd21efa0af","isHidden":false,"type":"title"}]
 
 ----
 
