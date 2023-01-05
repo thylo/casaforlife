@@ -41,4 +41,3 @@ function scrollFunction() {
     document.querySelector(".js-menu__logo--desk").style.height = "200px";
   }
 }
-

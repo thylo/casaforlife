@@ -14,11 +14,12 @@
 ?>
 <?php if ($block->url()->isNotEmpty()): ?>
 <figure>
-  <span class="video" style="--w:16;--h:9">
-    <?= video($block->url()) ?>
-  </span>
   <?php if ($block->caption()->isNotEmpty()): ?>
-  <figcaption class="video-caption"><?= $block->caption() ?></figcaption>
+    <figcaption class="c-mediumtitle c-article__block-title"><?= $block->caption() ?></figcaption>
   <?php endif ?>
+  <div class="o-fluidvideo">
+    <iframe allow="autoplay; fullscreen" allowfullscreen src="<?= $block->url() ?>"></iframe>
+  </div>
 </figure>
 <?php endif ?>
+<?php

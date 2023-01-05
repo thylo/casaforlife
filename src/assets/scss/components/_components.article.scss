@@ -44,7 +44,15 @@ figure{
 //=content
 //================================================
 
-.c-article__gallery-title{
+.c-article__line{
+  display: block;
+  width: 100%;
+  border: solid 0.5px var(--color-text);
+  opacity: 25%;
+  margin: 3rem 0;
+}
+
+.c-article__block-title{
   font-size: calc(22/16*1rem);
   font-weight: 500;
   width: fit-content;
@@ -66,6 +74,34 @@ figure{
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: calc(30/16*1rem);
+}
+
+.c-article__quote--all{
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.c-article__quote-icon{
+  opacity: 70%;
+}
+
+.c-article__quote{
+  padding-inline-start: 1rem;
+	border-inline-start: 2px solid var(--color-black);
+}
+
+.article__quote-text{
+  font-size: calc(22/16*1rem);
+  margin-bottom: 0.25rem;
+	line-height: 1.25em;
+}
+
+.c-article__quote-author{
+  font-style: italic;
+	font-size: calc(18/16*1rem);
+	color: var(--color-text);
+  opacity: 70%;
 }
 
 .c-article__heading{
