@@ -20,9 +20,11 @@ status:
 columns:
   
   - width: 2/3
-     fields:
-      text:
-        type: blocks
+     sections:
+      article:
+        type: fields
+        fields:
+          article: fields/article
 
   - width: 1/3
 
@@ -34,20 +36,25 @@ columns:
           default: "{{ page.title }}"
           help: Leave empty to use the title as headline
           maxlength: 64
+          required: true
         subheadline:
           label: Description
           type: textarea
           maxlength: 200
+          required: true
         date:
           type: date
           default: now
           display: DD/MM/YYYY
+          required: true
         author:
           type: users
+          required: true
         projectStatus:
           label: Statut du projet
           type: select
           default: En cours
+          required: true
           options:
             Terminé: Terminé
             En cours: En cours
@@ -55,7 +62,8 @@ columns:
         projectType:
           label: Type du projet
           type: select
-          default: En cours
+          default: autre
+          required: true
           options:
             sante: Nos réalisations en santé et maternité
             handicap: Nos réalisations dans le domaine du handicap
@@ -65,8 +73,10 @@ columns:
           label: Latitude
           type: number
           icon: map-marker
+          required: true
         locationLong:
           label: Longitude
           type: number
           icon: map-marker
+          required: true
         

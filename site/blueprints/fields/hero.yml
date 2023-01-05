@@ -3,10 +3,12 @@ fields:
   headline:
     type: text
     placeholder: "{{ page.title }}"
+    required: true
     help: Entourez un mot avec (((  ))) pour le mettre écriture fine dans le titre. Exemple (((Mon mot)))
 
   subheadline:
     type: text
+    required: true
 
   mainBtn: 
     label: Bouton principal
@@ -32,6 +34,7 @@ fields:
     label: Hero banner
     type: files
     multiple: false
+    required: true
     query: page.image.toFile
     image:
       ratio: 10/15

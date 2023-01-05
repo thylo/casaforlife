@@ -4,6 +4,7 @@
 # See http://getkirby.com/docs/guide/blueprints/extending-blueprints#reusing-and-extending-single-fields
 type: files
 multiple: false
+required: true
 query: page.images.template('image')
 uploads:
   template: image

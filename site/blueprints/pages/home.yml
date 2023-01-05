@@ -5,12 +5,7 @@ columns:
       blockContent:
         type: fields
         fields:
-          blockContent:
-            label: Blocks
-            type: blocks
-            fieldsets:
-                - smallSection
-                - fullTextSection
+          blockContent: fields/blockContent
             
   - width: 1/3 
     sections:

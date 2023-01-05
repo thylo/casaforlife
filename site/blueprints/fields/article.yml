@@ -1,0 +1,12 @@
+type: group
+fields:
+  article:
+    type: blocks  
+    label: Article
+    fieldsets:
+        - title
+        - text
+        - image
+        - video
+        - gallery
+        - quote

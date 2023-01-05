@@ -20,9 +20,12 @@ status:
 columns:
   
   - width: 2/3
-     fields:
-      text:
-        type: blocks
+    sections:
+      article:
+        type: fields
+        fields:
+          article: fields/article
+            
 
   - width: 1/3
 
@@ -34,14 +37,18 @@ columns:
           default: "{{ page.title }}"
           help: Leave empty to use the title as headline
           maxlength: 64
+          required: true
         subheadline:
           label: Description
           type: textarea
           maxlength: 200
+          required: true
         date:
           type: date
           default: now
           display: DD/MM/YYYY
+          required: true
         author:
           type: users
+          required: true
         # tags: true

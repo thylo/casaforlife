@@ -4,15 +4,18 @@ fields:
     label: Title
     type: text
     maxlength: 64
+    required: true
   textContent:
     label: Text
     type: textarea
+    required: true
   image:
     layout: cards
     size: small
     label: Image
     type: files
     multiple: false
+    required: true
     query: page.image.toFile
     image:
       ratio: 10/15
