@@ -3,12 +3,14 @@ icon: 👱🏼
 fields:
   contact_name:
     label: Nom
-    type: writer
+    type: text
+    maxlength: 40
     required: true
   contact_function:
     label: Fonction
-    type: writer
+    type: text
     required: true
+    maxlength: 32
   contact_mail:
     label: Email
     type: email

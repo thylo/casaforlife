@@ -5,15 +5,17 @@ p{
     display: flex;
     flex-direction: column;
     gap: calc(16/16*1rem);
-    width: fit-content;
     &__img{
-        width: 250px;
         aspect-ratio: 3/4;
         object-fit: cover;
     }
     &__content{
         display: flex;
         justify-content: space-between;
+        gap: calc(6/16*1rem);
+    }
+    &__name{
+        display: inline;
     }
     &__contacts{
         display: flex;

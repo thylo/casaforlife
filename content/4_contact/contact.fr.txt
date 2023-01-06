@@ -2,7 +2,11 @@ Title: Contact
 
 ----
 
-Equipcard: [{"content":{"contact_name":"<p>Jhon Supergentil<\/p>","contact_function":"<p>CEO<\/p>","contact_mail":"jhonsupergentil@gmail.com","contact_phone":"0488596545","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"1000c469-8789-4d3b-bb77-22ddc727404f","isHidden":false,"type":"equip"},{"content":{"contact_name":"<p>Jhon Supergentil<\/p>","contact_function":"<p>CEO<\/p>","contact_mail":"jhonsupergentil@gmail.com","contact_phone":"0488596545","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"b3d20a4c-3e62-4069-92ae-1d7790bba1e5","isHidden":false,"type":"equip"},{"content":{"contact_name":"<p>Jhon Supergentil<\/p>","contact_function":"<p>CEO<\/p>","contact_mail":"jhonsupergentil@gmail.com","contact_phone":"0488596545","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"051d1b22-c609-41b8-9df1-a6dfa28c053a","isHidden":false,"type":"equip"},{"content":{"contact_name":"<p>Jhon<\/p>","contact_function":"<p>Stagiaire<\/p>","contact_mail":"","contact_phone":"","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"464701fc-e380-4f7e-911d-835cc68d592f","isHidden":false,"type":"equip"},{"content":{"contact_name":"<p>Nom<\/p>","contact_function":"<p>Function<\/p>","contact_mail":"","contact_phone":"048586965","contact_image":["file:\/\/ZMTFniiChBFJsKQK"]},"id":"cc51e96f-e551-4431-ad54-e61b45ea2c29","isHidden":false,"type":"equip"}]
+Equiptitle: L'équipe grâce à laquelle tout cela est possible
+
+----
+
+Equipcard: [{"content":{"contact_name":"Juliette Lafi\u00e8vre","contact_function":"CEO","contact_mail":"juliette@mail.com","contact_phone":"089138292","contact_image":["file:\/\/JMLerFD21LNu4Fhv"]},"id":"7cd80891-d152-4148-a6b1-3c1a09c299f7","isHidden":false,"type":"equip"},{"content":{"contact_name":"Juliette Lafi\u00e8vre test test test test te","contact_function":"CEO","contact_mail":"juliette@mail.com","contact_phone":"089138292","contact_image":["file:\/\/JMLerFD21LNu4Fhv"]},"id":"e1ae2354-5059-4ea3-aaed-7230271f1dd2","isHidden":false,"type":"equip"},{"content":{"contact_name":"Juliette Lafi\u00e8vre","contact_function":"CEO","contact_mail":"juliette@mail.com","contact_phone":"089138292","contact_image":["file:\/\/JMLerFD21LNu4Fhv"]},"id":"007d7b3b-c9a0-4b78-9e31-f5303768c947","isHidden":false,"type":"equip"},{"content":{"contact_name":"Juliette Lafi\u00e8vre","contact_function":"CEO","contact_mail":"juliette@mail.com","contact_phone":"089138292","contact_image":["file:\/\/JMLerFD21LNu4Fhv"]},"id":"55a9977b-0e5d-440d-972e-d5d31cae7bc6","isHidden":false,"type":"equip"},{"content":{"contact_name":"Juliette Lafi\u00e8vre","contact_function":"CEO","contact_mail":"juliette@mail.com","contact_phone":"089138292","contact_image":["file:\/\/JMLerFD21LNu4Fhv"]},"id":"43a72ca4-feaf-4636-91ad-5e047c563def","isHidden":false,"type":"equip"}]
 
 ----
 
@@ -17,8 +21,8 @@ Subheadline: Notre équipe, nous contacter, nous soutenir, tout se passse ici !!
 Mainbtn:
 
 type: page
-value: page://WK73ymLBIwJHtszY
 text: Nous contacter
+value: page://WK73ymLBIwJHtszY
 
 ----
 

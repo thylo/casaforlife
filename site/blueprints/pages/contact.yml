@@ -1,15 +1,22 @@
 title: page.title
 columns:
+
   - width: 2/3
     sections:
       equipGroup:
         type: fields
         fields:
+          equipTitle:
+            label: Titre de la section
+            type: text
+            default: "{{ page.title }}"
+            maxlength: 64
+            required: true
           equipCard:
             label: Equipe
             type: blocks
             fieldsets:
-              - equip 
+              - equip
               
   - width: 1/3 
     sections:
