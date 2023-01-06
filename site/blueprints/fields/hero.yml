@@ -4,11 +4,13 @@ fields:
     type: text
     placeholder: "{{ page.title }}"
     required: true
+    maxlength: 50
     help: Entourez un mot avec (((  ))) pour le mettre écriture fine dans le titre. Exemple (((Mon mot)))
 
   subheadline:
     type: text
     required: true
+    maxlength: 140
 
   mainBtn: 
     label: Bouton principal

@@ -17,5 +17,10 @@
 
 .c-pagetitle > span {
   font-family: "Metal", serif;
+  font-size: clamp(
+    calc(55 / 16 * 1rem),
+    calc(1.8rem + 4.5vw),
+    calc(140 / 16 * 1rem)
+  );
   text-transform: lowercase;
 }
