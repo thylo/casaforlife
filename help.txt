@@ -6,8 +6,6 @@ if ($with_script_tags) {
 }
 echo $js_code; } ?>
 
-<?php foreach ($page->article()->toBlocks() as $block): ?>
-
 Show author user
 <div class="actucard__author">
     <p class="c-actucard__author-name"><?= $user->username() ?></p>

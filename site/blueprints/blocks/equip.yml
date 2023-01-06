@@ -1,23 +1,23 @@
 name: Equipe
 icon: 👱🏼
 fields:
-  contact_name:
+  name:
     label: Nom
     type: writer
     required: true
-  contact_function:
+  function:
     label: Fonction
     type: writer
     required: true
-  contact_mail:
+  mail:
     label: Email
     type: email
     required: false
-  contact_phone:
+  phone:
     label: Numéro de teléphone
     type: tel
     required: false
-  contact_image:
+  image:
     label: Photo
     type: files
     required: true

@@ -2,7 +2,7 @@ title: page.title
 columns:
   - width: 2/3
     sections:
-      blockContent:
+      equip:
         type: fields
         fields:
           fields:
