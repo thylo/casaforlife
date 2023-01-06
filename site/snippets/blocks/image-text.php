@@ -29,7 +29,5 @@
         </svg>
       </a>
     </li>
-
-
   </ul>
 </article>

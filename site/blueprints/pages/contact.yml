@@ -2,11 +2,10 @@ title: page.title
 columns:
   - width: 2/3
     sections:
-      equip:
+      equipGroup:
         type: fields
         fields:
-          fields:
-            layout: cards
+          equipCard:
             label: Equipe
             type: blocks
             fieldsets:

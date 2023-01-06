@@ -2,7 +2,7 @@ Title: Contact
 
 ----
 
-Fields: [{"content":{"contact_name":"<p>Jean<\/p>","contact_function":"<p>Junior<\/p>","contact_mail":"jeanjunior@gmail.com","contact_phone":"0467899054","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"463fef8a-77b1-4b7d-a963-8ab303dc0e9d","isHidden":false,"type":"equip"}]
+Equipcard: [{"content":{"contact_name":"<p>Jhon Supergentil<\/p>","contact_function":"<p>CEO<\/p>","contact_mail":"jhonsupergentil@gmail.com","contact_phone":"0488596545","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"1000c469-8789-4d3b-bb77-22ddc727404f","isHidden":false,"type":"equip"},{"content":{"contact_name":"<p>Jhon Supergentil<\/p>","contact_function":"<p>CEO<\/p>","contact_mail":"jhonsupergentil@gmail.com","contact_phone":"0488596545","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"b3d20a4c-3e62-4069-92ae-1d7790bba1e5","isHidden":false,"type":"equip"},{"content":{"contact_name":"<p>Jhon Supergentil<\/p>","contact_function":"<p>CEO<\/p>","contact_mail":"jhonsupergentil@gmail.com","contact_phone":"0488596545","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"051d1b22-c609-41b8-9df1-a6dfa28c053a","isHidden":false,"type":"equip"},{"content":{"contact_name":"<p>Jhon<\/p>","contact_function":"<p>Stagiaire<\/p>","contact_mail":"","contact_phone":"","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"464701fc-e380-4f7e-911d-835cc68d592f","isHidden":false,"type":"equip"},{"content":{"contact_name":"<p>Nom<\/p>","contact_function":"<p>Function<\/p>","contact_mail":"","contact_phone":"048586965","contact_image":["file:\/\/ZMTFniiChBFJsKQK"]},"id":"cc51e96f-e551-4431-ad54-e61b45ea2c29","isHidden":false,"type":"equip"}]
 
 ----
 
@@ -34,8 +34,12 @@ Heroimage: - file://5ahiGhjZCMKghD0T
 
 ----
 
-Sections: [{"content":{"contact_name":"<p>Jake<\/p>","contact_function":"<p>Jakeur<\/p>","contact_mail":"mail@exemple.com","contact_phone":"00090808054","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"254165a9-2a5c-45e1-b1fd-1c4ca72908b8","isHidden":false,"type":"equip"}]
+Uuid: WK73ymLBIwJHtszY
 
 ----
 
-Uuid: WK73ymLBIwJHtszY
+Fields: [{"content":{"contact_name":"<p>Jean<\/p>","contact_function":"<p>Junior<\/p>","contact_mail":"jeanjunior@gmail.com","contact_phone":"0467899054","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"463fef8a-77b1-4b7d-a963-8ab303dc0e9d","isHidden":false,"type":"equip"}]
+
+----
+
+Sections: [{"content":{"contact_name":"<p>Jake<\/p>","contact_function":"<p>Jakeur<\/p>","contact_mail":"mail@exemple.com","contact_phone":"00090808054","contact_image":["file:\/\/filb6NgEUQtL0kst"]},"id":"254165a9-2a5c-45e1-b1fd-1c4ca72908b8","isHidden":false,"type":"equip"}]
