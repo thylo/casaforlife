@@ -11,8 +11,10 @@
     <div class="c-smallsection__content">
         <div class="c-smallsection__wrapper o-wrapper">
             <div class="c-smallsection__content">
-                <h2 class="c-smallsection__title"><?= $block->title() ?></h2>
-                <div><?= $block->textContent()->kt() ?></div>
+                <?php if($block->title()->isNotEmpty()): ?>
+                    <h2 class="c-smallsection__title"><?= $block->title() ?></h2>
+                <?php endif ?>
+                    <div><?= $block->textContent()->kt() ?></div>
             </div>
     </div>
     </div>

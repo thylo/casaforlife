@@ -11,7 +11,7 @@
         <div class=" o-list-bare c-footerinfo">
           <ul class="u-margin-none o-list-bare c-footercontact">
             <li class="c-footercontact__item">
-              <a href="tel:0474/71 78 96" title="Phone" class="c-footercontact__link c-clickable-icon">
+              <a href="tel:0474/71 78 96" title="Phone" class="c-footercontact__link c-linkicon">
                 <svg class="c-linkicon" fill="none" height="100%" stroke="currentColor" stroke-linecap="round"
                   stroke-linejoin="round" stroke-width="2px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path vector-effect="non-scaling-stroke"
@@ -20,7 +20,7 @@
               </a>
             </li>
             <li class="c-footercontact__item">
-              <a href="mailto:info@casaforlife.org" title="Mail" class="c-footercontact__link c-clickable-icon">
+              <a href="mailto:info@casaforlife.org" title="Mail" class="c-footercontact__link c-linkicon">
                 <svg class="feather feather-mail" fill="none" height="100%" stroke="currentColor" stroke-linecap="round"
                   stroke-linejoin="round" stroke-width="2px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path vector-effect="non-scaling-stroke"
@@ -31,7 +31,7 @@
             </li>
             <li class="c-footercontact__item">
               <a href="https://goo.gl/maps/6qATjGAcVe16naSL9" target="_blank" title="Adress"
-                class="c-footercontact__link c-clickable-icon">
+                class="c-footercontact__link c-linkicon">
                 <svg class="feather feather-map-pin" fill="none" height="100%" stroke="currentColor"
                   stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">

@@ -30,18 +30,9 @@ p{
         display: inline-block;
         height: calc(22/16*1rem);
         color: var(--color-brand);
-        transform: scale(1);
-        transition: transform 0.2s ease-in-out;
         & > svg {
             stroke-width: 1.5px;
         }
-        &:hover{
-            transform: scale(1.05);
-            transition: transform 0.2s ease-in-out;
-        }
-    }
-    .c-linkicon--phone{
-        transform: scale(-1, 1);
     }
 }
 

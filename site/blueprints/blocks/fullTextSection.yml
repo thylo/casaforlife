@@ -3,8 +3,8 @@ fields:
   title:
     label: Title
     type: text
+    placeholder: Laisser vide pour une section sans titre
     maxlength: 64
-    required: true
   textContent:
     label: Text
     type: textarea

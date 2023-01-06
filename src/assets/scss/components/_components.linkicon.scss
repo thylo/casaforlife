@@ -1,0 +1,11 @@
+.c-linkicon{
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+    &:hover{
+        transform: scale(1.07);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+.c-linkicon--phone{
+    transform: scale(-1, 1);
+}
