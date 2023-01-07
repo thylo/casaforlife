@@ -1,4 +1,4 @@
-title: Small Section Block
+title: Small Section -- text-image
 fields:
   title:
     label: Title
@@ -20,5 +20,3 @@ fields:
     image:
       ratio: 10/15
       cover: true
-
-

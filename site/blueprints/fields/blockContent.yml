@@ -5,8 +5,9 @@ fields:
     label: Blocks
     fieldsets:
         - smallSection
-        - fullTextSection
+        - smallSection--full-text
+        - smallSection--image-text
+        - smallSection--text-image
         - video
         - image
-        - imageText
         - gallery

@@ -1,4 +1,13 @@
-<div class="c-smallsection c-smallsection--txtimg c l-grid l-grid--2cols@medium">
+<?php
+/** @var Kirby\Cms\Block $block */
+?>
+
+<div class="c-smallsection c-smallsection--text-image l-grid l-grid--2cols@medium">
+    <?php if ($block->image()->isNotEmpty()): ?>
+        <div class="c-smallsection__media">
+            <img class="o-fluidimage c-smallsection__cover" src="<?= $block->image()->toFile()->url() ?>">
+        </div>
+    <?php endif ?>
     <div class="c-smallsection__content">
         <div class="c-smallsection__wrapper o-wrapper">
             <div class="c-smallsection__content">
@@ -7,11 +16,6 @@
                 <?php endif ?>
                     <div><?= $block->textContent()->kt() ?></div>
             </div>
-    </div>
-    <?php if ($block->image()->isNotEmpty()): ?>
-        <div class="c-smallsection__media">
-            <img class="o-fluidimage c-smallsection__cover" src="<?= $block->image()->toFile()->url() ?>">
         </div>
-    <?php endif ?>
     </div>
 </div>

@@ -64,8 +64,36 @@
   }
 }
 
-.c-smallsection--txtimg{
-  grid-template: text image;
+/*
+=text-image
+*/
+
+.c-smallsection--text-image{
+  @include breakpoint(medium) {
+    grid-template-areas: 'text image' !important;
+  }
 }
 
+/*
+=image-text
+*/
+
+.c-smallsection--image-text{
+  @include breakpoint(medium) {
+    grid-template-areas: 'image text' !important;
+  }
+}
+
+/*
+=full-text
+*/
+
+.c-smallsection__text--full-text{
+  column-count: 1;
+    column-gap: calc(64/16*1rem);
+
+    @include breakpoint(medium){
+        column-count: 2;
+    }
+}
 

@@ -2,7 +2,7 @@
 /** @var Kirby\Cms\Block $block */
 ?>
 
-<div class="c-smallsection l-grid l-grid--2cols@medium">
+<div class="c-smallsection c-smallsection--image-text l-grid l-grid--2cols@medium">
     <?php if ($block->image()->isNotEmpty()): ?>
         <div class="c-smallsection__media">
             <img class="o-fluidimage c-smallsection__cover" src="<?= $block->image()->toFile()->url() ?>">
