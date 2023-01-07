@@ -6,6 +6,7 @@
   $ratio    = $block->ratio()->or('auto');
   $class    = $ratio != 'auto' ? 'img' : 'auto';
   $src      = null;
+  $srcValue      = null;
   $lightbox = $link->isEmpty();
 
 if ($block->location() == 'web') {

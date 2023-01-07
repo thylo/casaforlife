@@ -65,6 +65,32 @@
 }
 
 /*
+=classique
+*/
+
+.c-smallsection__media--no-deco{
+  width: 100%;
+  aspect-ratio: unset;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  &>img{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &::before{
+    content: '';
+    border: solid var(--color-brand) 1.5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &.vertical{
+    width: 70%;
+  }
+}
+
+/*
 =text-image
 */
 

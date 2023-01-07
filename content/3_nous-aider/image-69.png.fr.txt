@@ -1,9 +1,0 @@
-Uuid: taWrtsl5PtzKEzO3
-
-----
-
-Template: blocks/image
-
-----
-
-Caption: 
