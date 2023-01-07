@@ -8,6 +8,23 @@ tabs:
         layout: cards
         image:
           cover: true
+  infos:
+    label: Infos constantes
+    fields:
+      phone:
+        label: Téléphone
+        type: tel
+      email:
+        label: Email
+        type: email
+      address:
+        label: Adresse google maps url
+        help: Allez dans google maps, cliquez sur le marqueur, cliquez sur partager et copiez l'url
+        type: url
+      bank:
+        label: Compte en banque
+        type: text
+
   seo:
     label: SEO
     icon: search
@@ -22,3 +39,4 @@ tabs:
       mainMenu:
         type: pages
         label: Main menu pages
+  
