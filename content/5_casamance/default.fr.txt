@@ -1,0 +1,34 @@
+Title: Casamance
+
+----
+
+Blockcontent: [{"content":{"title":"Comment fonctionne un poste de sant\u00e9 au S\u00e9n\u00e9gal ? ","textcontent":"Au S\u00e9n\u00e9gal, un poste de sant\u00e9 est dirig\u00e9 par un \u00ab comit\u00e9 de sant\u00e9 \u00bb. Le comit\u00e9 de sant\u00e9 est choisi parmi les membres de la commune ou des quartiers environnants, instituteurs, pharmaciens, dirigeants, tous b\u00e9n\u00e9voles.\nAu poste de sant\u00e9 de N\u00e9ma, deux personnes sont r\u00e9mun\u00e9r\u00e9es par l\u2019\u00e9tat : un infirmier chef de poste, l\u2019ICP et une sage-femme. Les autres membres du personnel sont r\u00e9mun\u00e9r\u00e9s par les rentr\u00e9es financi\u00e8res du poste, leur r\u00e9mun\u00e9ration est tr\u00e8s faible : elle se situe entre 75 et 110 euros par mois. Les patients payent les consultations et les soins, le comit\u00e9 de sant\u00e9 g\u00e8re cet argent et d\u00e9cide de l\u2019attribution de ces fonds : achat de m\u00e9dicaments, petit mat\u00e9riel, r\u00e9mun\u00e9ration du personnel et entretien des locaux.\n(1000 FCFA ~ 1.5\u20ac)","image":["file:\/\/i3ujJVsUC8Fkptpe"]},"id":"9ad81355-0a34-4b9d-8a3a-279ad59b8bc1","isHidden":false,"type":"smallSection"}]
+
+----
+
+Headline: Tout se passe en  (((Casamance)))
+
+----
+
+Subheadline: La Casamance est une région du Sénégal connue pour ses plages, traditions culturelles, arts, artisanats et productions de riz et d'arachides
+
+----
+
+Mainbtn:
+
+type: url
+value: https://fr.wikipedia.org/wiki/Casamance
+text: En savoir plus
+popup: true
+
+----
+
+Secondarybtn: 
+
+----
+
+Heroimage: - file://quMm0ibEHgnB3JQu
+
+----
+
+Uuid: Ng7MumIXkSzbu312

@@ -13,7 +13,6 @@
     grid-template-rows: repeat(auto-fit, auto);
   }
 }
-
 .c-smallsection__title{
   font-weight: 500;
   font-size: calc(22/16*1rem);
@@ -64,4 +63,9 @@
     opacity: 0.5;
   }
 }
+
+.c-smallsection--txtimg{
+  grid-template: text image;
+}
+
 

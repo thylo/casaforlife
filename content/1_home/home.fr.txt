@@ -17,7 +17,7 @@ Subheadline: Une démarche solidaire pour la santé et la vie en casamance
 Mainbtn:
 
 type: page
-text: Nous contacter
+text: Nous soutenir
 value: page://WK73ymLBIwJHtszY
 
 ----
@@ -25,7 +25,7 @@ value: page://WK73ymLBIwJHtszY
 Secondarybtn:
 
 type: page
-text: Nous soutenir
+text: Nous contacter
 value: page://WK73ymLBIwJHtszY
 
 ----

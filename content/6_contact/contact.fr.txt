@@ -10,11 +10,11 @@ Equipcard: [{"content":{"contact_name":"Juliette Lafi\u00e8vre","contact_functio
 
 ----
 
-Headline: Rester en contact, c'est aider (((ensemble)))
+Headline: Nous (((contacter)))
 
 ----
 
-Subheadline: Notre équipe, nous contacter, nous soutenir, tout se passse ici !!
+Subheadline: Garder le contact, c'est avancer ensemble. Notre équipe, nous contacter, nous soutenir, tout se passse ici !!
 
 ----
 

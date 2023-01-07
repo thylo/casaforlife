@@ -9,12 +9,12 @@
     <div class=" c-herobanner__content">
         <?= snippet('hero/bigTitle',['text' => $hero_title]) ?>
         <?php if ($page->subheadline()->isNotEmpty()) : ?>
-                <h3 class="c-herobanner__subheadline <?php if ($mainBtn->isEmpty()||$secondaryBtn->isEmpty() ) : ?> c-herobanner__subheadline--nobtns<?php endif?>">
+                <h3 class="c-herobanner__subheadline <?php if ($mainBtn->isEmpty()&& $secondaryBtn->isEmpty() ) : ?> c-herobanner__subheadline--nobtns<?php endif?>">
                     <?= $page->subheadline()->esc() ?>
                 </h3>
         <?php endif ?>
         <?php if ($mainBtn->isNotEmpty()||$secondaryBtn->isNotEmpty() ) : ?>
-        <div class="c-herobanner__btns">  
+            <div class="c-herobanner__btns">  
         <?php endif?>
             <?php if ($mainBtn->isNotEmpty()) : ?>
                 <a href="<?= $mainBtn->url() ?>" class="c-herobanner__btn c-ctalink">
@@ -27,7 +27,7 @@
                 </a>
             <?php endif ?>
         <?php if ($mainBtn->isNotEmpty()||$secondaryBtn->isNotEmpty() ) : ?>
-        </div>
+            </div>
         <?php endif?>
     </div>
         

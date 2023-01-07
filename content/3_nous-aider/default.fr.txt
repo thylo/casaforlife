@@ -1,0 +1,33 @@
+Title: Nous aider
+
+----
+
+Blockcontent: [{"content":{"title":"","textcontent":"Afin de poursuivre et d\u00e9velopper nos projets, nous avons besoin de votre soutien :\n\nPar un don sur le compte\u00a0BE45 0018 3130 1089\u00a0de CASA for LIFE ASBL.\u2028Votre don est d\u00e9ductible fiscalement \u00e0 partir de 40\u20ac.\n\nPar la recherche de sponsors, de dons \u00e0 l\u2019occasion de mariage, bapt\u00eame, anniversaires\u2026 ou de fondations qui seraient susceptibles de financer certains de nos projets.\n\nPar une aide lors des \u00e9v\u00e9nements que nous organisons.","image":["file:\/\/sEawpSE4mUSk7nRl"]},"id":"af1e7df0-175a-4917-98a7-86e307035d6e","isHidden":false,"type":"smallSection"}]
+
+----
+
+Headline: Nous (((soutenir )))c'est les (((aider)))
+
+----
+
+Subheadline: Chaque geste compte, pour un monde meilleur chacun peut agir !
+
+----
+
+Mainbtn:
+
+type: page
+value: page://WK73ymLBIwJHtszY
+text: Nous soutenir
+
+----
+
+Secondarybtn: 
+
+----
+
+Heroimage: - file://P3IChuqHIX166PYQ
+
+----
+
+Uuid: tSfQKbbti83YLvmY

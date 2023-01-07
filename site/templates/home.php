@@ -43,7 +43,7 @@
             'blocks/' . $block->type(),
             [
               'block' => $block,
-              'theme' => 'ligth'
+              'theme' => 'dark'
             ]
           ) ?>
       <?php endforeach ?>
