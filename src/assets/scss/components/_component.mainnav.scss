@@ -4,9 +4,13 @@
 }
 
 .c-mainnav--phone{
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: calc(16/16*1rem);
+  padding: calc(64/16*1rem);
   height: 100%;
 }
 

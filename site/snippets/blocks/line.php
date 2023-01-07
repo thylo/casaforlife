@@ -1,1 +1,1 @@
-<hr class="c-article__line" />
+<hr class="c-line" />

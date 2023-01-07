@@ -13,7 +13,7 @@
 */
 ?>
 <?php if ($block->url()->isNotEmpty()): ?>
-<figure>
+<figure class="c-article__video">
   <div class="o-fluidvideo">
     <iframe allow="autoplay; fullscreen" allowfullscreen src="<?= $block->url() ?>"></iframe>
   </div>

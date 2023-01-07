@@ -6,3 +6,7 @@ fields:
     fieldsets:
         - smallSection
         - fullTextSection
+        - video
+        - image
+        - imageText
+        - gallery

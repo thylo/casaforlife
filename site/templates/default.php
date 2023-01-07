@@ -12,7 +12,6 @@
   <div class="l-container">
     <div class="c-smallsection-group">
       <?php foreach ($page->blockContent()->toBlocks() as $block): ?>
-
           <?php snippet(
             'blocks/' . $block->type(),
             [

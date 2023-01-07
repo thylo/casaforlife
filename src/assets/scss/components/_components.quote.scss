@@ -1,0 +1,27 @@
+.c-quote--all{
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .c-quote__icon{
+    opacity: 70%;
+  }
+  
+  .c-quote{
+    padding-inline-start: 1rem;
+      border-inline-start: 2px solid var(--color-black);
+  }
+  
+  .quote__text{
+    font-size: calc(22/16*1rem);
+    margin-bottom: 0.25rem;
+      line-height: 1.25em;
+  }
+  
+  .c-quote__author{
+    font-style: italic;
+      font-size: calc(18/16*1rem);
+      color: var(--color-text);
+    opacity: 70%;
+  }

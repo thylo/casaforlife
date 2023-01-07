@@ -28,6 +28,7 @@
                 </li>
                 <?= snippet('nav') ?>
             </ul>
+            <?= snippet('contactIcons') ?>
         </nav>
    </div>
 <?php endif; ?>

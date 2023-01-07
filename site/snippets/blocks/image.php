@@ -33,9 +33,7 @@ $attrs = attr([
 ?>
 <?php if ($srcValue) : ?>
   <figure>
-    <a <?= $attrs ?>>
       <img class="o-fluidimage" src="<?= $srcValue ?>" alt="<?= esc($alt, 'attr') ?>">
-    </a>
 
     <?php if ($caption->isNotEmpty()) : ?>
       <figcaption>
