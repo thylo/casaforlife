@@ -28,6 +28,7 @@ Secondarybtn:
 type: page
 text: Nous contacter
 value: page://WK73ymLBIwJHtszY
+hash: contact-us
 
 ----
 

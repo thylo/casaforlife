@@ -35,7 +35,7 @@
 <?php $page = $pages->current() ?>
 
 <?php if($page->blockContent()->isNotEmpty()):?>
-  <div class="c-pagesection">
+  <div class="c-pagesection c-pagesection--notop">
     <div class="l-container">
       <div class="c-smallsection-group">
         <?php foreach ($page->blockContent()->toBlocks() as $block): ?>

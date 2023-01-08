@@ -1,7 +1,7 @@
 <ul class="u-margin-none o-list-bare c-footercontact">
     <?php if(site()->phone()->isNotEmpty()): ?>
         <li class="c-footercontact__item">
-        <a href="tel:<?= site()->phone()->value() ?>" title="Phone" class="c-footercontact__link c-linkicon">
+        <a href="tel:<?= site()->phone()->value() ?>" title="Téléphone" class="c-footercontact__link c-clickable-icon">
             <svg class="c-linkicon" fill="none" height="100%" stroke="currentColor" stroke-linecap="round"
             stroke-linejoin="round" stroke-width="2px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path vector-effect="non-scaling-stroke"
@@ -12,7 +12,7 @@
     <?php endif ?>
     <?php if(site()->email()->isNotEmpty()): ?>
         <li class="c-footercontact__item">
-        <a href="mailto:<?= site()->email()->value() ?>" title="Mail" class="c-footercontact__link c-linkicon">
+        <a href="mailto:<?= site()->email()->value() ?>" title="Mail" class="c-footercontact__link c-clickable-icon">
             <svg class="feather feather-mail" fill="none" height="100%" stroke="currentColor" stroke-linecap="round"
             stroke-linejoin="round" stroke-width="2px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path vector-effect="non-scaling-stroke"
@@ -25,8 +25,8 @@
 
     <?php if(site()->address()->isNotEmpty()): ?>
         <li class="c-footercontact__item">
-        <a href="<?= site()->address()->value() ?>" target="_blank" title="Adress"
-            class="c-footercontact__link c-linkicon">
+        <a href="<?= site()->address()->value() ?>" target="_blank" title="Adresse"
+            class="c-footercontact__link c-clickable-icon">
             <svg class="feather feather-map-pin" fill="none" height="100%" stroke="currentColor"
             stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg">

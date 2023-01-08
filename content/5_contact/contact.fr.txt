@@ -32,6 +32,21 @@ Blockcontent:
 
 ----
 
+Contactimage: - file://4dVyOUpzLnMMrdMD
+
+----
+
+Contacttitle: Nous contacter
+
+----
+
+Contactcontent:
+
+Une question, une remarque ou tout autre demande ?
+Notre e-mail est ouvert et nous avons hâte de vous lire.
+
+----
+
 Headline: Nous (((contacter)))
 
 ----
@@ -54,6 +69,7 @@ Secondarybtn:
 type: page
 value: page://WK73ymLBIwJHtszY
 text: Nous contacter
+hash: contact-us
 
 ----
 
