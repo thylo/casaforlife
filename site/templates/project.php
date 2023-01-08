@@ -1,7 +1,5 @@
 <?php snippet('header') ?>
 
-<?php snippet('header') ?>
-
 <div class="c-pagesection c-pagesection--article">
     <div class="c-article">
         <div class="c-article_head">
@@ -25,9 +23,6 @@
         </div>
     </div>
 </div>
-
-
-<?php snippet('footer') ?>
 
 
 <?php snippet('footer') ?>
