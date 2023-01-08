@@ -1,0 +1,34 @@
+Title: Nous aider
+
+----
+
+Blockcontent: [{"content":{"title":"Section block","textcontent":"Lorem ipsum dolor sit amet. Qui sunt consequatur id veniam soluta a molestiae similique a laboriosam neque ut quia galisum et laudantium sequi quo consequatur omnis. Non quibusdam dolore At minus earum id fugiat quam est corrupti mollitia ut dolor dolorem. A voluptatem corporis et velit maxime et commodi soluta qui assumenda atque! Qui dolorem magni sit doloribus fugit aut numquam sunt id fugiat sint nam voluptatem laborum.\n\nHic minus tenetur eum quas excepturi eos maiores voluptatem. Non suscipit voluptas et repudiandae minus id corporis galisum est vero voluptatem. Rem iste eveniet et quod sequi et laboriosam ipsa et iure officia est internos itaque! Sed quia veniam est sint quam ea voluptatum sapiente et optio nihil At repellat error.","image":["file:\/\/uIdmtSrNqI5vW45o"]},"id":"47f654a9-7f25-4290-af9a-9e09a710fb4d","isHidden":false,"type":"smallSection"},{"content":{"title":"Img txt","textcontent":"Lorem ipsum dolor sit amet. Qui sunt consequatur id veniam soluta a molestiae similique a laboriosam neque ut quia galisum et laudantium sequi quo consequatur omnis. Non quibusdam dolore At minus earum id fugiat quam est corrupti mollitia ut dolor dolorem. A voluptatem corporis et velit maxime et commodi soluta qui assumenda atque! Qui dolorem magni sit doloribus fugit aut numquam sunt id fugiat sint nam voluptatem laborum.\n\nHic minus tenetur eum quas excepturi eos maiores voluptatem. Non suscipit voluptas et repudiandae minus id corporis galisum est vero voluptatem. Rem iste eveniet et quod sequi et laboriosam ipsa et iure officia est internos itaque! Sed quia veniam est sint quam ea voluptatum sapiente et optio nihil At repellat error.","image":["file:\/\/Av1XiPulz7IbxAT4"]},"id":"7f4a673b-480a-4e6c-a583-0cb52dfc42e0","isHidden":false,"type":"smallSection--image-text"},{"content":{"title":"Text img","textcontent":"Lorem ipsum dolor sit amet. Qui sunt consequatur id veniam soluta a molestiae similique a laboriosam neque ut quia galisum et laudantium sequi quo consequatur omnis. Non quibusdam dolore At minus earum id fugiat quam est corrupti mollitia ut dolor dolorem. A voluptatem corporis et velit maxime et commodi soluta qui assumenda atque! Qui dolorem magni sit doloribus fugit aut numquam sunt id fugiat sint nam voluptatem laborum.\n\nHic minus tenetur eum quas excepturi eos maiores voluptatem. Non suscipit voluptas et repudiandae minus id corporis galisum est vero voluptatem. Rem iste eveniet et quod sequi et laboriosam ipsa et iure officia est internos itaque! Sed quia veniam est sint quam ea voluptatum sapiente et optio nihil At repellat error.","image":["file:\/\/7CFFmuyPKmqDrLT8"]},"id":"ef55dacd-102c-4407-ba61-2afb16273fa0","isHidden":false,"type":"smallSection--text-image"},{"content":{"title":"","textcontent":"<?php function console_log($output, $with_script_tags = true) {\n$js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . \n');';\nif ($with_script_tags) {\n    $js_code = '<script>' . $js_code . '<\/script>';\n}\necho $js_code; } ?>\n\n<?= console_log($page->children()->listed()->data()); ?>","image":["file:\/\/EVEkQDwi9uzRedI3"]},"id":"490dacb0-791a-4cc3-9eeb-09c0b79cf605","isHidden":false,"type":"smallSection__classique"},{"content":{"title":"C text img","textcontent":"<?php function console_log($output, $with_script_tags = true) {\n$js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . \n');';\nif ($with_script_tags) {\n    $js_code = '<script>' . $js_code . '<\/script>';\n}\necho $js_code; } ?>\n\n<?= console_log($page->children()->listed()->data()); ?>","image":["file:\/\/0gECNX1XkfOKVNP4"]},"id":"bbe8b836-5f9f-4ffc-bb43-d8bf4f75907f","isHidden":false,"type":"smallSection__classique--text-image"},{"content":{"title":"C img text","textcontent":"<?php function console_log($output, $with_script_tags = true) {\n$js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . \n');';\nif ($with_script_tags) {\n    $js_code = '<script>' . $js_code . '<\/script>';\n}\necho $js_code; } ?>\n\n<?= console_log($page->children()->listed()->data()); ?>","image":["file:\/\/21oVWvPszrxYHPeV"]},"id":"6c4d857f-066e-4045-833c-e22a5550525a","isHidden":false,"type":"smallSection__classique--image-text"},{"content":{"title":"Hello full txt","textcontent":"<?php function console_log($output, $with_script_tags = true) {\n$js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . \n');';\nif ($with_script_tags) {\n    $js_code = '<script>' . $js_code . '<\/script>';\n}\necho $js_code; } ?>\n\n<?= console_log($page->children()->listed()->data()); ?>\n<?php function console_log($output, $with_script_tags = true) {\n$js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . \n');';\nif ($with_script_tags) {\n    $js_code = '<script>' . $js_code . '<\/script>';\n}\necho $js_code; } ?>\n\n<?= console_log($page->children()->listed()->data()); ?>\n<?php function console_log($output, $with_script_tags = true) {\n$js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . \n');';\nif ($with_script_tags) {\n    $js_code = '<script>' . $js_code . '<\/script>';\n}\necho $js_code; } ?>\n\n<?= console_log($page->children()->listed()->data()); ?>\n<?php function console_log($output, $with_script_tags = true) {\n$js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . \n');';\nif ($with_script_tags) {\n    $js_code = '<script>' . $js_code . '<\/script>';\n}\necho $js_code; } ?>\n\n<?= console_log($page->children()->listed()->data()); ?>"},"id":"e7003a7d-3ea6-459d-aab5-fb81fd611fa9","isHidden":false,"type":"smallSection--full-text"},{"content":{"images":["file:\/\/caszwwjmJrY4nu7Y","file:\/\/8OudG7qMSon0m4Nv"],"caption":"","ratio":"","crop":"false"},"id":"a6d64151-371d-40fa-8cc1-0f438f36d65b","isHidden":false,"type":"gallery"}]
+
+----
+
+Headline: Nous (((soutenir )))c'est les (((aider)))
+
+----
+
+Subheadline: Chaque geste compte, pour un monde meilleur chacun peut agir !
+
+----
+
+Mainbtn:
+
+type: page
+value: page://WK73ymLBIwJHtszY
+text: Nous soutenir
+hash: nous-soutenir
+
+----
+
+Secondarybtn: 
+
+----
+
+Heroimage: - file://caszwwjmJrY4nu7Y
+
+----
+
+Uuid: tSfQKbbti83YLvmY

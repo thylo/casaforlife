@@ -11,7 +11,7 @@
       <nav class="c-sitefooter__info">
         <div class="c-footerinfo">
           <?= snippet('contactIcons') ?>
-          <a class="c-ctalink c-ctalink--white-stroke" href="/">Nous soutenir</a>
+          <a class="c-ctalink c-ctalink--white-stroke" href="<?=page('contact')->url() ?>#nous-soutenir">Nous soutenir</a>
         </div>
       </nav>
     </div>

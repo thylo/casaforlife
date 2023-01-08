@@ -10,6 +10,28 @@ Equipcard: [{"content":{"contact_name":"Juliette Lafi\u00e8vre","contact_functio
 
 ----
 
+Soutenirtitle: Afin de poursuivre et développer nos projets, nous avons besoin de votre soutien :
+
+----
+
+Soutenircontent:
+
+- Par un don sur le compte **BE45 0018 3130 1089** de CASA for LIFE ASBL. Votre don est déductible fiscalement à partir de 40€.
+
+- Par la recherche de sponsors, de dons à l’occasion de mariage, baptême, anniversaires… ou de fondations qui seraient susceptibles de financer certains de nos projets.
+ 
+- Par une aide lors des événements que nous organisons.
+
+----
+
+Soutenirimage: - file://1biEKi0rxGHu9TT8
+
+----
+
+Blockcontent: 
+
+----
+
 Headline: Nous (((contacter)))
 
 ----
@@ -21,8 +43,9 @@ Subheadline: Garder le contact, c'est avancer ensemble. Notre équipe, nous cont
 Mainbtn:
 
 type: page
-text: Nous contacter
+text: Nous soutenir
 value: page://WK73ymLBIwJHtszY
+hash: nous-soutenir
 
 ----
 
@@ -30,7 +53,7 @@ Secondarybtn:
 
 type: page
 value: page://WK73ymLBIwJHtszY
-text: Nous soutenir
+text: Nous contacter
 
 ----
 

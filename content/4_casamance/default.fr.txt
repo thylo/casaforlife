@@ -23,7 +23,12 @@ popup: true
 
 ----
 
-Secondarybtn: 
+Secondarybtn:
+
+type: page
+text: Nous soutenir
+hash: nous-soutenir
+value: page://WK73ymLBIwJHtszY
 
 ----
 

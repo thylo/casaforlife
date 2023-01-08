@@ -19,6 +19,7 @@ Mainbtn:
 type: page
 text: Nous soutenir
 value: page://WK73ymLBIwJHtszY
+hash: nous-soutenir
 
 ----
 

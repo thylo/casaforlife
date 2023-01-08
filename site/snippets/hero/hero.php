@@ -18,7 +18,7 @@
         <?php endif?>
             <?php if ($mainBtn->isNotEmpty()) : ?>
                 <a href="<?= $mainBtn->url() ?>" class="c-herobanner__btn c-ctalink">
-                <?= $mainBtn->text() ?>
+                <?= $mainBtn->text() ?> 
                 </a>
             <?php endif ?>
             <?php if ($secondaryBtn->isNotEmpty()) : ?>

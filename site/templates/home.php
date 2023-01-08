@@ -34,22 +34,24 @@
 
 <?php $page = $pages->current() ?>
 
-<div class="c-pagesection">
-  <div class="l-container">
-    <div class="c-smallsection-group">
-      <?php foreach ($page->blockContent()->toBlocks() as $block): ?>
+<?php if($page->blockContent()->isNotEmpty()):?>
+  <div class="c-pagesection">
+    <div class="l-container">
+      <div class="c-smallsection-group">
+        <?php foreach ($page->blockContent()->toBlocks() as $block): ?>
 
-          <?php snippet(
-            'blocks/' . $block->type(),
-            [
-              'block' => $block,
-              'theme' => 'dark'
-            ]
-          ) ?>
-      <?php endforeach ?>
-    </div>
+            <?php snippet(
+              'blocks/' . $block->type(),
+              [
+                'block' => $block,
+                'theme' => 'dark'
+              ]
+            ) ?>
+        <?php endforeach ?>
+      </div>
+      </div>
     </div>
   </div>
-</div>
+<?php endif ?>
 
 <?php snippet('footer') ?>

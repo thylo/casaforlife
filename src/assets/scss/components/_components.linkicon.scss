@@ -1,4 +1,4 @@
-.c-linkicon{
+.c-clickable-icon {
     transform: scale(1);
     transition: transform 0.2s ease-in-out;
     &:hover{
@@ -6,6 +6,6 @@
         transition: transform 0.3s ease-in-out;
     }
 }
-.c-linkicon--phone{
+.c-linkicon--phone {
     transform: scale(-1, 1);
 }
