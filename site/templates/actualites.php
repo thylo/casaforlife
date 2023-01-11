@@ -16,7 +16,7 @@
   $listedElements = $page->children()->listed()->sortBy('date','desc');
   ?>
 
-  <?php if($listedElements->count()): ?>
+  <?php if($listedElements->isNotEmpty()): ?>
       <ul class="l-grid l-grid--2cols@small l-grid--3cols@large">
   <?php endif; ?>
 

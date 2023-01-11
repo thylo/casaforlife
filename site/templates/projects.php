@@ -15,7 +15,7 @@
   <?php
   $listedElements = $page->children()->listed()->sortBy('date','desc');?>
 
-  <?php if($listedElements->count()): ?>
+  <?php if($listedElements->isNotEmpty()): ?>
     <div class="c-projects">
       <ul class="c-projects__filters o-list-bare">
         <li class="c-projects__filter-item">
