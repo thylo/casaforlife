@@ -1,6 +1,7 @@
 .c-ctalink{
     position: relative;
     border-radius: 50px;
+    width: fit-content;
     padding: calc(9 / 16 * 1rem) calc(16 / 16 * 1rem);
 
     @include breakpoint(medium){

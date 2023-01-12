@@ -2,7 +2,7 @@
 
 <article class="c-actucard">
     <a href="<?= $item->url() ?>" class="c-actucard__media">
-        <img class="o-fluidimage" src="<?= $item->cover()->toFile()->url() ?>">
+        <img class="o-fluidimage" src="<?= $item->cover()->toFile()->thumb(['width' => 500, 'height' => 300, 'crop' => true, 'quality' => 80])->url() ?>">
     </a>
     <div class="c-actucard__body">
         <p class="c-actucard__date"><?= $item->date()->toDate('d-m-Y') ?></p>

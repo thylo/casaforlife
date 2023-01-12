@@ -8,6 +8,33 @@
   </div>
 </div>
 
+<?php if($page->flashContent()->isNotEmpty()): ?>
+    <div class="c-pagesection u-pt-m">
+        <div class="l-container">
+          <div class="c-flash">
+            <div class="c-flash__txt">
+            <?php if($page->flashTitle()->isNotEmpty()): ?>
+                <h2 class="c-smalltitle c-flash__title"><?= $page->flashTitle() ?></h2>
+            <?php endif ?>
+                <div class="c-flash__content">
+                    <?= $page->flashContent()->kt() ?>
+                </div>
+                <?php if ($page->flashBtn()->toLinkObject()->isNotEmpty()) : ?>
+                    <a href="<?= $page->flashBtn()->toLinkObject()->url() ?>" class="c-ctalink c-ctalink--white-stroke">
+                  <?= $page->flashBtn()->toLinkObject()->text() ?>
+                </a>
+              <?php endif ?>
+            </div>
+            <?php if ($page->flashImage()->isNotEmpty()) : ?>
+            <div class="c-flash__media">
+                <img class="o-fluidimage c-flash__img" src="<?= $page->flashImage()->toFile()->url() ?>">
+            </div>
+            <?php endif ?>
+          </div>
+        </div>
+    </div>
+<?php endif ?>
+
 <div class="c-pagesection u-pt-m">
   <div class="l-container">
 

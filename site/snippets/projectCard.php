@@ -2,7 +2,7 @@
 
 <article class="c-projectcard">
     <a href="<?= $item->url() ?>" class="c-projectcard__media">
-        <img class="o-fluidimage" src="<?= $item->cover()->toFile()->url() ?>">
+        <img class="o-fluidimage" src="<?= $item->cover()->toFile()->thumb(['width' => 500, 'height' => 300, 'crop' => true, 'quality' => 80])->url()?>">
     </a>
     <div class="c-projectcard__body">
         <p class="c-projectcard__date"><?= $item->date()->toDate('d-m-Y') ?></p>
