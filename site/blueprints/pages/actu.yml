@@ -50,5 +50,6 @@ columns:
           required: true
         author:
           type: users
-          required: true
+          help: Sélectionnez un auteur pour afficher son nom et son avatar, ne sera pas affiché si laissé vide, pour modifier le titre au dessus de l'auteur, allez dans les infos constantes
+          multiple: false
         # tags: true

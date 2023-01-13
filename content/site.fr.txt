@@ -14,7 +14,7 @@ Address: https://goo.gl/maps/DPqWs8YDQDq7Z2JRA
 
 ----
 
-Bank: BE45 0018 3130 1089
+Authortitle: Article réalisé par :
 
 ----
 
@@ -29,3 +29,7 @@ Mainmenu:
 - page://sbx8xbn4nWv9n3oA
 - page://Ng7MumIXkSzbu312
 - page://WK73ymLBIwJHtszY
+
+----
+
+Bank: BE45 0018 3130 1089

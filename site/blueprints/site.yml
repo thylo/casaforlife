@@ -21,9 +21,11 @@ tabs:
         label: Adresse google maps url
         help: Allez dans google maps, cliquez sur le marqueur, cliquez sur partager et copiez l'url
         type: url
-      bank:
-        label: Compte en banque
-        type: text
+      authorTitle: 
+          label: Titre de l'auteur
+          help: Titre de la petite section auteur dans les actualités, visible seulement si un auteur est sélectionné
+          type: text
+          maxlength: 64
 
   seo:
     label: SEO

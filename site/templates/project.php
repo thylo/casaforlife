@@ -18,9 +18,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Article content block -->
-            <?php snippet('articleContent') ?>
         </div>
+        <!-- Project content block -->
+        <?php snippet('articleContent') ?>
     </div>
 </div>
 

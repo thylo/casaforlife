@@ -2,6 +2,7 @@
     background: var(--color-brand);
     color: var(--color-text-invert);
     font-size: 18px;
+    padding: calc(42/16*1rem) 0;
 
     &__content{
         display: flex;

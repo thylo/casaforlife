@@ -1,5 +1,7 @@
 <?php snippet('header') ?>
 
+<?php $user = $page->author()->toUser() ?>
+
 <div class="c-pagesection c-pagesection--article">
     <div class="c-article">
         <div class="c-article_head">
@@ -26,8 +28,16 @@
                 </div>
             </div>
             <!-- Article content block -->
-            <?php snippet('articleContent') ?>
         </div>
+        <?php snippet('articleContent') ?>
+        <!-- Author -->
+        <?php if($page->author()->isNotEmpty()): ?>
+            <div class="c-article__author">
+                <h3 class="c-smalltitle"><?= site()->authorTitle()->text() ?></h3>
+                <img class="o-fluidimage c-article__author-picture" src="<?= $user->avatar()->thumb(['width' => 200, 'height' => 200, 'crop' => true, 'quality' => 80])->url() ?>">
+                <p class="c-c-article__author-name"><?= $user->name() ?></p>
+            </div>
+        <?php endif ?>
     </div>
 </div>
 

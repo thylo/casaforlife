@@ -2,14 +2,14 @@
 // =links
 // --------------------------------- */
 
-// a {
-//   color: var(--color-brand);
-//   text-decoration: underline;
-//   text-underline-offset: 4px;
-// }
+a {
+  color: var(--color-brand);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
-// a:hover {
-//   color: var(--color-brand-dark);
-// }
+a:hover {
+    opacity: 0.9;
+}
 
 
