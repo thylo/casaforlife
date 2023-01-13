@@ -1,9 +1,0 @@
-Uuid: d0AJVoEz4evttnj8
-
-----
-
-Template: image
-
-----
-
-Caption: 

@@ -1,9 +1,0 @@
-Uuid: ipmVeiBTzSDb9yoI
-
-----
-
-Template: image
-
-----
-
-Caption: 

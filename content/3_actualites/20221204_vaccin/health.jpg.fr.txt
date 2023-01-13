@@ -1,9 +1,0 @@
-Uuid: ZyzeCiI4HulKOCta
-
-----
-
-Template: blocks/image
-
-----
-
-Caption: 

@@ -1,9 +1,0 @@
-Uuid: Tz7D9fx9iozFVd7l
-
-----
-
-Template: image
-
-----
-
-Caption: 

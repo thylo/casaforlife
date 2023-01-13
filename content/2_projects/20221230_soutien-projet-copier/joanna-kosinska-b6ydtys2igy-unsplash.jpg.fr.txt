@@ -1,9 +1,0 @@
-Uuid: nebLAYuSt3MklX9C
-
-----
-
-Template: image
-
-----
-
-Caption: 
