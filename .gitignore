@@ -21,4 +21,6 @@ site/plugins/*
 
 /site/config/.license
 
+node_modules
+
 .idea
