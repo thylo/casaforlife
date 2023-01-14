@@ -31,6 +31,16 @@
     }
 }
 
+.c-flash__content > p > a{
+    color: var(--color-brand);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
 .c-flash__txt{
     display: flex;
     flex-direction: column;
