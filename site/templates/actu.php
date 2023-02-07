@@ -33,9 +33,15 @@
         <!-- Author -->
         <?php if($page->author()->isNotEmpty()): ?>
             <div class="c-article__author">
-                <h3 class="c-smalltitle"><?= site()->authorTitle()->text() ?></h3>
-                <img class="o-fluidimage c-article__author-picture" src="<?= $user->avatar()->thumb(['width' => 200, 'height' => 200, 'crop' => true, 'quality' => 80])->url() ?>">
-                <p class="c-c-article__author-name"><?= $user->name() ?></p>
+                 <?php if($user->site()->authorTitle()->isNotEmpty()): ?>
+                    <h3 class="c-smalltitle"><?= site()->authorTitle()->text() ?></h3>
+                <?php endif ?>
+                <?php if($user->avatar()->isNotEmpty()): ?>
+                 <img class="o-fluidimage c-article__author-picture" src="<?= $user->avatar()->thumb(['width' => 200, 'height' => 200, 'crop' => true, 'quality' => 80])->url() ?>">
+                <?php endif ?>
+                <?php if($user->name()->isNotEmpty()): ?>
+                    <p class="c-c-article__author-name"><?= $user->name() ?></p>
+                <?php endif ?>
             </div>
         <?php endif ?>
     </div>
