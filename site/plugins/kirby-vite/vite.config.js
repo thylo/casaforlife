@@ -1,32 +1,18 @@
-import liveReload from 'vite-plugin-live-reload'
 import { resolve } from 'path'
+import kirby from 'vite-plugin-kirby'
+import legacy from '@vitejs/plugin-legacy'
 
 export default ({ mode }) => ({
   root: 'src',
   base: mode === 'development' ? '/' : '/dist/',
 
-  server: {
-    origin: 'http://localhost:3000',
-    port: 3000,
-    strictPort: true,
-  },
-
   build: {
     outDir: resolve(process.cwd(), 'public/dist'),
     emptyOutDir: true,
-    manifest: true,
     rollupOptions: {
       input: resolve(process.cwd(), 'src/index.js'),
     },
   },
 
-  plugins: [
-    liveReload(
-      [
-        './content/**/*',
-        './site/(templates|snippets|controllers|models)/**/*.php',
-      ],
-      { alwaysReload: true, root: process.cwd() }
-    ),
-  ],
+  plugins: [legacy(), kirby()],
 })

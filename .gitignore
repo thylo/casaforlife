@@ -7,8 +7,8 @@ site/plugins/*
 /public/media/*
 !/public/media/index.html
 
-/storage/accounts/*
-!/storage/accounts/.gitkeep
+/storage/_accounts/*
+!/storage/_accounts/.gitkeep
 
 /storage/cache/*
 !/storage/cache/.gitkeep
