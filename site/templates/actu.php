@@ -31,16 +31,20 @@
         </div>
         <?php snippet('articleContent') ?>
         <!-- Author -->
-        <?php if($page->author()->isNotEmpty()): ?>
-            <div class="c-article__author">
-                 <?php if($user->site()->authorTitle()->isNotEmpty()): ?>
+        <?php
+        $user = $page->author()->isNotEmpty() ? $page->author()->toUser() : null;
+        ?>
+        <?php if ($user): ?>
+            <div class="c-article-author">
+                <?php if (site()->authorTitle()->isNotEmpty()): ?>
                     <h3 class="c-smalltitle"><?= site()->authorTitle()->text() ?></h3>
                 <?php endif ?>
-                <?php if($user->avatar()->isNotEmpty()): ?>
-                 <img class="o-fluidimage c-article__author-picture" src="<?= $user->avatar()->thumb(['width' => 200, 'height' => 200, 'crop' => true, 'quality' => 80])->url() ?>">
+                <?php if ($user->avatar()->isNotEmpty()): ?>
+                    <img class="o-fluidimage c-article-author__picture"
+                         src="<?= $user->avatar()->thumb(['width' => 200, 'height' => 200, 'crop' => true, 'quality' => 80])->url() ?>">
                 <?php endif ?>
-                <?php if($user->name()->isNotEmpty()): ?>
-                    <p class="c-c-article__author-name"><?= $user->name() ?></p>
+                <?php if ($user->name()->isNotEmpty()): ?>
+                    <p class="c-article-author__name"><?= $user->name() ?></p>
                 <?php endif ?>
             </div>
         <?php endif ?>

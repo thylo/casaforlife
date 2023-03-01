@@ -72,20 +72,22 @@
 =author
 ----------------------------- */
 
-.c-article__author{
+.c-article-author{
+  font-size: calc(14/16*1rem);;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: calc(12/16*1rem);
   &>h3{
-    margin: none;
+    margin: 0;
+  }
+  &__picture{
+    width: 100%;
+    max-width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #00694a;
   }
 }
 
-.c-article__author-picture{
-  width: 100%;
-  max-width: 100px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  overflow: hidden;
-}

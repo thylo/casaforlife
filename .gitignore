@@ -10,6 +10,9 @@ site/plugins/*
 /storage/_accounts/*
 !/storage/_accounts/.gitkeep
 
+/storage/accounts/*
+!/storage/accounts/.gitkeep
+
 /storage/cache/*
 !/storage/cache/.gitkeep
 
@@ -25,3 +28,4 @@ node_modules
 content
 
 .idea
+.dev

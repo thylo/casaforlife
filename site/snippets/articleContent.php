@@ -2,7 +2,7 @@
     <div class="c-article__content">
 
 <?php foreach ($page->article()->toBlocks() as $block): ?> 
-            <div id="<?= $block->id() ?>" class="o-section block block-type-<?= $block->type() ?>">
+            <div id="<?= $block->id() ?>" class="o-section block block-type-<?= $block->type() ?> c-wysiwig">
             <?php snippet(
                 'blocks/' . $block->type(),
                 [
