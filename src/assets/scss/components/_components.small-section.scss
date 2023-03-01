@@ -12,14 +12,6 @@
     grid-template-areas: 'image text';
     grid-template-rows: repeat(auto-fit, auto);
   }
-  & ul {
-    display: flex;
-    flex-direction: column;
-    gap: calc(16/16*1rem);
-  }
-  & strong {
-    font-weight: 500;
-  }
 }
 .c-smallsection__title{
   font-weight: 500;

@@ -66,7 +66,7 @@
     <div class="l-container">
       <div class="c-smallsection-group">
         <?php foreach ($page->blockContent()->toBlocks() as $block): ?>
-
+            <div class="c-section <?= $block->type() ?>">
             <?php snippet(
               'blocks/' . $block->type(),
               [
@@ -74,6 +74,7 @@
                 'theme' => 'dark'
               ]
             ) ?>
+            </div>
         <?php endforeach ?>
       </div>
       </div>

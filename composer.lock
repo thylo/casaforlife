@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a17287269312c8ebfbcb0ab41d060a41",
+    "content-hash": "c9cec81551bf44770c039167f6a85a8b",
     "packages": [
         {
             "name": "arnoson/kirby-vite",
-            "version": "3.0.4",
+            "version": "3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/arnoson/kirby-vite.git",
-                "reference": "2eb052b8c3a8573e850fb9c78291ff80769c6353"
+                "reference": "0b26cffa2c89cada21b60917739915c1e6ba8c3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/arnoson/kirby-vite/zipball/2eb052b8c3a8573e850fb9c78291ff80769c6353",
-                "reference": "2eb052b8c3a8573e850fb9c78291ff80769c6353",
+                "url": "https://api.github.com/repos/arnoson/kirby-vite/zipball/0b26cffa2c89cada21b60917739915c1e6ba8c3f",
+                "reference": "0b26cffa2c89cada21b60917739915c1e6ba8c3f",
                 "shasum": ""
             },
             "require": {
@@ -40,9 +40,9 @@
             "description": "Vite helper for Kirby CMS",
             "support": {
                 "issues": "https://github.com/arnoson/kirby-vite/issues",
-                "source": "https://github.com/arnoson/kirby-vite/tree/v3.0.4"
+                "source": "https://github.com/arnoson/kirby-vite/tree/v3.0.6"
             },
-            "time": "2022-12-06T08:42:56+00:00"
+            "time": "2023-02-15T08:35:38+00:00"
         },
         {
             "name": "claviska/simpleimage",
@@ -247,16 +247,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "3.9.0-rc.2",
+            "version": "3.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "5095bb347fc5e5665f2dcd40bdf666d96ef65763"
+                "reference": "617a07aa0151aa4b1a3735b3b5e1a41ccc244a43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/5095bb347fc5e5665f2dcd40bdf666d96ef65763",
-                "reference": "5095bb347fc5e5665f2dcd40bdf666d96ef65763",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/617a07aa0151aa4b1a3735b3b5e1a41ccc244a43",
+                "reference": "617a07aa0151aa4b1a3735b3b5e1a41ccc244a43",
                 "shasum": ""
             },
             "require": {
@@ -343,7 +343,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-01-10T09:11:51+00:00"
+            "time": "2023-01-31T10:07:31+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -568,16 +568,16 @@
         },
         {
             "name": "oblik/kirby-link-field",
-            "version": "5.2.1",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OblikStudio/kirby-link-field.git",
-                "reference": "d12257715d804705bc9c0b32369bae47ed3dce00"
+                "reference": "6d0a8a3ff86f61cea154aa2a2b7faa97c9b6eeac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OblikStudio/kirby-link-field/zipball/d12257715d804705bc9c0b32369bae47ed3dce00",
-                "reference": "d12257715d804705bc9c0b32369bae47ed3dce00",
+                "url": "https://api.github.com/repos/OblikStudio/kirby-link-field/zipball/6d0a8a3ff86f61cea154aa2a2b7faa97c9b6eeac",
+                "reference": "6d0a8a3ff86f61cea154aa2a2b7faa97c9b6eeac",
                 "shasum": ""
             },
             "require": {
@@ -622,7 +622,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-01-05T15:58:27+00:00"
+            "time": "2023-02-11T07:39:52+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -1012,9 +1012,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "getkirby/cms": 5
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

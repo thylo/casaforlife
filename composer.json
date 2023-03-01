@@ -1,12 +1,12 @@
 {
-  "name": "arnoson/kirby-vite-basic-kit",
-  "description": "A simple Kirby CMS + Vite starter kit",
+  "name": "thylo/casaforlife",
+  "description": "Casa for life",
   "type": "project",
   "license": "MIT",
   "require": {
-    "getkirby/cms": "^3.9.0-rc.2",
-    "arnoson/kirby-vite": "^3.0.4",
-    "oblik/kirby-link-field": "^5.2"
+    "getkirby/cms": "^3.9.1",
+    "arnoson/kirby-vite": "^3.0.6",
+    "oblik/kirby-link-field": "^5.2.2"
   },
   "config": {
     "allow-plugins": {

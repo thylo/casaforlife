@@ -24,7 +24,7 @@ $format = "";
             <?php if($block->title()->isNotEmpty()): ?>
                 <h2 class="c-smallsection__title"><?= $block->title() ?></h2>
             <?php endif ?>
-                <div><?= $block->textContent()->kt() ?></div>
+                <div class="c-wysiwig"><?= $block->textContent()->kt() ?></div>
         </div>
     </div>
 </div>
