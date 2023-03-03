@@ -23,8 +23,9 @@ if ($ratio == 'auto') {
                 'crop' => $crop)); ?>
             <li class="o-list-bare__item" data-src="<?= $image->url() ?>">
                 <figure>
-                    <img alt="<?= $image->alt() ?>" class="o-fluidimage c-gallery__image"
-                         src="<?= $croppedImage->url() ?>">
+                    <a href="<?= $image->url() ?>">
+                        <img alt="<?= $image->alt() ?>" class="o-fluidimage c-gallery__image"
+                             src="<?= $croppedImage->url() ?>"></a>
                     <?php if ($image->alt()): ?>
                         <figcaption><?= $image->alt() ?></figcaption>
                     <?php endif ?>
