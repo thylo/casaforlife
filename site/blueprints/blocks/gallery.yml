@@ -2,6 +2,9 @@ name: field.blocks.gallery.name
 icon: dashboard
 preview: gallery
 fields:
+  title:
+    label: "Titre"
+    type: text
   images:
     label: field.blocks.gallery.images.label
     type: files

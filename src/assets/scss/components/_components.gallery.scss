@@ -1,3 +1,6 @@
-.gallery{
-    margin-bottom: calc(30/16*1rem);
+.c-gallery {
+  margin-bottom: calc(30 / 16 * 1rem);
+  &__title{
+    margin-bottom: calc(20 / 16 * 1rem);
   }
+}

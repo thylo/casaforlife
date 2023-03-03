@@ -2,6 +2,9 @@
 return [
     'languages' => true,
     'debug' => true,
+    'auth' => [
+        'methods' => ['password'],
+    ],
     'panel' =>[
         'install' => false
     ],

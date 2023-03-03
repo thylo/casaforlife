@@ -1,3 +1,4 @@
+import lightGallery from "lightgallery";
 import "./assets/scss/main.scss";
 
 let last_known_scroll_position = 0;
@@ -41,3 +42,12 @@ function scrollFunction() {
     document.querySelector(".js-menu__logo--desk").style.height = "200px";
   }
 }
+
+// lightgallery
+
+document.querySelectorAll(".js-gallery").forEach((element) => {
+  lightGallery(element, {
+    speed: 500,
+    // ... other settings
+  });
+});
