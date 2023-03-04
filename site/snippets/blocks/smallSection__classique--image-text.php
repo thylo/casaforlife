@@ -15,8 +15,8 @@ $format = "";
 
 <div class="c-smallsection c-smallsection--image-text l-grid l-grid--2cols@medium">
     <?php if ($block->image()->isNotEmpty()): ?>
-        <div class="c-smallsection__media c-smallsection__media--no-deco <?=  $format ?>">
-            <img class="o-fluidimage c-smallsection__cover" src="<?= $block->image()->toFile()->url() ?>">
+        <div class="c-smallsection__media c-smallsection-media c-smallsection-media--no-deco <?=  $format ?>">
+            <img class="o-fluidimage c-smallsection-media__cover" src="<?= $block->image()->toFile()->url() ?>">
         </div>
     <?php endif ?>
     <div class="c-smallsection__content">

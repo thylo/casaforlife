@@ -1,4 +1,4 @@
-name: field.blocks.video.name
+  name: field.blocks.video.name
 icon: video
 preview: video
 fields:

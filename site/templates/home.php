@@ -1,3 +1,7 @@
+<?php
+/** @var \Kirby\Cms\Page $page */
+?>
+
 <?php snippet('header') ?>
 
 <div class="c-pagesection c-pagesection--brand ">
@@ -38,11 +42,11 @@
 <div class="c-pagesection u-pt-m">
   <div class="l-container">
 
-    <?php if ($page = page('Actualites')): ?>
+    <?php if ($newsPage = page('Actualites')): ?>
 
       <?= snippet('hero/bigTitleh2',['text' => page('Actualites')->headline()]) ?>
 
-      <?php $listedElements = $page->children()->listed()->sortBy('date','desc')->limit(3); ?>
+      <?php $listedElements = $newsPage->children()->listed()->sortBy('date','desc')->limit(3); ?>
 
         <ul class="l-grid l-grid--3cols@medium">
           <?php foreach ($listedElements as $item): ?>
@@ -54,12 +58,10 @@
           <?php endforeach ?>
         </ul>
       
-      <a href="<?= $page->url()?>" class="c-link c-actulink"> Toutes nos actualités</a>  
+      <a href="<?= $newsPage->url()?>" class="c-link c-actulink"> Toutes nos actualités</a>
     <?php endif ?>
   </div>
 </div>
-
-<?php $page = $pages->current() ?>
 
 <?php if($page->blockContent()->isNotEmpty()):?>
   <div class="c-pagesection c-pagesection--notop">

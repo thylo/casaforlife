@@ -38,7 +38,7 @@
     <div class="l-container">
       <div class="c-smallsection l-grid l-grid--2cols@medium">
         <?php if ($page->soutenirImage()->isNotEmpty()): ?>
-          <div class="c-smallsection__media">
+          <div class="c-smallsection__media c-smallsection-media">
             <img class="o-fluidimage c-smallsection__cover" src="<?= $page->soutenirImage()->toFile()->url() ?>">
           </div>
           <?php endif ?>
