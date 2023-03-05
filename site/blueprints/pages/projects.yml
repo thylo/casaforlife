@@ -1,17 +1,17 @@
 title: Page projets
 tabs:
-  content:
-    label: Content
+  hero:
     columns:
       - width: 2/3
-        sections:
-          page: sections/projects
-      - width: 1/3
         sections:
           content:
             type: fields
             fields:
               hero: fields/hero
+  content:
+    label: Content
+    sections:
+      page: sections/projects
   settings:
     label: Settings
     fields:
