@@ -1,24 +1,33 @@
 title: Titre + texte + image
-fields:
-  title:
-    label: Title
-    type: text
-    maxlength: 64
-    placeholder: Laisser vide pour une section sans titre
-  textContent:
-    label: Text
-    type: textarea
-    required: true
-  image:
-    layout: cards
-    size: small
-    label: Image
-    type: files
-    multiple: false
-    required: true
-    query: page.image.toFile
-    image:
-      ratio: 10/15
-      cover: true
-
-
+tabs:
+  - label: Contenu
+    fields:
+      title:
+        label: Title
+        type: text
+        maxlength: 64
+        placeholder: Laisser vide pour une section sans titre
+      textContent:
+        label: Text
+        type: textarea
+        required: true
+      image:
+        layout: cards
+        size: small
+        label: Image
+        type: files
+        multiple: false
+        required: true
+        query: page.image.toFile
+        image:
+          ratio: 10/15
+          cover: true
+  - label: Settings
+    fields:
+      theme:
+        type: select
+        default: default
+        options:
+          - light
+          - dark
+          - default
