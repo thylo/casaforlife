@@ -6,10 +6,10 @@ $projects = $page->children();
 ?>
 <?php snippet('header') ?>
 
-    <div class="c-pagesection c-pagesection--brand">
+    <div class="c-pagesection c-pagesection--brand c-pagesection--secondary">
         <div class="l-container">
 
-            <?php snippet('hero/hero') ?>
+            <?php snippet('hero/hero--secondary') ?>
 
         </div>
     </div>
