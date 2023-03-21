@@ -77,7 +77,7 @@
       <div class="c-smallsection l-grid l-grid--2cols@medium">
         <?php if ($page->contactImage()->isNotEmpty()): ?>
             <div class="c-smallsection__media">
-                <img class="o-fluidimage c-smallsection__cover" src="<?= $page->contactImage()->toFile()->url() ?>">
+                <img alt="<?= $page->contactImage()->toFile()->alt()->esc() ?>" class="o-fluidimage c-smallsection__cover" src="<?= $page->contactImage()->toFile()->url() ?>">
             </div>
         <?php endif ?>
         <div class="c-smallsection__content c-contact__content" id="contact-us">
