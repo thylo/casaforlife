@@ -14,6 +14,12 @@ $projects = $page->children();
         </div>
     </div>
 
+    <div class="c-pagesection">
+        <div class="l-container">
+            <?php snippet('map') ?>
+        </div>
+    </div>
+
     <div id="anchor-projects" class="c-pagesection u-pt-m">
         <div class="l-container">
             <?php foreach ($page->projectTypes()->toStructure() as $type): ?>

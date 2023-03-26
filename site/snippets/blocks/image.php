@@ -17,7 +17,7 @@ if ($block->location() == 'web') {
   $src = $srcValue = $image->url();
 }
 
-if ($ratio !== 'auto') {
+if ($ratio !== 'auto') { 
   $ratio = explode("/",$ratio);
   $w = $ratio[0] ?? 1;
   $h = $ratio[1] ?? 1;
@@ -38,6 +38,10 @@ $attrs = attr([
     <?php if ($caption->isNotEmpty()) : ?>
       <figcaption>
         <?= $caption ?>
+      </figcaption>
+    <?php elseif($alt->isNotEmpty()) : ?>
+      <figcaption>
+        <?= $alt ?>
       </figcaption>
     <?php endif ?>
   </figure>

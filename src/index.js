@@ -51,3 +51,24 @@ document.querySelectorAll(".js-gallery").forEach((element) => {
     // ... other settings
   });
 });
+
+
+// maplibre script
+import maplibregl from "maplibre-gl";
+
+let mapContainer = document.querySelector(".js-map");
+
+var map = new maplibregl.Map({
+  container: mapContainer,
+  style:
+  'https://api.maptiler.com/maps/hybrid/style.json?key=zGOAhHI04onwS7U5LJKD',
+  // 'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL',
+  center: [-15.31769, 13.01526],
+  
+  zoom: 6,
+  scrollZoom: false
+  });
+   
+  var marker = new maplibregl.Marker()
+  .setLngLat([-15.31769, 13.01526])
+  .addTo(map);
