@@ -68,7 +68,41 @@ var map = new maplibregl.Map({
   zoom: 6,
   scrollZoom: false
   });
-   
-  var marker = new maplibregl.Marker()
-  .setLngLat([-15.31769, 13.01526])
+  map.addControl(new maplibregl.NavigationControl());
+
+
+function createMarker(longitude, latitude, title, url, date) {
+  let marker = new maplibregl.Marker()
+  .setLngLat([longitude, latitude])
   .addTo(map);
+
+  let popup = new maplibregl.Popup({ 
+    offset: 25,
+    closeButton: false,
+    className: 'c-map-popup'
+  })
+  .setHTML(
+    `
+    <a class="c-map-popup__link" href="`+ url +`" target="_blank" class="c-map-popup">`+ title +`</a>
+    <p class="c-map-popup__date">` + date +`</p>
+    `
+  );
+  marker.setPopup(popup);
+    // pop up show when you hover it
+  marker.getElement().classList.add('c-map-marker');
+}
+
+let projects = document.querySelectorAll(".js-projectcard");
+
+projects.forEach((project) => {
+    let longitude = project.getAttribute("data-long");
+    let latitude = project.getAttribute("data-lat");
+    let title = project.getAttribute("data-name");
+    let url = project.getAttribute("data-link");
+    let date = project.getAttribute("data-date");
+    createMarker(longitude, latitude, title, url, date);
+  });
+
+
+
+
