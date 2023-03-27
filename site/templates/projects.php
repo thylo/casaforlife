@@ -14,7 +14,7 @@ $projects = $page->children();
         </div>
     </div>
 
-    <div class="c-pagesection">
+    <div class="c-pagesection c-pagesection--notop">
         <div class="l-container">
             <?php snippet('map') ?>
         </div>

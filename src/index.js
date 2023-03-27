@@ -52,57 +52,55 @@ document.querySelectorAll(".js-gallery").forEach((element) => {
   });
 });
 
-
 // maplibre script
+var mapContainer = document.querySelector(".js-map");
 import maplibregl from "maplibre-gl";
 
-let mapContainer = document.querySelector(".js-map");
+if(mapContainer) {
+  var map = new maplibregl.Map({
+    container: mapContainer,
+    style:
+    'https://api.maptiler.com/maps/hybrid/style.json?key=zGOAhHI04onwS7U5LJKD',
+    // 'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL',
+    center: [-15.31769, 13.01526],
+    
+    zoom: 7.75,
+    scrollZoom: false
+    });
+    map.addControl(new maplibregl.NavigationControl());
 
-var map = new maplibregl.Map({
-  container: mapContainer,
-  style:
-  'https://api.maptiler.com/maps/hybrid/style.json?key=zGOAhHI04onwS7U5LJKD',
-  // 'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL',
-  center: [-15.31769, 13.01526],
-  
-  zoom: 6,
-  scrollZoom: false
-  });
-  map.addControl(new maplibregl.NavigationControl());
 
+  function createMarker(longitude, latitude, title, url, date) {
+    let marker = new maplibregl.Marker()
+    .setLngLat([longitude, latitude])
+    .addTo(map);
 
-function createMarker(longitude, latitude, title, url, date) {
-  let marker = new maplibregl.Marker()
-  .setLngLat([longitude, latitude])
-  .addTo(map);
+    let popup = new maplibregl.Popup({ 
+      offset: 25,
+      closeButton: false,
+      className: 'c-map-popup'
+    })
+    .setHTML(
+      `
+      <a class="c-map-popup__link" href="`+ url +`" target="_blank" class="c-map-popup">`+ title +`</a>
+      <p class="c-map-popup__date">` + date +`</p>
+      `
+    );
+    marker.setPopup(popup);
+      // pop up show when you hover it
+    marker.getElement().classList.add('c-map-marker');
+  }
 
-  let popup = new maplibregl.Popup({ 
-    offset: 25,
-    closeButton: false,
-    className: 'c-map-popup'
-  })
-  .setHTML(
-    `
-    <a class="c-map-popup__link" href="`+ url +`" target="_blank" class="c-map-popup">`+ title +`</a>
-    <p class="c-map-popup__date">` + date +`</p>
-    `
-  );
-  marker.setPopup(popup);
-    // pop up show when you hover it
-  marker.getElement().classList.add('c-map-marker');
+  let projects = document.querySelectorAll(".js-projectcard");
+
+  projects.forEach((project) => {
+      let longitude = project.getAttribute("data-long");
+      let latitude = project.getAttribute("data-lat");
+      let title = project.getAttribute("data-name");
+      let url = project.getAttribute("data-link");
+      let date = project.getAttribute("data-date");
+      createMarker(longitude, latitude, title, url, date);
+    });
+
 }
-
-let projects = document.querySelectorAll(".js-projectcard");
-
-projects.forEach((project) => {
-    let longitude = project.getAttribute("data-long");
-    let latitude = project.getAttribute("data-lat");
-    let title = project.getAttribute("data-name");
-    let url = project.getAttribute("data-link");
-    let date = project.getAttribute("data-date");
-    createMarker(longitude, latitude, title, url, date);
-  });
-
-
-
 

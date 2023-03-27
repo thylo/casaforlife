@@ -1,10 +1,21 @@
 title: Titre + texte
-fields:
-  title:
-    label: Title
-    type: text
-    placeholder: Laisser vide pour une section sans titre
-    maxlength: 64
-  textContent:
-    label: Text
-    type: textarea
+tabs:
+  - label: Contenu
+    fields:
+      title:
+        label: Title
+        type: text
+        placeholder: Laisser vide pour une section sans titre
+        maxlength: 64
+      textContent:
+        label: Text
+        type: textarea
+  - label: Settings
+    fields:
+      theme:
+        type: select
+        default: default
+        options:
+          - light
+          - dark
+          - default

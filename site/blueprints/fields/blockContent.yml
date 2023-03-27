@@ -10,16 +10,6 @@ fields:
         fieldsets:
           - smallSection
           - smallSection--full-text
-          - smallSection--image-text
-          - smallSection--text-image
-      smallSection__classique:
-        label: Small Section classique
-        help: "Small section mais l'image est rectangulaire"
-        type: group
-        fieldsets:
-          - smallSection__classique
-          - smallSection__classique--text-image
-          - smallSection__classique--image-text
       otherFields:
         label: Autres champs
         type: group
