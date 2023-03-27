@@ -5,23 +5,9 @@ $theme = $block->theme()->value();
 $style = $block->style()->value();
 
 
-$sectionClass = 'c-smallsection l-grid l-grid--2cols@medium';
-$sectionMediaClass = 'c-smallsection__media c-smallsection-media';
-
-if ($type == 'img-text') {
-  $sectionClass .= ' c-smallsection--image-text';
-}
-if ($type == 'text-img') {
-  $sectionClass .= ' c-smallsection--text-image';
-}
-
-
-if ($theme == 'light') {
-  $sectionClass .= ' c-smallsection--light';
-}
-if ($theme == 'dark') {
-  $sectionClass .= ' c-smallsection--dark';
-}
+$sectionClass = 'c-smallsection l-grid l-grid--2cols@medium c-smallsection--' . $theme . ' c-smallsection--' . $type;
+$sectionMediaClass = 'c-smallsection__media c-smallsection-media c-smallsection-media--' . $theme;
+$sectionTitleClass = 'c-smallsection__title c-smallsection__title--' . $theme;
 
 if ($style == 'square') {
     $ratio = $block->image()->toFile()->ratio();
@@ -44,11 +30,9 @@ if ($style == 'square') {
         </div>
     <?php endif ?>
     <div class="c-smallsection__content">
-        <div class="c-smallsection__content">
-            <?php if($block->title()->isNotEmpty()): ?>
-                <h2 class="c-smallsection__title"><?= $block->title() ?></h2>
-            <?php endif ?>
-                <div class="c-wysiwig"><?= $block->textContent()->kt() ?></div>
-        </div>
+        <?php if($block->title()->isNotEmpty()): ?>
+            <h2 class="<?=  $sectionTitleClass ?>"><?= $block->title() ?></h2>
+        <?php endif ?>
+            <div class="c-wysiwig"><?= $block->textContent()->kt() ?></div>
     </div>
 </div>
