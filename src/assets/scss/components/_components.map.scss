@@ -8,6 +8,10 @@
     cursor: move;
 }
 
+.c-map__projects--display-none{
+    display: none;
+}
+
 .c-map-marker:hover{
     cursor: pointer;
     opacity: 1;

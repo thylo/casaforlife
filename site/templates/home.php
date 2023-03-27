@@ -42,7 +42,7 @@
 <div class="c-pagesection u-pt-m">
   <div class="l-container">
 
-    <?php if ($newsPage = page('Actualites')): ?>
+    <?php if ($newsPage = page('actualites')): ?>
 
       <?= snippet('hero/bigTitleh2',['text' => page('Actualites')->headline()]) ?>
 

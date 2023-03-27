@@ -38,5 +38,4 @@ $projects = $page->children();
             <?php endforeach ?>
         </div>
     </div>
-    </div>
 <?php snippet('footer') ?>
