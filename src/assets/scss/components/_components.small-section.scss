@@ -14,6 +14,11 @@
     grid-template-areas: "image text";
     grid-template-rows: repeat(auto-fit, auto);
   }
+  &__img-group{
+    @include breakpoint(medium) {
+      grid-area: image;
+    }
+  }
   &:nth-child(even) {
     @include breakpoint(medium) {
       grid-template-areas: "text image";
@@ -78,9 +83,6 @@
   border-top-right-radius: 300px;
   z-index: 1;
 
-  @include breakpoint(medium) {
-    grid-area: image;
-  }
   & > img {
     width: 100%;
     height: 100%;

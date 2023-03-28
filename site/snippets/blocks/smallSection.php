@@ -23,12 +23,18 @@ if ($style == 'square') {
   }
 ?>
 
+
 <div class="<?= $sectionClass ?>">
-    <?php if ($block->image()->isNotEmpty()): ?>
+    <figure class="c-smallsection__img-group">
         <div class="<?= $sectionMediaClass ?>">
-            <img class="o-fluidimage c-smallsection-media__cover" src="<?= $block->image()->toFile()->url() ?>">
+            <img alt="<?php $block->image()->alt() ?>" class="o-fluidimage c-smallsection-media__cover" src="<?= $block->image()->toFile()->url()?>">    
         </div>
-    <?php endif ?>
+        <?php if ($block->image()->toFile()->alt()->isNotEmpty()): ?>
+            <figcaption class="c-image__caption">
+                <?= $block->image()->toFile()->alt() ?>
+            </figcaption>
+        <?php endif ?>
+    </figure>
     <div class="c-smallsection__content">
         <?php if($block->title()->isNotEmpty()): ?>
             <h2 class="<?=  $sectionTitleClass ?>"><?= $block->title() ?></h2>
