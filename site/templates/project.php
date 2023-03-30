@@ -1,5 +1,13 @@
 <?php snippet('header') ?>
 
+<?php 
+    $user = $page->author()->toUser();
+    $title = $page->headline();
+    $location = $page->location()->yaml();
+    $long = $location['lon'];
+    $lat = $location['lat'];
+?>
+
 <div class="c-pagesection c-pagesection--article">
     <div class="c-article">
         <div class="c-article_head">
@@ -8,12 +16,12 @@
             </div>
             <div class="l-container l-container--copy">
                 <div class="c-article__body">
-                    <h1 class="c-article__title"><?= $page->headline() ?></h1>
+                    <h1 class="c-article__title"><?=  $title ?></h1>
                     <div class="c-article__date-position">
                         <p class="c-article__date"><?= $page->date()->toDate('d-m-Y') ?></p>
                         <div class="c-article__position">
-                            <p class="c-article__location"><?= $page->locationLat()?></p>
-                            <p class="c-article__location"><?= $page->locationLong()?></p>
+                            <p class="c-article__location"><?= $lat ?></p>
+                            <p class="c-article__location"><?= $long ?></p>
                         </div>
                     </div>
                 </div>

@@ -61,6 +61,11 @@
   position: relative;
   width: 100%;
   align-self: center;
+  justify-self: center;
+  @include breakpoint(medium) {
+    justify-self: end;
+    align-self: start;
+  }
 }
 
 .c-herobanner__img{
@@ -90,4 +95,49 @@
 }
 
 
+.c-herobanner--secondary{
+  gap: calc(42 / 16 * 1rem);
+}
 
+.c-herobanner--secondary .c-herobanner__content{
+  margin-top: 0;
+}
+
+.c-herobanner--secondary .c-herobanner__title{
+  font-size: clamp(
+    calc(32 / 16 * 1rem),
+    calc(1rem + 3.5vw),
+    calc(96 / 16 * 1rem)
+  );
+  &>span{
+    font-weight: 500;
+    font-size: clamp(
+    calc(48 / 16 * 1rem),
+    calc(1.8rem + 3.5vw),
+    calc(120 / 16 * 1rem));
+  }
+}
+
+.c-herobanner--secondary .c-herobanner__subheadline{
+  font-size: clamp(
+    calc(18 / 16 * 1rem),
+    calc(0.4rem + 1vw),
+    calc(28 / 16 * 1rem)
+  );
+  margin: 0;
+}
+
+
+@include breakpoint(medium) {
+  .c-herobanner--secondary .c-herobanner__btns{
+    margin-bottom: 30%;
+  }
+  .c-herobanner--secondary .c-herobanner__subheadline--nobtns{
+    margin-bottom: 30%;
+  }
+  
+}
+
+.c-herobanner--secondary .c-herobanner__picture{
+  width: 75%;
+}

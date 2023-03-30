@@ -3,13 +3,13 @@
   alt="<?= $block->content()->contact_name() ?> photo">
   <ul class="c-contactcard__content o-list-bare u-margin-none">
     
+    <li class="c-contactcard__item c-contactcard__infos">
+      <?php if($block->contact_name()->isNotEmpty()):?>
+        <div class="c-contactcard__name">
+          <p> <?= $block->contact_name() ?> </p>
+        </div>
+      <?php endif?>
     <?php if($block->contact_phone()->isNotEmpty() || $block->contact_mail()->isNotEmpty()):?>
-      <li class="c-contactcard__item c-contactcard__infos">
-        <?php if($block->contact_name()->isNotEmpty()):?>
-          <div class="c-contactcard__name">
-            <p> <?= $block->contact_name() ?> </p>
-          </div>
-          <?php endif?>
           <?php if($block->contact_function()->isNotEmpty()):?>
             <div class="c-contactcard__function">
               <p> <?= $block->contact_function() ?> </p>

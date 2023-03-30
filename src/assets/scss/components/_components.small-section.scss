@@ -1,15 +1,23 @@
 .c-smallsection-group {
   display: flex;
   flex-direction: column;
-  gap: calc(64 / 16 * 1rem);
 }
 
 .c-smallsection {
+  padding: 36px 0;
+  position: relative;
+
   justify-items: center;
   align-items: center;
+  
   @include breakpoint(medium) {
     grid-template-areas: "image text";
     grid-template-rows: repeat(auto-fit, auto);
+  }
+  &__img-group{
+    @include breakpoint(medium) {
+      grid-area: image;
+    }
   }
   &:nth-child(even) {
     @include breakpoint(medium) {
@@ -26,7 +34,8 @@
       grid-template-areas: "text image" !important;
     }
   }
-  //
+
+
   &__title {
     font-weight: 500;
     font-size: calc(22 / 16 * 1rem);
@@ -44,24 +53,36 @@
   &__text {
     &--full-text {
       column-count: 1;
-      column-gap: calc(64 / 16 * 1rem);
+      column-gap: calc(64/16*1rem);
 
       @include breakpoint(medium) {
         column-count: 2;
       }
     }
   }
+  //bg color for defferent themed blocks
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    height: 100%;
+    transform: translate(-50%, 0);
+
+    background-color: var(--color-white);
+  }
 }
 
 .c-smallsection-media {
   position: relative;
+  padding: 15px 0 0 15px;
   width: 60%;
   border-top-left-radius: 300px;
   border-top-right-radius: 300px;
   z-index: 1;
-  @include breakpoint(medium) {
-    grid-area: image;
-  }
+
   & > img {
     width: 100%;
     height: 100%;
@@ -78,10 +99,10 @@
     left: 0;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
     border: solid var(--color-brand) 1.5px;
     border-top-left-radius: 300px;
     border-top-right-radius: 300px;
-    transform: translate3d(-15px, -15px, 0);
     z-index: -1;
     opacity: 0.5;
   }
@@ -105,5 +126,30 @@
     &.vertical {
       width: 70%;
     }
+  }
+}
+
+//dark theme
+
+.c-smallsection--dark {
+  color: var(--color-white);
+  &::before {
+    background-color: var(--color-brand);
+  }
+}
+.c-smallsection__title--dark {
+  color: var(--color-white);
+}
+.c-smallsection-media--dark {
+  &::before {
+    border: solid var(--color-white) 1.5px;
+  }
+}
+
+//light
+
+.c-smallsection--light {
+  &::before {
+    background-color: #EFEFEF;
   }
 }

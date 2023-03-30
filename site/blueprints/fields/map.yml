@@ -1,0 +1,15 @@
+type: group
+fields:
+  
+  mapDisplay:
+    label: Display map
+    type: toggle
+    default: true
+    whidth: 1/2
+    help: Afficher la carte des projets sur la page
+ mapTitle:
+    label: Map title
+    type: text
+    default: Nos projets sur une carte
+    help: Si vous ne mettez rien le titre ne sera pas affiché
+    maxlength: 64

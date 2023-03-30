@@ -4,10 +4,10 @@
 
 <?php snippet('header') ?>
 
-<div class="c-pagesection c-pagesection--brand ">
+<div class="c-pagesection c-pagesection--brand c-pagesection--secondary">
   <div class="l-container">
     
-    <?php snippet('hero/hero') ?>
+  <?php snippet('hero/hero--secondary') ?>w
 
   </div>
 </div>
@@ -56,16 +56,16 @@
   <div class="c-pagesection c-pagesection--notop">
     <div class="l-container">
       <div class="c-smallsection-group">
-        <?php foreach ($page->blockContent()->toBlocks() as $block): ?>
-            <?php snippet(
-              'blocks/' . $block->type(),
-              [
-                'block' => $block,
-                'theme' => 'dark'
-              ]
-            ) ?>
-        <?php endforeach ?>
-      </div>
+          <?php foreach ($page->blockContent()->toBlocks() as $block): ?>
+              <?php snippet(
+                'blocks/' . $block->type(),
+                [
+                  'block' => $block,
+                  'theme' => 'dark'
+                ]
+              ) ?>
+          <?php endforeach ?>
+        </div>
       </div>
     </div>
   </div>
@@ -77,7 +77,7 @@
       <div class="c-smallsection l-grid l-grid--2cols@medium">
         <?php if ($page->contactImage()->isNotEmpty()): ?>
             <div class="c-smallsection__media">
-                <img class="o-fluidimage c-smallsection__cover" src="<?= $page->contactImage()->toFile()->url() ?>">
+                <img alt="<?= $page->contactImage()->toFile()->alt()->esc() ?>" class="o-fluidimage c-smallsection__cover" src="<?= $page->contactImage()->toFile()->url() ?>">
             </div>
         <?php endif ?>
         <div class="c-smallsection__content c-contact__content" id="contact-us">

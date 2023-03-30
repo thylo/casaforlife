@@ -47,3 +47,16 @@
     padding-top: 275px;
   }
 }
+
+.c-pagesection--secondary{
+  margin-bottom: 0;
+  padding-bottom: calc(36 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    padding-bottom: calc(42 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    padding-bottom: calc(72 / 16 * 1rem);
+  }
+}

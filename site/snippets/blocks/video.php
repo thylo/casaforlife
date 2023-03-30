@@ -1,21 +1,29 @@
 <?php
-/*
-  Snippets are a great way to store code snippets for reuse
-  or to keep your templates clean.
 
-  Block snippets control the HTML for individual blocks
-  in the blocks field. This video snippet overwrites
-  Kirby's default video block to add custom classes
-  and style attributes.
+$url = $block->url();
 
-  More about snippets:
-  https://getkirby.com/docs/guide/templates/snippets
-*/
+  $url_parts = parse_url($url);
+  if ($url_parts['host'] === 'youtu.be') {
+      $video_id = ltrim($url_parts['path'], '/');
+  } elseif ($url_parts['host'] === 'www.youtube.com' && isset($url_parts['query'])) {
+      parse_str($url_parts['query'], $query_vars);
+      if (isset($query_vars['v'])) {
+          $video_id = $query_vars['v'];
+      }
+  }
+
+  if (isset($video_id)) {
+    $embedUrl = 'https://www.youtube.com/embed/' . $video_id;
+  } else {
+    $original_url = $url;
+  }
+
 ?>
+
 <?php if ($block->url()->isNotEmpty()): ?>
 <figure class="c-article__video">
   <div class="o-fluidvideo">
-    <iframe allow="autoplay; fullscreen" allowfullscreen src="<?= $block->url() ?>"></iframe>
+    <iframe allow="autoplay; fullscreen" allowfullscreen src="<?= $embedUrl ?>"></iframe>
   </div>
   <?php if ($block->caption()->isNotEmpty()): ?>
     <figcaption><?= $block->caption() ?></figcaption>

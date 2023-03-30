@@ -24,10 +24,23 @@ tabs:
           cover: true
   - label: Settings
     fields:
+      blockType:
+        type: select
+        default: alternate
+        options:
+          - alternate
+          - text-img
+          - img-text
       theme:
         type: select
         default: default
         options:
           - light
           - dark
+          - default
+      style:
+        type: select
+        default: default
+        options:
+          - square
           - default

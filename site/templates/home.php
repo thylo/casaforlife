@@ -1,7 +1,3 @@
-<?php
-/** @var \Kirby\Cms\Page $page */
-?>
-
 <?php snippet('header') ?>
 
 <div class="c-pagesection c-pagesection--brand ">
@@ -42,7 +38,7 @@
 <div class="c-pagesection u-pt-m">
   <div class="l-container">
 
-    <?php if ($newsPage = page('Actualites')): ?>
+    <?php if ($newsPage = page('actualites')): ?>
 
       <?= snippet('hero/bigTitleh2',['text' => page('Actualites')->headline()]) ?>
 
@@ -66,19 +62,17 @@
 <?php if($page->blockContent()->isNotEmpty()):?>
   <div class="c-pagesection c-pagesection--notop">
     <div class="l-container">
-      <div class="c-smallsection-group">
-        <?php foreach ($page->blockContent()->toBlocks() as $block): ?>
-            <div class="c-section <?= $block->type() ?>">
-            <?php snippet(
-              'blocks/' . $block->type(),
-              [
-                'block' => $block,
-                'theme' => 'dark'
-              ]
-            ) ?>
-            </div>
-        <?php endforeach ?>
-      </div>
+        <div class="c-smallsection-group">
+          <?php foreach ($page->blockContent()->toBlocks() as $block): ?>
+              <?php snippet(
+                'blocks/' . $block->type(),
+                [
+                  'block' => $block,
+                  'theme' => 'dark'
+                ]
+              ) ?>
+          <?php endforeach ?>
+        </div>
       </div>
     </div>
   </div>
