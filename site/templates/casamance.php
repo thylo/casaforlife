@@ -6,15 +6,6 @@ $projectsPage = page('projects');
 $projects = $projectsPage->children();
 ?>
 
-<?php function console_log($output, $with_script_tags = true) {
-$js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
-');';
-if ($with_script_tags) {
-    $js_code = '<script>' . $js_code . '</script>';
-}
-echo $js_code; } ?>
-<?= console_log($projects->count()); ?>
-
 
 <!-- hero -->
 <div class="c-pagesection c-pagesection--brand c-pagesection--secondary">
@@ -34,7 +25,6 @@ echo $js_code; } ?>
 
 <ul class="c-map__projects c-map__projects--display-none">
   <?php foreach ($projects as $item): ?>
-    <?= console_log($item); ?>
       <li>
           <?= snippet('projectCard', ['item' => $item]) ?>
       </li>

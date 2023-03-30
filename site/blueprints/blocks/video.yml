@@ -5,6 +5,7 @@ fields:
   url:
     label: field.blocks.video.url.label
     type: url
+    help: Only youtubes videos are supported
     placeholder: field.blocks.video.url.placeholder
   caption:
     label: field.blocks.video.caption
