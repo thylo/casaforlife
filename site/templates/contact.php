@@ -85,7 +85,7 @@
                 <?php if($page->contactTitle()->isNotEmpty()): ?>
                     <h2 class="c-smallsection__title"><?= $page->title() ?></h2>
                 <?php endif ?>
-                    <div><?= $page->contactContent()->kt() ?></div>
+                    <div class="c-wysiwig"><?= $page->contactContent()->kt() ?></div>
             </div>
             <div class="c-contact__icons">
               <?php if(site()->email()->isNotEmpty()): ?>
