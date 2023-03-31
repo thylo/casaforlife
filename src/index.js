@@ -67,7 +67,10 @@ if(mapContainer) {
     zoom: 7.75,
     scrollZoom: false
     });
-    map.addControl(new maplibregl.NavigationControl());
+    map.addControl(new maplibregl.NavigationControl()
+  );
+
+  let bounds = new maplibregl.LngLatBounds();
 
 
   function createMarker(longitude, latitude, title, url, date) {
@@ -94,13 +97,15 @@ if(mapContainer) {
   let projects = document.querySelectorAll(".js-projectcard");
 
   projects.forEach((project) => {
-      let longitude = project.getAttribute("data-long");
-      let latitude = project.getAttribute("data-lat");
-      let title = project.getAttribute("data-name");
-      let url = project.getAttribute("data-link");
-      let date = project.getAttribute("data-date");
-      createMarker(longitude, latitude, title, url, date);
-    });
+    let longitude = project.getAttribute("data-long");
+    let latitude = project.getAttribute("data-lat");
+    let title = project.getAttribute("data-name");
+    let url = project.getAttribute("data-link");
+    let date = project.getAttribute("data-date");
+    createMarker(longitude, latitude, title, url, date);
+    bounds.extend([longitude, latitude]);
+  });
+    map.fitBounds(bounds, { padding: 70 });
 
 }
 
