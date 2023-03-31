@@ -69,6 +69,7 @@ tabs:
               value: "{{ item.id }}"
           location:
             type: object
+            required: true
             fields:
               lat:
                 label: Latitude
