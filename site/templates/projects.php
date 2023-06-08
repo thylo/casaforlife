@@ -27,7 +27,7 @@ $projects = $page->children();
                     <h3 class="c-projects__title c-smalltitle"><?= $type->title() ?></h3>
                     <?php if ($projects->count()): ?>
                         <ul class="l-grid l-grid--2cols@small l-grid--3cols@large">
-                            <?php foreach ($projects->filterBy('projectType', $type->id(), ',') as $item): ?>
+                            <?php foreach ($projects->filterBy('projectType', $type->id(), ',')->sort('date')->flip() as $item): ?>
                                 <li>
                                     <?= snippet('projectCard', ['item' => $item]) ?>
                                 </li>
