@@ -17,11 +17,13 @@ $projects = $projectsPage->children();
 </div>
 
 <!-- map -->
+<?php if($page->mapDisplay()->toBool()):?>
 <div class="c-pagesection c-pagesection--notop">
     <div class="l-container">
         <?php snippet('map') ?>
     </div>
 </div>
+<?php endif ?>
 
 <ul class="c-map__projects c-map__projects--display-none">
   <?php foreach ($projects as $item): ?>

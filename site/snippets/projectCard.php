@@ -10,7 +10,9 @@
 
 <article class="c-projectcard js-projectcard" data-link="<?= $url ?>" data-date="<?= $item->date()->toDate('d-m-Y') ?>" data-name="<?= $title ?>" data-long="<?= $long ?>" data-lat="<?= $lat ?>">
     <a href="<?= $url ?>" class="c-projectcard__media">
-        <img class="o-fluidimage" src="<?= $item->cover()->toFile()->thumb(['width' => 1000, 'height' => 600, 'crop' => true, 'quality' => 60])->url()?>">
+        <?php if ($cover = $item->cover()->toFile()): ?>
+            <img class="o-fluidimage" src="<?= $cover->thumb(['width' => 1000, 'height' => 600, 'crop' => true, 'quality' => 60])->url()?>">
+        <?php endif ?>
     </a>
     <div class="c-projectcard__body">
         <p class="c-projectcard__date"><?= $item->date()->toDate('d-m-Y') ?></p>

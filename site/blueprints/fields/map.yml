@@ -1,6 +1,5 @@
 type: group
 fields:
-  
   mapDisplay:
     label: Display map
     type: toggle
