@@ -15,41 +15,41 @@ status:
   listed:
     label: Published
     text: The note is online and listed in the blog
-
-
-columns:
-  
-  - width: 2/3
-    sections:
-      article:
-        type: fields
+tabs:
+  content:
+    label: Content
+    columns:
+      - width: 2/3
+        sections:
+          article:
+            type: fields
+            fields:
+              article: fields/article
+      - width: 1/3
         fields:
-          article: fields/article
-            
-
-  - width: 1/3
-
-      fields:
-        cover: fields/cover
-        headline:
-          label: Titre
-          type: text
-          default: "{{ page.title }}"
-          help: Leave empty to use the title as headline
-          maxlength: 64
-          required: true
-        subheadline:
-          label: Description
-          type: textarea
-          maxlength: 215
-          required: true
-        date:
-          type: date
-          default: now
-          display: DD/MM/YYYY
-          required: true
-        author:
-          type: users
-          help: Sélectionnez un auteur pour afficher son nom et son avatar, ne sera pas affiché si laissé vide, pour modifier le titre au dessus de l'auteur, allez dans les infos constantes
-          multiple: false
-        # tags: true
+          cover: fields/cover
+          headline:
+            label: Titre
+            type: text
+            default: "{{ page.title }}"
+            help: Leave empty to use the title as headline
+            maxlength: 64
+            required: true
+          subheadline:
+            label: Description
+            type: textarea
+            maxlength: 215
+            required: true
+          date:
+            type: date
+            default: now
+            display: DD/MM/YYYY
+            required: true
+          author:
+            type: users
+            help: Sélectionnez un auteur pour afficher son nom et son avatar, ne sera pas affiché si laissé vide, pour modifier le titre au dessus de l'auteur, allez dans les infos constantes
+            multiple: false
+  medias:
+    label: Medias
+    sections:
+      files: true

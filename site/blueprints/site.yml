@@ -1,5 +1,4 @@
 title: Site
-
 tabs:
   pages:
     sections:
@@ -31,7 +30,6 @@ tabs:
           help: Titre de la petite section auteur dans les actualités, visible seulement si un auteur est sélectionné
           type: text
           maxlength: 64
-
   seo:
     label: SEO
     icon: search

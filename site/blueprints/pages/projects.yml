@@ -18,8 +18,11 @@ tabs:
     label: Content
     sections:
       page: sections/projects
+  medias:
+    sections:
+      files: true
   settings:
-    label: Settings
+    label: Types de projets
     fields:
       projectTypes:
         label: Types de projets

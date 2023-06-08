@@ -5,9 +5,10 @@ fields:
     label: Article
     fieldsets:
         - title
-        - text
         - image
         - video
         - gallery
         - quote
         - line
+        - text
+        - markdown

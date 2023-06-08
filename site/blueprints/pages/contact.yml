@@ -1,75 +1,77 @@
 title: Page contact
-columns:
 
-  - width: 2/3
-    sections:
-      equipGroup:
-        type: fields
-        fields:
-          equipTitle:
-            label: Titre de la section
-            type: text
-            default: "{{ page.title }}"
-            maxlength: 64
-            required: true
-          equipCard:
-            label: Equipe
-            type: blocks
-            required: true
-            fieldsets:
-              - equip
-      soutenirSection:
-        label: Section nous soutenir
-        type: fields
-        fields:
-          soutenirTitle:
-            label: Titre de la section nous soutenir
-            type: text
-            maxlength: 90
-            required: true
-          soutenirContent:
-            label: Nous soutenir contenu
-            type: textarea
-            required: true
-          soutenirImage:
-            label: Image de la section nous soutenir
-            type: files
-            multiple: false
-            required: true
-            query: page.image.toFile
-            image:
-              ratio: 10/15
-              cover: true
-      blockContent:
-        type: fields
-        fields:
-          blockContent: fields/blockContent
-      contactSection:
-        type: fields
-        fields:
-          contactImage:
-            label: Image de la section nous contacter
-            type: files
-            layout: cards
-            multiple: false
-            required: true
-            query: page.image.toFile
-            image:
-              ratio: 16/9
-              cover: true
-          contactTitle:
-            label: Titre de la section contact
-            type: text
-            maxlength: 90
-            required: true
-          contactContent:
-            label: Nous contacter contenu
-            type: textarea
-            required: true
-              
-  - width: 1/3 
+tabs:
+  content:
+        sections:
+          equipGroup:
+            type: fields
+            fields:
+              equipTitle:
+                label: Titre de la section
+                type: text
+                default: "{{ page.title }}"
+                maxlength: 64
+                required: true
+              equipCard:
+                label: Equipe
+                type: blocks
+                required: true
+                fieldsets:
+                  - equip
+          soutenirSection:
+            label: Section nous soutenir
+            type: fields
+            fields:
+              soutenirTitle:
+                label: Titre de la section nous soutenir
+                type: text
+                maxlength: 90
+                required: true
+              soutenirContent:
+                label: Nous soutenir contenu
+                type: textarea
+                required: true
+              soutenirImage:
+                label: Image de la section nous soutenir
+                type: files
+                multiple: false
+                required: true
+                query: page.image.toFile
+                image:
+                  ratio: 10/15
+                  cover: true
+          blockContent:
+            type: fields
+            fields:
+              blockContent: fields/blockContent
+          contactSection:
+            type: fields
+            fields:
+              contactImage:
+                label: Image de la section nous contacter
+                type: files
+                layout: cards
+                multiple: false
+                required: true
+                query: page.image.toFile
+                image:
+                  ratio: 16/9
+                  cover: true
+              contactTitle:
+                label: Titre de la section contact
+                type: text
+                maxlength: 90
+                required: true
+              contactContent:
+                label: Nous contacter contenu
+                type: textarea
+                required: true
+  hero:
     sections:
       hero:
         type: fields
         fields:
           hero: fields/hero
+  medias:
+    sections:
+      files: true

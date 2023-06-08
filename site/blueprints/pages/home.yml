@@ -1,40 +1,45 @@
 title: Défault layout - small section blocks
-columns:
-  - width: 2/3
+tabs:
+  content:
+    columns:
+      - width: 2/3
+        sections:
+          blockContent:
+            type: fields
+            fields:
+              flashTitle:
+                label: Titre flash
+                type: text
+                help: Si vous ne mettez rien, le contenu s'adaptera
+                maxlength: 64
+              flashContent:
+                label: Contenu flash
+                type: textarea
+                maxlength: 360
+                help: Le contenu ne s'affichera que si ce champs est remplis
+              flashImage:
+                label: Image flash
+                type: files
+                multiple: false
+                help: Si vous ne mettez rien, le contenu s'adaptera
+                image:
+                  ratio: 10/15
+                  cover: true
+              flashBtn:
+                label: Bouton flash
+                type: link
+                linkTypes:
+                  - page
+                  - url
+                help: Pour le texte du bouton ça se trouve dans option et laissez vide si vous ne souhaitez pas de bouton secondaire
+              blockContent: fields/blockContent
+
+      - width: 1/3
+        sections:
+          hero:
+            type: fields
+            fields:
+              hero: fields/hero
+  medias:
     sections:
-      blockContent:
-        type: fields 
-        fields:
-          flashTitle:
-            label: Titre flash
-            type: text
-            help: Si vous ne mettez rien, le contenu s'adaptera
-            maxlength: 64
-          flashContent:
-            label: Contenu flash
-            type: textarea
-            maxlength: 360
-            help: Le contenu ne s'affichera que si ce champs est remplis
-          flashImage:
-            label: Image flash
-            type: files
-            multiple: false
-            help: Si vous ne mettez rien, le contenu s'adaptera
-            image:
-              ratio: 10/15
-              cover: true
-          flashBtn:
-            label: Bouton flash
-            type: link
-            linkTypes:
-              - page
-              - url
-            help: Pour le texte du bouton ça se trouve dans option et laissez vide si vous ne souhaitez pas de bouton secondaire
-          blockContent: fields/blockContent
-            
-  - width: 1/3 
-    sections:
-      hero:
-        type: fields
-        fields:
-          hero: fields/hero
+      files: true

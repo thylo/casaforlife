@@ -15,7 +15,6 @@ status:
   listed:
     label: Published
     text: The note is online and listed in the blog
-
 tabs:
   content:
     label: Contenu
@@ -81,3 +80,11 @@ tabs:
                 type: number
                 icon: map-marker
                 required: true
+          attachments:
+            type: files
+            uploads:
+              mime: null
+  medias:
+    label: Medias
+    sections:
+      files: true

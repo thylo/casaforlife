@@ -8,8 +8,8 @@
     "server": "php -S localhost:8888 -t public server.php",
     "build": "shx rm -f src/.lock && vite build",
     "preview": "npm run build && npm run server",
-    "syncLocalToRemote": " rsync -av ./content casaforlife@deploy.eu2.frbit.com:~",
-    "syncRemoteToLocal": " rsync -av casaforlife@deploy.eu2.frbit.com:~/content ./content "
+    "syncLocalToRemote": " rsync -av content casaforlife@deploy.eu2.frbit.com:~",
+    "syncRemoteToLocal": " rsync -av casaforlife@deploy.eu2.frbit.com:~/content content "
   },
   "author": "thylo.be",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "sass": "^1.54.9",
     "shx": "^0.3.4",
     "vite": "^3.0.0",
-    "vite-plugin-kirby": "^0.1.0"
+    "vite-plugin-kirby": "^0.2.1"
   },
   "dependencies": {
     "lightgallery": "^2.7.1",
