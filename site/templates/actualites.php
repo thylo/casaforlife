@@ -1,37 +1,32 @@
-
 <?php snippet('header') ?>
 
-<div class="c-pagesection c-pagesection--brand c-pagesection--secondary ">
-  <div class="l-container">
-    
-  <?php snippet('hero/hero--secondary') ?>
-
-  </div>
+<div class="c-pagesection c-pagesection--brand c-pagesection--secondary">
+    <div class="l-container">
+        <?php snippet('hero/hero--secondary') ?>
+    </div>
 </div>
 
 <div class="c-pagesection u-pt-m">
-  <div class="l-container">
+    <div class="l-container">
+        <?php
+        $listedElements = $page->children()->listed()->sortBy('date', 'desc');
+        ?>
 
-  <?php
-  $listedElements = $page->children()->listed()->sortBy('date','desc');
-  ?>
+        <?php if ($listedElements->isNotEmpty()): ?>
+            <ul class="l-grid l-grid--2cols@small l-grid--3cols@large">
+        <?php endif; ?>
 
-  <?php if($listedElements->isNotEmpty()): ?>
-      <ul class="l-grid l-grid--2cols@small l-grid--3cols@large">
-  <?php endif; ?>
+        <?php foreach ($listedElements as $item): ?>
+            <li>
+                <?= snippet('actuCard', ['item' => $item]) ?>
+            </li>
+        <?php endforeach; ?>
 
+        <?php if ($listedElements->count()): ?>
+            </ul>
+        <?php endif; ?>
 
-  <?php foreach ($listedElements as $item): ?>
-      <li>
-          <?= snippet('actuCard', ['item' => $item]) ?>
-      </li>
-  <?php endforeach; ?>
-
-  <?php if($listedElements->count()): ?>
-  </ul>
-  <?php endif; ?>
-
-  </div>
+    </div>
 </div>
 
 <?php snippet('footer') ?>
