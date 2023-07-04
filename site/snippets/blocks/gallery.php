@@ -9,23 +9,29 @@ if ($ratio == 'auto') {
 } else {
     $ratio = explode("/", $ratio);
     $ratio = $ratio[1] / $ratio[0];
-} ?>
+}
+
+$title = $block->title();
+$images = $block->images()->toFiles();
+?>
 
 <figure class="c-gallery">
-    <?php if ($block->title()->isNotEmpty()): ?>
-        <h3 class="c-gallery__title c-smalltitle"><?= $block->title() ?></h3>
+    <?php if ($title->isNotEmpty()): ?>
+        <h3 class="c-gallery__title c-smalltitle"><?= $title ?></h3>
     <?php endif ?>
     <ul class="c-gallery-images o-list-bare l-grid l-grid--auto js-gallery">
-        <?php foreach ($block->images()->toFiles() as $image): ?>
-            <?php $croppedImage = $image->thumb(array(
+        <?php foreach ($images as $image): ?>
+            <?php
+            $croppedImage = $image->thumb(array(
                 'width' => 1280,
                 'height' => 1280 * $ratio,
-                'crop' => $crop)); ?>
+                'crop' => $crop
+            ));
+            ?>
             <li class="o-list-bare__item" data-src="<?= $image->url() ?>">
                 <figure>
                     <a href="<?= $image->url() ?>">
-                        <img alt="<?= $image->alt() ?>" class="o-fluidimage c-gallery__image"
-                             src="<?= $croppedImage->url() ?>"></a>
+                        <img alt="<?= $image->alt() ?>" class="o-fluidimage c-gallery__image" src="<?= $croppedImage->url() ?>"></a>
                     <?php if ($image->alt()): ?>
                         <figcaption><?= $image->alt() ?></figcaption>
                     <?php endif ?>
