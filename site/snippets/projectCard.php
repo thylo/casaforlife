@@ -7,7 +7,7 @@ $description = $item->subheadline();
 $location = $item->location()->yaml();
 $long = $location['lon'];
 $lat = $location['lat'];
-$coverUrl = $item->cover()->toFile()->thumb(['width' => 1000, 'height' => 600, 'crop' => true, 'quality' => 60])->url();
+$coverUrl = $item->cover()->isNotEmpty() && $item->cover()->toFile() != null ? $item->cover()->toFile()->thumb(['width' => 1000, 'height' => 600, 'crop' => true, 'quality' => 60])->url() : '';
 $date = $item->date()->toDate('d-m-Y');
 ?>
 
