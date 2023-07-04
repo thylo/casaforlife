@@ -136,9 +136,11 @@
   &::before {
     background-color: var(--color-brand);
   }
+
 }
 .c-smallsection__title--dark {
   color: var(--color-white);
+  --color-text: var(--color-white);
 }
 .c-smallsection-media--dark {
   &::before {
