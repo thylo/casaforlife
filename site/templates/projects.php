@@ -2,7 +2,7 @@
 /** @var \Kirby\Cms\Page $page */
 $listedElements = $page->children()->listed()->sortBy('date', 'desc');
 $tag = param('tag');
-$projects = $page->children();
+$projects = $page->children()->sortBy('date', 'desc');
 ?>
 <?php snippet('header') ?>
 
